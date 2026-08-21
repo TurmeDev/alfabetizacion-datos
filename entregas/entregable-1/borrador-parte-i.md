@@ -305,3 +305,11 @@ Vacíos por ahora. Próxima sesión los armamos cuando confirmes:
 **Decisiones representadas:**
 1. **Después de actividad 2 (Diseño):** ¿Decisiones de diseño locked-in? Si NO, vuelve a la actividad 2 para revisar
 2. **Después de actividad 5 (Desarrollo):** ¿Pruebas OK? (verifica que ambos modos leen lo mismo y que el sesgo solo está en Tono A). Si NO, vuelve a la actividad 5 para corregir
+
+---
+
+## PARTE VI — Conclusión del equipo
+
+Al analizar "Dos Tonos" como un proceso, el equipo CriterIA aprendió tres cosas centrales. Primero, descomponer un servicio en actividades discretas hace visibles dependencias que de otro modo quedarían ocultas: por ejemplo, la demostración del día del evento depende de que el sub-equipo B coordine, lo que depende de que se defina su alcance, lo que aún no hicimos. Sin este ejercicio de mapeo, la dependencia aparecería como problema el día del evento. Segundo, los puntos de control son tan importantes como las actividades mismas: las dos decisiones del flujograma (¿decisiones locked-in?, ¿pruebas OK?) no son opcionales sino el mecanismo que evita avanzar con supuestos sin validar. Tercero, el mismo dato puede producir dos presentaciones muy distintas: el sesgo de los modelos de IA no está en la información que leen, sino en cómo se les pide que la presenten.
+
+Los principales aspectos a mejorar antes de la implementación son: (1) definir el alcance del sub-equipo B, que actualmente está sin asignar, sin lo cual las actividades 7 y 8 del flujograma no se pueden planificar concretamente; (2) obtener la aprobación formal del colegio para la demostración con contenido político (anti-patrón #04), porque sin ella el evento no se realiza; (3) construir la base de al menos 9 candidatos en 3 áreas, ya que sin contenido la aplicación no se puede probar; (4) definir el stack técnico (ADR-0002) y el contrato de datos con M5 (ADR-0004), ambos pendientes; (5) coordinar con el equipo de Control de Gestión para asegurar que los datos capturados durante la demo sirvan para su informe. El plazo hasta la entrega aprieta, pero el flujograma permite ver qué se puede paralelizar (corpus y stack) y qué es secuencial (diseño → corpus → implementación).
