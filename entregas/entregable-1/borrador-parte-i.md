@@ -118,43 +118,116 @@ Vacíos por ahora. Próxima sesión los armamos cuando confirmes:
 
 ## PARTE III — Secuencia del proceso
 
-### 7. Flujograma preliminar (notación de la Guía del Entregable 1)
+### 7. Flujograma preliminar (formato ASCII, simbología ANSI)
 
 ```
-INICIO (Brief + mapa visual del proyecto)
-   ↓
-ACTIVIDAD → Análisis del brief y del contexto
-   ↓
-ACTIVIDAD → Diseño del servicio y preparación técnica
-   ↓
-DECISIÓN/CONTROL → ¿Decisiones de diseño locked-in? (ADRs aceptados)
-   ├─ NO → vuelve a "Diseño del servicio" (revisión)
-   └─ SÍ → continúa
-   ↓
-ACTIVIDAD → Investigación de modelos de IA y herramientas
-   ↓
-ACTIVIDAD → Recopilación de información de candidatos
-   ↓
-ACTIVIDAD → Desarrollo de la aplicación "Dos Tonos"
-   ↓
-DECISIÓN/CONTROL → ¿Pruebas OK? (ambos modos leen lo mismo)
-   ├─ NO → vuelve a "Desarrollo de la aplicación" (corregir)
-   └─ SÍ → continúa
-   ↓
-ACTIVIDAD → Pruebas y validación
-   ↓
-ACTIVIDAD → Preparación de la demostración
-   ↓
-ACTIVIDAD → Demostración del proyecto en el colegio
-   ↓
-ACTIVIDAD → Análisis del proceso (tablas)
-   ↓
-ACTIVIDAD → Diagramas, conclusión y armado del documento final
-   ↓
-RESULTADO → PDF del Entregable 1
-   ↓
-FIN (entrega al docente)
+                          ╭───────────────────╮
+                          │       INICIO       │
+                          │  Brief + mapa del  │
+                          │      proyecto      │
+                          ╰─────────┬─────────╯
+                                    │
+                                    ▼
+        ┌─────────────────────────────────────────────┐
+        │ 1. Análisis del brief y del contexto        │
+        └────────────────────────┬────────────────────┘
+                                 │
+                                 ▼
+        ┌─────────────────────────────────────────────┐
+        │ 2. Diseño del servicio y preparación        │
+        │    técnica                                  │
+        └────────────────────────┬────────────────────┘
+                                 │
+                                 ▼
+                             ╱─────────╲
+                            ╱ ¿Decisiones╲
+                           ╱   locked-in? ╲
+                           ╲    (ADRs)    ╱
+                            ╲──────┬─────╯
+                              NO  │  SÍ
+                              ┌───┘   └───┐
+                              │          │
+                              ▼          │
+                    ┌──────────────┐    │
+                    │ volver a 2   │    │
+                    └──────────────┘    │
+                                       │
+                                       ▼
+        ┌─────────────────────────────────────────────┐
+        │ 3. Investigación de modelos de IA y         │
+        │    herramientas                             │
+        └────────────────────────┬────────────────────┘
+                                 │
+                                 ▼
+        ┌─────────────────────────────────────────────┐
+        │ 4. Recopilación de información de           │
+        │    candidatos                               │
+        └────────────────────────┬────────────────────┘
+                                 │
+                                 ▼
+        ┌─────────────────────────────────────────────┐
+        │ 5. Desarrollo de la aplicación              │
+        │    "Dos Tonos"                              │
+        └────────────────────────┬────────────────────┘
+                                 │
+                                 ▼
+                             ╱─────────╲
+                            ╱  ¿Pruebas  ╲
+                           ╱    OK?       ╲
+                           ╲              ╱
+                            ╲─────┬─────╯
+                              NO │ SÍ
+                              ┌──┘  └──┐
+                              │       │
+                              ▼       │
+                    ┌──────────────┐   │
+                    │ volver a 5   │   │
+                    └──────────────┘   │
+                                    │
+                                    ▼
+        ┌─────────────────────────────────────────────┐
+        │ 6. Pruebas y validación de la aplicación    │
+        └────────────────────────┬────────────────────┘
+                                 │
+                                 ▼
+        ┌─────────────────────────────────────────────┐
+        │ 7. Preparación de la demostración           │
+        └────────────────────────┬────────────────────┘
+                                 │
+                                 ▼
+        ┌─────────────────────────────────────────────┐
+        │ 8. Demostración del proyecto en el colegio  │
+        └────────────────────────┬────────────────────┘
+                                 │
+                                 ▼
+        ┌─────────────────────────────────────────────┐
+        │ 9. Análisis del proceso: tablas de          │
+        │    intervinientes, recursos y decisiones    │
+        └────────────────────────┬────────────────────┘
+                                 │
+                                 ▼
+        ┌─────────────────────────────────────────────┐
+        │ 10. Diagramas, conclusión y armado del      │
+        │     documento final                         │
+        └────────────────────────┬────────────────────┘
+                                 │
+                                 ▼
+                          ╭───────────────────╮
+                          │        FIN         │
+                          │   PDF Entregable   │
+                          │    1 entregado     │
+                          ╰───────────────────╯
 ```
+
+**Simbología utilizada (ANSI):**
+- `╭─╮` óvalos = Inicio / Fin del proceso
+- `┌─┐` rectángulos = Actividad / Proceso
+- `╱─╲` rombos = Decisión (con retorno si NO se cumple la condición)
+- `│` `▼` = Dirección del flujo
+
+**Decisiones con retorno:**
+1. Después de actividad 2: ¿Decisiones locked-in? Si NO, vuelve a la actividad 2
+2. Después de actividad 5: ¿Pruebas OK? Si NO, vuelve a la actividad 5
 
 ---
 
