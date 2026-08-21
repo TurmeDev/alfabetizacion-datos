@@ -69,22 +69,22 @@ Dentro de Módulo 2:
 | Usuario/beneficiario directo | Docente de la asignatura |
 | Resultado esperado | **Índice 3: Documento entregable** (el PDF con las 6 partes de la Guía del Entregable 1). El resto del trabajo (APP funcionando, base documental en git) son insumos/medio para producir el documento, no resultados formales del proceso |
 
-### 6. Actividades principales (10 actividades, alineadas con la Guía del Entregable 1)
+### 6. Actividades principales — Plan de Acción secuencial (10 actividades, **desde el Diseño del servicio hasta la Prestación del servicio**)
 
 | N.° | Actividad | Quién la realiza | Dónde | Recursos / documentos | Resultado |
 |---|---|---|---|---|---|
 | 1 | **Análisis de brief y contexto** — Lectura de la Guía del Entregable 1, mapa visual del proyecto, comprensión de la Estación 2 y su rol dentro del Startup Educativa | CriterIA completo | Reunión inicial (presencial o virtual) | Guía Entregable 1, mapa visual del proyecto, syllabus OSM | Brief digerido, plan de trabajo, dudas listadas para el profe |
-| 2 | **Investigación de herramientas y LLMs disponibles** — Evaluar qué LLMs se pueden usar (vía API key), qué herramientas de soporte (gnosis, MCPs, git), qué restricciones técnicas (costo, latencia, idioma) | 1-2 delegados | Trabajo individual + puesta en común | API keys disponibles, docs de gnosis, búsqueda de LLMs | Lista corta de herramientas elegibles, restricciones documentadas |
-| 3 | **Diseño arquitectónico (ADRs)** — Definir el diseño experimental (1x2 con sesgo en prompting), las áreas políticas del corpus, el modelo de datos de las respuestas para M5 | CriterIA completo | Sesión de diseño colaborativa | Notas de la actividad 2, decisiones previas con Mavis | ADRs locked-in (mínimo: diseño experimental, criterios del corpus, contrato M5) |
-| 4 | **Setup de infraestructura** — Crear el repo git, configurar gnosis para indexar la doc, escribir el AGENTS.md índice, definir los anti-patterns del proyecto | 1 delegado + revisión | Trabajo técnico individual | gnosis-mcp instalado, node + git, reference del engineering-harness | Repo git inicializado. Doc viva indexada y consultable |
-| 5 | **Construcción del corpus `\candidatos\`** — Definir las 3 áreas políticas, seleccionar 3-5 candidatos por área, escribir un .md por candidato con: nombre, partido, propuestas, frases textuales, fuente | 2-3 delegados (uno por área) | Trabajo individual + revisión cruzada | Fuentes públicas verificables (perfil, propuestas,Wikipedia, sitios oficiales) | Carpeta `corpus/candidatos/` poblada, ≥9 candidatos completos |
-| 6 | **Implementación de la APP "Dos Tonos"** — Backend (adapter por LLM, manejo de los 2 modos, lectura del corpus), Frontend (UI simple: input, 2 respuestas lado a lado), captura de datos para M5 | 2-3 delegados (backend / frontend) | Trabajo técnico iterativo | ADRs locked-in, corpus poblado, API keys | APP funcional con 2 modos (Tono A / Tono B), demo local corriendo |
-| 7 | **Testing y validación** — Probar la APP con preguntas de ejemplo del corpus, verificar que ambos modos leen lo mismo, verificar que el sesgo se aplica en Tono A y NUNCA en Tono B, validar la captura de datos | CriterIA completo | Sesión de testing | APP, corpus, lista de preguntas de prueba | Reporte de bugs, fixes aplicados, demo validado |
-| 8 | **Tablas de análisis del proceso (Part IV)** — Intervinientes y funciones, Recursos y documentos (con quién los usa), Decisiones y controles | CriterIA completo | Trabajo de documentación | Notas del equipo, brief, esquema del proceso | 3 tablas completadas siguiendo el formato de la Guía |
-| 9 | **Diagramas de proceso (Part III + V)** — Flujograma preliminar con la notación indicada por el docente (INICIO → ACTIVIDAD → DECISIÓN → RESULTADO → FIN) + flujograma formal con simbología de la Unidad VI | CriterIA completo | Trabajo de documentación | Simbología Unidad VI, esquema del proceso | 2 diagramas (preliminar + formal) |
-| 10 | **Conclusión del equipo (Part VI, 300 palabras) + empaquetamiento del PDF final** — Redacción de la conclusión + armado del PDF único según formato `Equipo_N°_Entregable_1_StartupEducativa.pdf` | CriterIA completo | Trabajo final individual | Todo el output previo | PDF del Entregable 1 listo para subir a la plataforma |
+| 2 | **Diseño del servicio + Setup de infraestructura** — ADRs (diseño 1x2, sesgo hard-coded, criterios del corpus, contrato M5) + creación del repo git + configuración de gnosis + AGENTS.md + anti-patterns | CriterIA completo (diseño) + 1 delegado (setup) | Sesión de diseño + trabajo técnico | Notas de la actividad 1, gnosis-mcp, node + git, reference engineering-harness | ADRs locked-in, repo inicializado, doc viva indexada |
+| 3 | **Investigación de LLMs y herramientas** — Evaluar qué LLMs se pueden usar (vía API key), qué herramientas de soporte, qué restricciones técnicas (costo, latencia, idioma) | 1-2 delegados | Trabajo individual + puesta en común | API keys disponibles, docs de gnosis, búsqueda de LLMs | Lista corta de herramientas elegibles, restricciones documentadas |
+| 4 | **Construcción del corpus `\candidatos\`** — Definir las 3 áreas políticas, seleccionar 3-5 candidatos por área, escribir un .md por candidato con: nombre, partido, propuestas, frases textuales, fuente | 2-3 delegados (uno por área) | Trabajo individual + revisión cruzada | Fuentes públicas verificables (perfil, propuestas, Wikipedia, sitios oficiales) | Carpeta `corpus/candidatos/` poblada, ≥9 candidatos completos |
+| 5 | **Implementación de la APP "Dos Tonos"** — Backend (adapter por LLM, manejo de los 2 modos, lectura del corpus), Frontend (UI simple: input, 2 respuestas lado a lado), captura de datos para M5 | 2-3 delegados (backend / frontend) | Trabajo técnico iterativo | ADRs locked-in, corpus poblado, API keys | APP funcional con 2 modos (Tono A / Tono B), demo local corriendo |
+| 6 | **Testing y validación** — Probar la APP con preguntas de ejemplo del corpus, verificar que ambos modos leen lo mismo, verificar que el sesgo se aplica en Tono A y NUNCA en Tono B, validar la captura de datos | CriterIA completo | Sesión de testing | APP, corpus, lista de preguntas de prueba | Reporte de bugs, fixes aplicados, demo validado |
+| 7 | **Preparación de la demostración/exposición** — Preparar materiales de inducción para el estudiante, ensayar el flujo interno, coordinar con el sub-equipo B sobre la operación, preparar la logística de la Estación 2 (mesa, dispositivo, conexión, scripts) | CriterIA completo + coordinación con sub-equipo B | Trabajo de pre-evento | Guion de inducción, checklist logístico, plan de rotación | Estación 2 lista para operar, materiales preparados, sub-equipo B alineado |
+| 8 | **Demostración del proyecto en el colegio (Prestación del servicio)** — Ejecutar la Estación 2 con cada grupo rotativo de estudiantes: inducción, tipeo de pregunta, comparación de respuestas, reflexión, captura de datos para M5 | CriterIA + sub-equipo B (operación conjunta) | Colegio asignado, Estación 2 | APP "Dos Tonos" deployada local, dispositivo, internet, materiales de inducción | Estudiantes experimentan el contraste entre Tono A y Tono B; datos capturados para M5 |
+| 9 | **Tablas de análisis del proceso (Part IV)** — Intervinientes y funciones, Recursos y documentos (con quién los usa), Decisiones y controles | CriterIA completo | Trabajo de documentación | Notas del equipo, brief, esquema del proceso | 3 tablas completadas siguiendo el formato de la Guía |
+| 10 | **Diagramas + Conclusión + Empaquetamiento PDF (Part III + V + VI)** — Flujograma preliminar (notación `INICIO → ACTIVIDAD → DECISIÓN → RESULTADO → FIN`) + flujograma formal (simbología Unidad VI) + conclusión 300 palabras + armado del PDF `Equipo_N°_Entregable_1_StartupEducativa.pdf` | CriterIA completo | Trabajo final individual | Todo el output previo, simbología U6 | PDF del Entregable 1 listo para subir a la plataforma |
 
-**Nota:** las actividades 8-10 corresponden directamente a las secciones Partes IV, V y VI de la Guía del Entregable 1. Las actividades 1-7 son el trabajo de fondo (análisis, investigación, diseño, setup, datos, implementación, testing) que produce los insumos para esas secciones.
+**Estructura del plan:** actividades 1-6 son la fase de **diseño y construcción** del servicio; actividad 7 es la **preparación operativa**; actividad 8 es la **prestación** del servicio (el día del evento); actividades 9-10 son la **documentación formal** que cierra el ciclo y se entrega al docente como Entregable 1.
 
 ---
 
@@ -104,9 +104,9 @@ Vacíos por ahora. Próxima sesión los armamos cuando confirmes:
 2. ~~Refinar descripción (modos bien separados, sesgo nunca en los datos)~~ ✅
 3. ~~Establecer que el único resultado formal es el Documento entregable (PDF)~~ ✅
 4. ~~Establecer que Módulos 1 y 2 son los de operación~~ ✅
-5. Coordinar con el sub-equipo B (aunque sea un email/reunión rápida) para entender su alcance
-6. Construir el **flujograma preliminar** (Part III, notación `INICIO → ACTIVIDAD → DECISIÓN → RESULTADO → FIN`)
-7. Construir el **flujograma formal** (Part V, simbología Unidad VI, peso 25%)
-8. Llenar las **3 tablas de análisis** (Part IV: intervinientes, recursos, decisiones/controles)
-9. Escribir la **conclusión** (Part VI, 300 palabras)
-10. Revisar y pulir la descripción (200 palabras) si el profe pide más detalle o menos jerga
+5. ~~Plan de acción secuencial (Diseño → Prestación) con demo incorporada~~ ✅
+6. Coordinar con el sub-equipo B (especialmente para actividades 7-8)
+7. Construir el **flujograma preliminar** (Part III, notación `INICIO → ACTIVIDAD → DECISIÓN → RESULTADO → FIN`)
+8. Construir el **flujograma formal** (Part V, simbología Unidad VI, peso 25%)
+9. Llenar las **3 tablas de análisis** (Part IV: intervinientes, recursos, decisiones/controles)
+10. Escribir la **conclusión** (Part VI, 300 palabras)
