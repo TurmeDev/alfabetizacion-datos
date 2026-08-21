@@ -108,10 +108,11 @@ Vacíos por ahora. Próxima sesión los armamos cuando confirmes:
 4. ~~Establecer que Módulos 1 y 2 son los de operación~~ ✅
 5. ~~Plan de acción secuencial (Diseño → Prestación) con demo incorporada~~ ✅
 6. ~~Reducir tecnicismo en títulos de actividades~~ ✅
-7. Coordinar con el sub-equipo B (especialmente para actividades 7-8)
-8. ~~Construir el **flujograma preliminar** (Part III)~~ ✅
-9. ~~Construir el **flujograma formal** (Part V, ANSI, peso 25%)~~ ✅
-10. Llenar las **3 tablas de análisis** (Part IV: intervinientes, recursos, decisiones/controles)
+7. ~~Construir el **flujograma preliminar** (Part III)~~ ✅
+8. ~~Construir el **flujograma formal** (Part V, ANSI, peso 25%)~~ ✅
+9. ~~Llenar las **3 tablas de análisis** (Part IV)~~ ✅
+10. ~~Escribir la **conclusión** (Part VI, 300 palabras)~~ ✅
+11. Coordinar con el sub-equipo B (pendiente externo, no bloquea Entregable 1)
 11. Escribir la **conclusión** (Part VI, 300 palabras)
 
 ---
