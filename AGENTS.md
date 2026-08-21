@@ -52,10 +52,13 @@ alfabetizacion-datos/             ← repo único (consolidado 2026-08-21)
 
 ## gnosis (índice semántico)
 Este repo usa [gnosis-mcp](https://gnosismcp.com) para búsqueda semántica sobre
-`docs/`. Para re-indexar tras cambios:
+`docs/` **y** `entregas/` (los borradores de entregas también son corpus
+consultable por Mavis). Para re-indexar tras cambios en cualquiera de las dos
+carpetas:
 ```bash
 GNOSIS_MCP_DATABASE_URL="$(git rev-parse --show-toplevel)/.gnosis/docs.db" \
-  gnosis-mcp ingest docs/ --force --embed
+  gnosis-mcp ingest docs/ --force --embed && \
+gnosis-mcp ingest entregas/ --force --embed
 ```
 
 ## Integración con otros módulos del proyecto Startup Educativa
