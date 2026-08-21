@@ -107,8 +107,83 @@ Vacíos por ahora. Próxima sesión los armamos cuando confirmes:
 3. ~~Establecer que el único resultado formal es el Documento entregable (PDF)~~ ✅
 4. ~~Establecer que Módulos 1 y 2 son los de operación~~ ✅
 5. ~~Plan de acción secuencial (Diseño → Prestación) con demo incorporada~~ ✅
-6. Coordinar con el sub-equipo B (especialmente para actividades 7-8)
-7. Construir el **flujograma preliminar** (Part III, notación `INICIO → ACTIVIDAD → DECISIÓN → RESULTADO → FIN`)
-8. Construir el **flujograma formal** (Part V, simbología Unidad VI, peso 25%)
-9. Llenar las **3 tablas de análisis** (Part IV: intervinientes, recursos, decisiones/controles)
-10. Escribir la **conclusión** (Part VI, 300 palabras)
+6. ~~Reducir tecnicismo en títulos de actividades~~ ✅
+7. Coordinar con el sub-equipo B (especialmente para actividades 7-8)
+8. ~~Construir el **flujograma preliminar** (Part III)~~ ✅
+9. ~~Construir el **flujograma formal** (Part V, ANSI, peso 25%)~~ ✅
+10. Llenar las **3 tablas de análisis** (Part IV: intervinientes, recursos, decisiones/controles)
+11. Escribir la **conclusión** (Part VI, 300 palabras)
+
+---
+
+## PARTE III — Secuencia del proceso
+
+### 7. Flujograma preliminar (notación de la Guía del Entregable 1)
+
+```
+INICIO (Brief + mapa visual del proyecto)
+   ↓
+ACTIVIDAD → Análisis del brief y del contexto
+   ↓
+ACTIVIDAD → Diseño del servicio y preparación técnica
+   ↓
+DECISIÓN/CONTROL → ¿Decisiones de diseño locked-in? (ADRs aceptados)
+   ├─ NO → vuelve a "Diseño del servicio" (revisión)
+   └─ SÍ → continúa
+   ↓
+ACTIVIDAD → Investigación de modelos de IA y herramientas
+   ↓
+ACTIVIDAD → Recopilación de información de candidatos
+   ↓
+ACTIVIDAD → Desarrollo de la aplicación "Dos Tonos"
+   ↓
+DECISIÓN/CONTROL → ¿Pruebas OK? (ambos modos leen lo mismo)
+   ├─ NO → vuelve a "Desarrollo de la aplicación" (corregir)
+   └─ SÍ → continúa
+   ↓
+ACTIVIDAD → Pruebas y validación
+   ↓
+ACTIVIDAD → Preparación de la demostración
+   ↓
+ACTIVIDAD → Demostración del proyecto en el colegio
+   ↓
+ACTIVIDAD → Análisis del proceso (tablas)
+   ↓
+ACTIVIDAD → Diagramas, conclusión y armado del documento final
+   ↓
+RESULTADO → PDF del Entregable 1
+   ↓
+FIN (entrega al docente)
+```
+
+---
+
+## PARTE V — Flujograma del proceso
+
+### 11. Flujograma formal — Estándar ANSI
+
+**Tipo de flujograma:** Vertical · **Estándar:** ANSI (simbología clásica de procesos)
+
+![Flujograma Formal ANSI](diagrams/flujograma-formal-ans.svg)
+
+*Fuente: `entregas/entregable-1/diagrams/flujograma-formal-ans.svg`*
+
+**Justificación de la elección (estándar ANSI):**
+
+- Es el estándar más usado en textbooks de Organización y Métodos en universidades latinoamericanas
+- La simbología es clara y reconocible para un lector no técnico: rectángulo = proceso, rombo = decisión, óvalo = inicio/fin
+- Permite representar los dos puntos de control del proceso (decisiones sobre ADRs y sobre validación de pruebas) con retorno explícito al paso anterior cuando la condición no se cumple
+- Es coherente con la formación de la docente (Ingeniera en Producción), que probablemente enseñó con material ANSI durante la carrera
+
+**Simbología utilizada:**
+
+| Figura | Significado |
+|---|---|
+| Óvalo verde | Inicio / Fin del proceso |
+| Rectángulo celeste | Actividad / Proceso |
+| Rombo amarillo | Decisión (con retorno si NO) |
+| Flecha con punta | Dirección del flujo |
+
+**Decisiones representadas:**
+1. **Después de actividad 2 (Diseño):** ¿Decisiones de diseño locked-in? Si NO, vuelve a la actividad 2 para revisar
+2. **Después de actividad 5 (Desarrollo):** ¿Pruebas OK? (verifica que ambos modos leen lo mismo y que el sesgo solo está en Tono A). Si NO, vuelve a la actividad 5 para corregir
