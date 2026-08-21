@@ -310,6 +310,81 @@ Vacíos por ahora. Próxima sesión los armamos cuando confirmes:
 
 ---
 
+## Sub-procesos
+
+Las actividades marcadas con ↳ en el flujograma formal tienen sub-procesos asociados. Esta sección los detalla.
+
+### Sub-proceso 2.1 — Diseño del diseño experimental
+
+- **2.1.1** Definir la arquitectura (un modelo de IA, dos modos de presentación)
+- **2.1.2** Escribir el prompt de Tono A (con sesgo marcado hacia progresiva)
+- **2.1.3** Escribir el prompt de Tono B (neutro, balanceado)
+- **2.1.D1** Decisión: ¿Los prompts producen respuestas claramente distintas? Si NO → volver a 2.1.2 / 2.1.3
+- **Output:** Diseño experimental documentado
+
+### Sub-proceso 4.1 — Construcción de la base de candidatos
+
+- **4.1.1** Definir las 3 áreas políticas (progresista, centrista, conservadora)
+- **4.1.2** Seleccionar 3-5 candidatos por área (total ≥9)
+- **4.1.3** Escribir una ficha por candidato con: nombre, partido, propuestas, frases textuales, fuente
+- **4.1.4** Verificar fuentes (sitios oficiales, perfiles públicos)
+- **Output:** Carpeta con ≥9 fichas completas
+
+### Sub-proceso 5.1 — Desarrollo de la aplicación
+
+- **5.1.1** Construir Tono A: implementar el prompt con sesgo marcado hacia progresiva
+- **5.1.2** Construir Tono B: implementar el prompt neutro, balanceado
+- **5.1.3** Construir la interfaz: input del estudiante, 2 respuestas lado a lado
+- **5.1.4** Implementar la captura de datos para Control de Gestión
+- **5.1.5** Implementar verificación automática: ambos modos leen lo mismo, sesgo solo en Tono A
+- **Output:** APP funcional con 2 modos verificada
+
+### Sub-proceso 6.1 — Validación de la aplicación
+
+- **6.1.1** Probar la aplicación con preguntas de ejemplo
+- **6.1.2** Verificar que Tono A introduce variaciones de framing
+- **6.1.3** Verificar que Tono B NO introduce variaciones
+- **6.1.4** Validar la captura de datos
+- **6.1.5** Documentar bugs y aplicar correcciones
+- **Output:** Reporte de validación + bugs corregidos
+
+### Sub-proceso 7.1 — Preparación de la operación
+
+- **7.1.1** Preparar el guion de inducción (~2 min) para el estudiante media
+- **7.1.2** Coordinar con el sub-equipo B los roles de operación del día del evento
+- **7.1.3** Preparar los dispositivos electrónicos para inducción
+- **7.1.4** Preparar el checklist logístico de la Estación 2
+- **Output:** Estación 2 lista, sub-equipo B alineado
+
+### Sub-proceso 8.1 — Operación de la demostración
+
+- **8.1.1** Recibir al grupo de estudiantes en la Estación 2
+- **8.1.2** Hacer la inducción: "van a comparar 2 respuestas del mismo modelo"
+- **8.1.3** Estudiante tipea su pregunta sobre un candidato
+- **8.1.4** Recibir las 2 respuestas (Tono A y Tono B) lado a lado
+- **8.1.5** Facilitar la comparación: "¿ven alguna diferencia en el framing?"
+- **8.1.6** Capturar los datos para Control de Gestión
+- **Output:** Datos capturados para Módulo 5
+
+### Sub-proceso 9.1 — Documentación del análisis
+
+- **9.1.1** Llenar la tabla de intervinientes y funciones
+- **9.1.2** Llenar la tabla de recursos y documentos
+- **9.1.3** Llenar la tabla de decisiones y controles
+- **9.1.4** Revisar la coherencia entre las 3 tablas
+- **Output:** 3 tablas completadas y consistentes
+
+### Sub-proceso 10.1 — Armado del documento final
+
+- **10.1.1** Construir el flujograma formal (la imagen SVG de la Parte V)
+- **10.1.2** Redactar la conclusión del equipo (300 palabras)
+- **10.1.3** Armar el PDF único con las 6 partes de la Guía
+- **10.1.4** Verificar el formato del nombre del archivo
+- **10.1.5** Subir a la plataforma del docente
+- **Output:** PDF entregado en la plataforma
+
+---
+
 ## PARTE VI — Conclusión del equipo
 
 Al analizar "Dos Tonos" como un proceso, el equipo CriterIA aprendió tres cosas centrales. Primero, descomponer un servicio en actividades discretas hace visibles dependencias que de otro modo quedarían ocultas: por ejemplo, la demostración del día del evento depende de que el sub-equipo B coordine, lo que depende de que se defina su alcance, lo que aún no hicimos. Sin este ejercicio de mapeo, la dependencia aparecería como problema el día del evento. Segundo, los puntos de control son tan importantes como las actividades mismas: las dos decisiones del flujograma (¿decisiones locked-in?, ¿pruebas OK?) no son opcionales sino el mecanismo que evita avanzar con supuestos sin validar. Tercero, el mismo dato puede producir dos presentaciones muy distintas: el sesgo de los modelos de IA no está en la información que leen, sino en cómo se les pide que la presenten.
