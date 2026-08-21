@@ -8,10 +8,17 @@
 
 ## Aclaración de equipo (importante para el profe)
 
-Somos 1 de los 2 sub-equipos de 5 que cubren Alfabetización de Datos dentro de Módulo 2.
+Somos 1 de los 2 sub-equipos de 5 que cubren Alfabetización de Datos dentro de Módulo 2 (Contenido y Demostraciones).
 
-- **Sub-equipo A (este equipo, 5 estudiantes):** construye la APP chatbot (código, arquitectura, infraestructura) y la base documental (ADRs, anti-patterns, decisiones de diseño, iteraciones) que queda a disposición del docente.
-- **Sub-equipo B (otros 5 estudiantes):** alcance complementario, aún por confirmar con el otro equipo. Probablemente: facilitación, materiales impresos, dinámica de la estación, o guión pedagógico de inducción. *A coordinar.*
+**Módulos de operación** según el mapa visual del proyecto:
+- **Módulo 1 (Diseño de Estaciones)** — OSM, 15-20 estudiantes
+- **Módulo 2 (Contenido y Demostraciones)** — OSM, 10-15 estudiantes ← nuestro módulo
+
+Los módulos 3 (Logística), 4 (Promoción de Carreras) y 5 (Evaluación) son de soporte operativo; los módulos 1 y 2 son los que **operan** la experiencia educativa el día del evento.
+
+Dentro de Módulo 2:
+- **Sub-equipo A — CriterIA (este equipo, 5 estudiantes):** construye la APP chatbot (código, arquitectura, infraestructura) y la base documental (ADRs, anti-patterns, decisiones de diseño, iteraciones) que queda a disposición del docente. **Produce el Documento entregable del Entregable 1.**
+- **Sub-equipo B (otros 5 estudiantes):** alcance complementario, aún por confirmar. Probablemente facilitación, materiales impresos, dinámica de la estación o guión pedagógico de inducción. *A coordinar.*
 
 **Interfaz entre los dos sub-equipos:** nuestro chatbot es la herramienta que el sub-equipo B opera el día del evento. La base documental es lo que el docente usa para entender qué construimos y por qué.
 
@@ -20,31 +27,33 @@ Somos 1 de los 2 sub-equipos de 5 que cubren Alfabetización de Datos dentro de 
 ## PARTE I — Identificación del servicio (BORRADOR)
 
 ### 1. Nombre del equipo
-> ☐ PENDIENTE — el user lo define
+**CriterIA** — Sub-equipo A de Módulo 2 (Contenido y Demostraciones), 5 estudiantes universitarios de la carrera de Ingeniería en Informática, OSM 5° semestre.
 
 ### 2. Tema o componente asignado
 **Módulo 2 (Contenido y Demostraciones) — Estación 2: Alfabetización de Datos — sub-equipo técnico (APP + base documental).**
 
 ### 3. Nombre del servicio o experiencia
-> ☐ PENDIENTE — propuestas:
-> - "Datos con lupa" (recomendada: invita a mirar críticamente)
-> - "Voces en la IA" (énfasis en los candidatos detrás de los datos)
-> - "Modo A / Modo B" (técnico, alineado al ADR-0001)
+**"Dos Tonos"** — APP de consulta política con dos modos de presentación del mismo modelo (uno con sesgo marcado hacia el área ideológica progresiva, otro neutro/balanceado).
 
 ### 4. Descripción del servicio (BORRADOR)
 
-> El equipo construye una **APP de consulta de candidatos políticos** con
-> dos modos de presentación (Modo A con sesgo marcado hacia el área
-> ideológica progresiva, Modo B neutro/balanceado), respaldada por un corpus
-> curado de información. La herramienta se entrega al docente junto con una
-> base documental completa (decisiones de diseño, reglas del proyecto, log
-> de iteraciones) que explica el porqué de cada elección técnica. La APP
-> está pensada para ser operada en la Estación 2 del Startup Educativa por
-> el sub-equipo B, donde estudiantes de educación media tipean preguntas
-> libres sobre candidatos y comparan en tiempo real las dos respuestas que
-> reciben. El objetivo pedagógico es que el estudiante descubra que el
-> sesgo no está en los datos que el modelo leyó, sino en cómo se le pide
-> que los presente. La experiencia es **consulta**, no simulación de voto.
+> **"Dos Tonos"** es una APP de consulta sobre candidatos políticos del
+> equipo CriterIA, pensada para la Estación 2 (Alfabetización de Datos)
+> del Startup Educativa. Se alimenta de un corpus curado y presenta los
+> datos en **dos modos claramente diferenciados e independientes del
+> prompt** del estudiante. **Tono B (neutro)** responde **siempre** de
+> forma objetiva y estadística, mostrando los datos tal como están en
+> el corpus. **Tono A (sesgado)** introduce variaciones intencionales
+> en el framing — resalta u opaca información según el área ideológica.
+> Cuando un estudiante de educación media tipea una pregunta, recibe
+> simultáneamente las dos respuestas y las compara en tiempo real. El
+> insight pedagógico es que **el sesgo nunca está en los datos**: los
+> dos modos leen exactamente la misma información. El sesgo es
+> únicamente el efecto de las variaciones que el Tono A aplica sobre
+> el framing. La experiencia es una **consulta**, no simulación de
+> voto. El equipo entrega la APP junto con una base documental
+> completa que permite al docente y al sub-equipo B entender el porqué
+> de cada elección técnica.
 
 ---
 
@@ -54,26 +63,28 @@ Somos 1 de los 2 sub-equipos de 5 que cubren Alfabetización de Datos dentro de 
 
 | Campo | Valor |
 |---|---|
-| Nombre | Construcción de la APP de Alfabetización de Datos y su base documental |
-| Inicio | El equipo recibe el brief del proyecto y se conforma el sub-equipo A |
-| Fin | Entrega al docente: APP funcional + base documental committeada en git |
-| Usuario/beneficiario directo | Docente de la asignatura (revisión de la entrega) y, por extensión, sub-equipo B (operador el día del evento) y estudiantes de educación media (usuario final) |
-| Resultado esperado | (1) Repositorio git con la APP chatbot funcionando, (2) Repositorio git con la base documental (ADRs, anti-patterns, iteraciones, backlog), (3) Documento Entregable 1 con el flujograma del proceso de desarrollo |
+| Nombre | Construcción de "Dos Tonos" y entrega de la documentación al docente |
+| Inicio | El equipo CriterIA recibe el brief del Entregable 1 y conforma el plan de trabajo |
+| Fin | PDF del Entregable 1 entregado al docente. **El docente NO es especialista en tecnologías informáticas**, por lo que el formato de entrega es siempre **documentación PDF**, y salvo a ciertos esquemas, simplemente se anexan al desarrollo (no se entrega código, configs, ni artefactos de dev como resultado formal) |
+| Usuario/beneficiario directo | Docente de la asignatura |
+| Resultado esperado | **Índice 3: Documento entregable** (el PDF con las 6 partes de la Guía del Entregable 1). El resto del trabajo (APP funcionando, base documental en git) son insumos/medio para producir el documento, no resultados formales del proceso |
 
-### 6. Actividades principales (proceso de desarrollo, 8 actividades)
+### 6. Actividades principales (10 actividades, alineadas con la Guía del Entregable 1)
 
 | N.° | Actividad | Quién la realiza | Dónde | Recursos / documentos | Resultado |
 |---|---|---|---|---|---|
-| 1 | **Análisis de brief y contexto** — Lectura de la Guía del Entregable 1, mapa visual del proyecto, comprensión de la Estación 2 y su rol dentro del Startup Educativa | Todo el sub-equipo A | Reunión inicial (presencial o virtual) | Guía Entregable 1, mapa visual del proyecto, syllabus OSM | Brief digerido, dudas listadas para el profe |
-| 2 | **Investigación de herramientas y LLMs disponibles** — Evaluar qué LLMs se pueden usar (vía API key), qué herramientas de soporte (gnosis, MCPs, git), qué restricciones técnicas (costo, latencia, idioma) | 1-2 estudiantes delegados | Trabajo individual + puesta en común | Acceso a API keys, docs de gnosis, internet para investigar LLMs | Lista corta de herramientas elegibles, restricciones documentadas |
-| 3 | **Diseño arquitectónico (ADRs)** — Definir el diseño experimental (1x2 con sesgo en prompting), las áreas políticas del corpus, el modelo de datos de las respuestas para M5 | Todo el sub-equipo A | Sesión de diseño colaborativa | Notas de la actividad 2, decisiones de sesiones previas con Mavis | ADRs locked-in (mínimo: diseño experimental, criterios del corpus, contrato M5) |
-| 4 | **Setup de infraestructura** — Crear los repos git, configurar gnosis para indexar la doc, escribir el AGENTS.md índice, definir los anti-patterns del proyecto | 1 estudiante delegado (con revisión del equipo) | Trabajo técnico individual | gnosis-mcp instalado, node + git disponibles, reference del engineering-harness | 2 repos git inicializados: APP + docs. Doc viva indexada y consultable |
-| 5 | **Construcción del corpus `\candidatos\`** — Definir las 3 áreas políticas, seleccionar 3-5 candidatos por área, escribir un archivo .md por candidato con: nombre, partido, propuestas, frases textuales, fuente | 2-3 estudiantes (uno por área) | Trabajo individual + revisión cruzada | Fuentes públicas (perfil del candidato, propuestas,Wikipedia, sitios oficiales) | Carpeta `corpus/candidatos/` poblada, ≥9 candidatos completos |
-| 6 | **Implementación de la APP** — Backend (adapter por LLM, manejo de los 2 modos, lectura del corpus), Frontend (UI simple: input, 2 respuestas lado a lado), captura de datos para M5 | 2-3 estudiantes (backend / frontend) | Trabajo técnico, iterativo | ADRs locked-in, corpus poblado, API keys | APP funcional con 2 modos, demo local corriendo |
-| 7 | **Testing y validación** — Probar la APP con preguntas de ejemplo del corpus, verificar que ambos modos leen lo mismo, verificar que el sesgo se aplica, validar la captura de datos | Todo el sub-equipo A | Sesión de testing | APP, corpus, lista de preguntas de prueba | Reporte de bugs, fixes aplicados, demo validado |
-| 8 | **Empaquetamiento y entrega al docente** — Escribir README de uso, commit final, validar que todo el flujo (APP + docs) esté navegable, generar Entregable 1 en PDF, subir a la plataforma | 1 estudiante delegado + revisión del equipo | Trabajo final individual | Todo el output previo | (1) PDF del Entregable 1, (2) Links a los 2 repos, (3) Demo de la APP accesible para el docente |
+| 1 | **Análisis de brief y contexto** — Lectura de la Guía del Entregable 1, mapa visual del proyecto, comprensión de la Estación 2 y su rol dentro del Startup Educativa | CriterIA completo | Reunión inicial (presencial o virtual) | Guía Entregable 1, mapa visual del proyecto, syllabus OSM | Brief digerido, plan de trabajo, dudas listadas para el profe |
+| 2 | **Investigación de herramientas y LLMs disponibles** — Evaluar qué LLMs se pueden usar (vía API key), qué herramientas de soporte (gnosis, MCPs, git), qué restricciones técnicas (costo, latencia, idioma) | 1-2 delegados | Trabajo individual + puesta en común | API keys disponibles, docs de gnosis, búsqueda de LLMs | Lista corta de herramientas elegibles, restricciones documentadas |
+| 3 | **Diseño arquitectónico (ADRs)** — Definir el diseño experimental (1x2 con sesgo en prompting), las áreas políticas del corpus, el modelo de datos de las respuestas para M5 | CriterIA completo | Sesión de diseño colaborativa | Notas de la actividad 2, decisiones previas con Mavis | ADRs locked-in (mínimo: diseño experimental, criterios del corpus, contrato M5) |
+| 4 | **Setup de infraestructura** — Crear el repo git, configurar gnosis para indexar la doc, escribir el AGENTS.md índice, definir los anti-patterns del proyecto | 1 delegado + revisión | Trabajo técnico individual | gnosis-mcp instalado, node + git, reference del engineering-harness | Repo git inicializado. Doc viva indexada y consultable |
+| 5 | **Construcción del corpus `\candidatos\`** — Definir las 3 áreas políticas, seleccionar 3-5 candidatos por área, escribir un .md por candidato con: nombre, partido, propuestas, frases textuales, fuente | 2-3 delegados (uno por área) | Trabajo individual + revisión cruzada | Fuentes públicas verificables (perfil, propuestas,Wikipedia, sitios oficiales) | Carpeta `corpus/candidatos/` poblada, ≥9 candidatos completos |
+| 6 | **Implementación de la APP "Dos Tonos"** — Backend (adapter por LLM, manejo de los 2 modos, lectura del corpus), Frontend (UI simple: input, 2 respuestas lado a lado), captura de datos para M5 | 2-3 delegados (backend / frontend) | Trabajo técnico iterativo | ADRs locked-in, corpus poblado, API keys | APP funcional con 2 modos (Tono A / Tono B), demo local corriendo |
+| 7 | **Testing y validación** — Probar la APP con preguntas de ejemplo del corpus, verificar que ambos modos leen lo mismo, verificar que el sesgo se aplica en Tono A y NUNCA en Tono B, validar la captura de datos | CriterIA completo | Sesión de testing | APP, corpus, lista de preguntas de prueba | Reporte de bugs, fixes aplicados, demo validado |
+| 8 | **Tablas de análisis del proceso (Part IV)** — Intervinientes y funciones, Recursos y documentos (con quién los usa), Decisiones y controles | CriterIA completo | Trabajo de documentación | Notas del equipo, brief, esquema del proceso | 3 tablas completadas siguiendo el formato de la Guía |
+| 9 | **Diagramas de proceso (Part III + V)** — Flujograma preliminar con la notación indicada por el docente (INICIO → ACTIVIDAD → DECISIÓN → RESULTADO → FIN) + flujograma formal con simbología de la Unidad VI | CriterIA completo | Trabajo de documentación | Simbología Unidad VI, esquema del proceso | 2 diagramas (preliminar + formal) |
+| 10 | **Conclusión del equipo (Part VI, 300 palabras) + empaquetamiento del PDF final** — Redacción de la conclusión + armado del PDF único según formato `Equipo_N°_Entregable_1_StartupEducativa.pdf` | CriterIA completo | Trabajo final individual | Todo el output previo | PDF del Entregable 1 listo para subir a la plataforma |
 
-**Nota:** no se usan las 10 filas porque el proceso de este sub-equipo cabe en 8 actividades limpias. Si el sub-equipo B tiene actividades propias (operación el día del evento, facilitación), se documentan por separado.
+**Nota:** las actividades 8-10 corresponden directamente a las secciones Partes IV, V y VI de la Guía del Entregable 1. Las actividades 1-7 son el trabajo de fondo (análisis, investigación, diseño, setup, datos, implementación, testing) que produce los insumos para esas secciones.
 
 ---
 
@@ -89,8 +100,13 @@ Vacíos por ahora. Próxima sesión los armamos cuando confirmes:
 ---
 
 ## Tareas para próximas sessions
-1. Confirmar nombre del equipo + nombre del servicio
-2. Coordinar con el sub-equipo B (aunque sea un email/reunión rápida) para entender su alcance
-3. Construir el flujograma (peso 25%): puede ser horizontal (recomendado para procesos de desarrollo secuenciales) o vertical
-4. Llenar las tablas de intervinientes, recursos y decisiones/controles
-5. Escribir la conclusión (300 palabras)
+1. ~~Confirmar nombre del equipo + nombre del servicio~~ ✅ (CriterIA + Dos Tonos)
+2. ~~Refinar descripción (modos bien separados, sesgo nunca en los datos)~~ ✅
+3. ~~Establecer que el único resultado formal es el Documento entregable (PDF)~~ ✅
+4. ~~Establecer que Módulos 1 y 2 son los de operación~~ ✅
+5. Coordinar con el sub-equipo B (aunque sea un email/reunión rápida) para entender su alcance
+6. Construir el **flujograma preliminar** (Part III, notación `INICIO → ACTIVIDAD → DECISIÓN → RESULTADO → FIN`)
+7. Construir el **flujograma formal** (Part V, simbología Unidad VI, peso 25%)
+8. Llenar las **3 tablas de análisis** (Part IV: intervinientes, recursos, decisiones/controles)
+9. Escribir la **conclusión** (Part VI, 300 palabras)
+10. Revisar y pulir la descripción (200 palabras) si el profe pide más detalle o menos jerga
