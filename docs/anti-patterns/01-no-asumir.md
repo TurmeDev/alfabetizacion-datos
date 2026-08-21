@@ -7,7 +7,7 @@ preguntar al usuario antes de avanzar.
 ## Por qué existe
 - El proyecto tiene 4 módulos integrados (TOM + Control de Gestión). Asumir
   significa romper la integración con los otros equipos.
-- El profe puede tener requisitos no documentados (aprobación colegio, formato
+- El profe puede tener requisitos no documentados (formato
   de entrega, criterios de evaluación).
 - Cambiar después es más caro que preguntar antes.
 

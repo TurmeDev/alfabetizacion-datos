@@ -16,10 +16,6 @@ desviación requiere un ADR nuevo.
 | 6 | **Idioma único: español** | Demo en colegio PY, no traducir |
 | 7 | **Tiempo limitado** | ~5-8 min por estudiante (40 chicos × 3-4 hs) |
 
-## Spec adicional (política)
-- **Contenido político requiere aprobación del colegio antes del demo.** No es
-  decisión del bot ni del equipo — pasa por dirección del colegio.
-
 ## Por qué existe
 - **Reproducibilidad**: M5 (Evaluación) necesita comparar las respuestas de los
   40 estudiantes. Si cada uno interactúa distinto, los datos son ruido.

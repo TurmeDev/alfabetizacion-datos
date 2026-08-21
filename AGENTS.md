@@ -19,12 +19,14 @@ sino en cómo se le pide al modelo que los presente.
 - **ADR-0002** — Stack técnico — PENDIENTE (será el ÚLTIMO ADR, tras corpus)
 - **ADR-0003** — Criterios del corpus — PENDIENTE
 - **ADR-0004** — Contrato de datos con Módulo 5 — PENDIENTE
+- **ADR-0005** — Privacidad y manejo de datos de estudiantes — PENDIENTE
+- **ADR-0006** — Métricas de "sesgo" para Módulo 5 — PENDIENTE
 
 ## Convenciones duras (ver `docs/anti-patterns/`)
 - **01-no-asumir**: preguntar antes de inventar requisitos
 - **02-corpus-antes-codigo**: sin `\candidatos\` no se toca la API
 - **03-ciego-en-demo**: el estudiante no ve nombre de modelo
-- **04-alcance-hermetico**: 7 specs del demo + aprobación colegio
+- **04-alcance-hermetico**: 7 specs del demo
 
 ## Estructura
 ```
