@@ -19,6 +19,9 @@ dist/
 build/
 *.egg-info/
 
+# gnosis index (regenerable, no commitear)
+.gnosis/
+
 # OS
 .DS_Store
 Thumbs.db
@@ -27,3 +30,6 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Scripts temporales de migración (se borran tras ejecutarse)
+.tmp-*.py

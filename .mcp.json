@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "gnosis": {
+      "command": "node",
+      "args": ["gnosis-serve.mjs"]
+    }
+  }
+}
