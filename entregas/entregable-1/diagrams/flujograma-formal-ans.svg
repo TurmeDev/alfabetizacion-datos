@@ -1,144 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 2000" font-family="Arial, sans-serif" font-size="14">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 2000" font-family="Arial, sans-serif" font-size="14" fill="#e8e8e8">
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000"/>
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e8e8e8"/>
     </marker>
   </defs>
 
+  <!-- Dark background -->
+  <rect x="0" y="0" width="900" height="2000" fill="#1e1e1e"/>
+
   <!-- Title -->
-  <text x="450" y="30" text-anchor="middle" font-size="18" font-weight="bold">
+  <text x="450" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#ffffff">
     Flujograma Formal del Proceso — Estándar ANSI
   </text>
-  <text x="450" y="52" text-anchor="middle" font-size="12" font-style="italic">
+  <text x="450" y="52" text-anchor="middle" font-size="12" font-style="italic" fill="#b0b0b0">
     Servicio: Dos Tonos · Equipo: CriterIA · Módulo 2 — Estación 2
   </text>
 
   <!-- INICIO -->
-  <ellipse cx="450" cy="110" rx="120" ry="30" fill="#d4edda" stroke="#000" stroke-width="1.5"/>
-  <text x="450" y="106" text-anchor="middle" font-size="12">INICIO</text>
-  <text x="450" y="122" text-anchor="middle" font-size="11">Brief + mapa visual del proyecto</text>
+  <ellipse cx="450" cy="110" rx="120" ry="30" fill="#3a6b41" stroke="#e8e8e8" stroke-width="1.5"/>
+  <text x="450" y="106" text-anchor="middle" font-size="12" fill="#ffffff">INICIO</text>
+  <text x="450" y="122" text-anchor="middle" font-size="11" fill="#e8e8e8">Brief + mapa visual del proyecto</text>
 
   <!-- arrow -->
-  <line x1="450" y1="140" x2="450" y2="170" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="140" x2="450" y2="170" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- 1. Análisis -->
-  <rect x="250" y="175" width="400" height="60" fill="#cfe2ff" stroke="#000" stroke-width="1.5" rx="4"/>
-  <text x="450" y="200" text-anchor="middle" font-size="13" font-weight="bold">1. Análisis del brief y del contexto del proyecto</text>
-  <text x="450" y="218" text-anchor="middle" font-size="11">Lectura de Guía Entregable 1, mapa visual, syllabus</text>
+  <rect x="250" y="175" width="400" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
+  <text x="450" y="200" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">1. Análisis del brief y del contexto del proyecto</text>
+  <text x="450" y="218" text-anchor="middle" font-size="11" fill="#e8e8e8">Lectura de Guía Entregable 1, mapa visual, syllabus</text>
 
-  <line x1="450" y1="235" x2="450" y2="265" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="235" x2="450" y2="265" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- 2. Diseño -->
-  <rect x="250" y="270" width="400" height="60" fill="#cfe2ff" stroke="#000" stroke-width="1.5" rx="4"/>
-  <text x="450" y="295" text-anchor="middle" font-size="13" font-weight="bold">2. Diseño del servicio y preparación técnica</text>
-  <text x="450" y="313" text-anchor="middle" font-size="11">Decisiones de diseño (ADRs) + repo + indexación de documentos</text>
+  <rect x="250" y="270" width="400" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
+  <text x="450" y="295" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">2. Diseño del servicio y preparación técnica</text>
+  <text x="450" y="313" text-anchor="middle" font-size="11" fill="#e8e8e8">Decisiones de diseño (ADRs) + repo + indexación de documentos</text>
 
-  <line x1="450" y1="330" x2="450" y2="360" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="330" x2="450" y2="360" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- Decisión 1: ADRs locked-in? -->
-  <polygon points="450,360 580,420 450,480 320,420" fill="#fff3cd" stroke="#000" stroke-width="1.5"/>
-  <text x="450" y="416" text-anchor="middle" font-size="12" font-weight="bold">¿Decisiones locked-in?</text>
-  <text x="450" y="432" text-anchor="middle" font-size="11">(ADRs aceptados)</text>
+  <polygon points="450,360 580,420 450,480 320,420" fill="#8a6e2a" stroke="#e8e8e8" stroke-width="1.5"/>
+  <text x="450" y="416" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">¿Decisiones locked-in?</text>
+  <text x="450" y="432" text-anchor="middle" font-size="11" fill="#e8e8e8">(ADRs aceptados)</text>
 
   <!-- NO label y loop back arrow -->
-  <text x="305" y="416" text-anchor="end" font-size="11" font-weight="bold">NO</text>
-  <path d="M 320 420 L 230 420 L 230 300 L 248 300" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="305" y="416" text-anchor="end" font-size="11" font-weight="bold" fill="#ffffff">NO</text>
+  <path d="M 320 420 L 230 420 L 230 300 L 248 300" fill="none" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- SI label -->
-  <text x="595" y="416" text-anchor="start" font-size="11" font-weight="bold">SÍ</text>
+  <text x="595" y="416" text-anchor="start" font-size="11" font-weight="bold" fill="#ffffff">SÍ</text>
 
-  <line x1="450" y1="480" x2="450" y2="510" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="480" x2="450" y2="510" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- 3. Investigación -->
-  <rect x="250" y="515" width="400" height="60" fill="#cfe2ff" stroke="#000" stroke-width="1.5" rx="4"/>
-  <text x="450" y="540" text-anchor="middle" font-size="13" font-weight="bold">3. Investigación de modelos de IA y herramientas</text>
-  <text x="450" y="558" text-anchor="middle" font-size="11">Lista de modelos elegibles + restricciones (costo, latencia, idioma)</text>
+  <rect x="250" y="515" width="400" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
+  <text x="450" y="540" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">3. Investigación de modelos de IA y herramientas</text>
+  <text x="450" y="558" text-anchor="middle" font-size="11" fill="#e8e8e8">Lista de modelos elegibles + restricciones (costo, latencia, idioma)</text>
 
-  <line x1="450" y1="575" x2="450" y2="605" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="575" x2="450" y2="605" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- 4. Recopilación -->
-  <rect x="250" y="610" width="400" height="60" fill="#cfe2ff" stroke="#000" stroke-width="1.5" rx="4"/>
-  <text x="450" y="635" text-anchor="middle" font-size="13" font-weight="bold">4. Recopilación de información de candidatos</text>
-  <text x="450" y="653" text-anchor="middle" font-size="11">3-5 fichas por área, ≥9 candidatos, fuentes verificables</text>
+  <rect x="250" y="610" width="400" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
+  <text x="450" y="635" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">4. Recopilación de información de candidatos</text>
+  <text x="450" y="653" text-anchor="middle" font-size="11" fill="#e8e8e8">3-5 fichas por área, ≥9 candidatos, fuentes verificables</text>
 
-  <line x1="450" y1="670" x2="450" y2="700" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="670" x2="450" y2="700" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- 5. Desarrollo -->
-  <rect x="250" y="705" width="400" height="60" fill="#cfe2ff" stroke="#000" stroke-width="1.5" rx="4"/>
-  <text x="450" y="730" text-anchor="middle" font-size="13" font-weight="bold">5. Desarrollo de la aplicación "Dos Tonos"</text>
-  <text x="450" y="748" text-anchor="middle" font-size="11">Tono A (sesgo progresiva) + Tono B (neutro) + captura de datos</text>
+  <rect x="250" y="705" width="400" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
+  <text x="450" y="730" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">5. Desarrollo de la aplicación "Dos Tonos"</text>
+  <text x="450" y="748" text-anchor="middle" font-size="11" fill="#e8e8e8">Tono A (sesgo progresiva) + Tono B (neutro) + captura de datos</text>
 
-  <line x1="450" y1="765" x2="450" y2="795" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="765" x2="450" y2="795" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- Decisión 2: ¿Pruebas OK? -->
-  <polygon points="450,795 580,855 450,915 320,855" fill="#fff3cd" stroke="#000" stroke-width="1.5"/>
-  <text x="450" y="851" text-anchor="middle" font-size="12" font-weight="bold">¿Pruebas OK?</text>
-  <text x="450" y="867" text-anchor="middle" font-size="11">(ambos modos leen lo mismo, sesgo solo en Tono A)</text>
+  <polygon points="450,795 580,855 450,915 320,855" fill="#8a6e2a" stroke="#e8e8e8" stroke-width="1.5"/>
+  <text x="450" y="851" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">¿Pruebas OK?</text>
+  <text x="450" y="867" text-anchor="middle" font-size="11" fill="#e8e8e8">(ambos modos leen lo mismo, sesgo solo en Tono A)</text>
 
-  <text x="305" y="851" text-anchor="end" font-size="11" font-weight="bold">NO</text>
-  <path d="M 320 855 L 230 855 L 230 735 L 248 735" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <text x="595" y="851" text-anchor="start" font-size="11" font-weight="bold">SÍ</text>
+  <text x="305" y="851" text-anchor="end" font-size="11" font-weight="bold" fill="#ffffff">NO</text>
+  <path d="M 320 855 L 230 855 L 230 735 L 248 735" fill="none" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="595" y="851" text-anchor="start" font-size="11" font-weight="bold" fill="#ffffff">SÍ</text>
 
-  <line x1="450" y1="915" x2="450" y2="945" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="915" x2="450" y2="945" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- 6. Pruebas -->
-  <rect x="250" y="950" width="400" height="60" fill="#cfe2ff" stroke="#000" stroke-width="1.5" rx="4"/>
-  <text x="450" y="975" text-anchor="middle" font-size="13" font-weight="bold">6. Pruebas y validación de la aplicación</text>
-  <text x="450" y="993" text-anchor="middle" font-size="11">Preguntas de prueba, validación de captura de datos</text>
+  <rect x="250" y="950" width="400" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
+  <text x="450" y="975" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">6. Pruebas y validación de la aplicación</text>
+  <text x="450" y="993" text-anchor="middle" font-size="11" fill="#e8e8e8">Preguntas de prueba, validación de captura de datos</text>
 
-  <line x1="450" y1="1010" x2="450" y2="1040" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="1010" x2="450" y2="1040" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- 7. Preparación -->
-  <rect x="250" y="1045" width="400" height="60" fill="#cfe2ff" stroke="#000" stroke-width="1.5" rx="4"/>
-  <text x="450" y="1070" text-anchor="middle" font-size="13" font-weight="bold">7. Preparación de la demostración</text>
-  <text x="450" y="1088" text-anchor="middle" font-size="11">Materiales, ensayo, coordinación con sub-equipo B, logística</text>
+  <rect x="250" y="1045" width="400" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
+  <text x="450" y="1070" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">7. Preparación de la demostración</text>
+  <text x="450" y="1088" text-anchor="middle" font-size="11" fill="#e8e8e8">Materiales, ensayo, coordinación con sub-equipo B, logística</text>
 
-  <line x1="450" y1="1105" x2="450" y2="1135" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="1105" x2="450" y2="1135" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- 8. Demostración -->
-  <rect x="250" y="1140" width="400" height="60" fill="#cfe2ff" stroke="#000" stroke-width="1.5" rx="4"/>
-  <text x="450" y="1165" text-anchor="middle" font-size="13" font-weight="bold">8. Demostración del proyecto en el colegio</text>
-  <text x="450" y="1183" text-anchor="middle" font-size="11">Inducción, tipeo de pregunta, comparación, reflexión, captura</text>
+  <rect x="250" y="1140" width="400" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
+  <text x="450" y="1165" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">8. Demostración del proyecto en el colegio</text>
+  <text x="450" y="1183" text-anchor="middle" font-size="11" fill="#e8e8e8">Inducción, tipeo de pregunta, comparación, reflexión, captura</text>
 
-  <line x1="450" y1="1200" x2="450" y2="1230" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="1200" x2="450" y2="1230" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- 9. Análisis del proceso -->
-  <rect x="250" y="1235" width="400" height="60" fill="#cfe2ff" stroke="#000" stroke-width="1.5" rx="4"/>
-  <text x="450" y="1260" text-anchor="middle" font-size="13" font-weight="bold">9. Análisis del proceso: tablas de intervinientes,</text>
-  <text x="450" y="1278" text-anchor="middle" font-size="11">recursos y decisiones</text>
+  <rect x="250" y="1235" width="400" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
+  <text x="450" y="1260" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">9. Análisis del proceso: tablas de intervinientes,</text>
+  <text x="450" y="1278" text-anchor="middle" font-size="11" fill="#e8e8e8">recursos y decisiones</text>
 
-  <line x1="450" y1="1295" x2="450" y2="1325" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="1295" x2="450" y2="1325" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- 10. Documentación final -->
-  <rect x="250" y="1330" width="400" height="60" fill="#cfe2ff" stroke="#000" stroke-width="1.5" rx="4"/>
-  <text x="450" y="1355" text-anchor="middle" font-size="13" font-weight="bold">10. Diagramas, conclusión y armado del documento final</text>
-  <text x="450" y="1373" text-anchor="middle" font-size="11">Flujograma preliminar, flujograma formal, conclusión 300 palabras, PDF</text>
+  <rect x="250" y="1330" width="400" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
+  <text x="450" y="1355" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">10. Diagramas, conclusión y armado del documento final</text>
+  <text x="450" y="1373" text-anchor="middle" font-size="11" fill="#e8e8e8">Flujograma preliminar, flujograma formal, conclusión 300 palabras, PDF</text>
 
-  <line x1="450" y1="1390" x2="450" y2="1420" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="1390" x2="450" y2="1420" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- FIN -->
-  <ellipse cx="450" cy="1465" rx="180" ry="35" fill="#d4edda" stroke="#000" stroke-width="1.5"/>
-  <text x="450" y="1460" text-anchor="middle" font-size="12" font-weight="bold">FIN</text>
-  <text x="450" y="1478" text-anchor="middle" font-size="11">PDF del Entregable 1 entregado al docente</text>
+  <ellipse cx="450" cy="1465" rx="180" ry="35" fill="#3a6b41" stroke="#e8e8e8" stroke-width="1.5"/>
+  <text x="450" y="1460" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">FIN</text>
+  <text x="450" y="1478" text-anchor="middle" font-size="11" fill="#e8e8e8">PDF del Entregable 1 entregado al docente</text>
 
   <!-- Legend (simbología ANSI) -->
-  <rect x="50" y="1550" width="800" height="190" fill="none" stroke="#666" stroke-width="1"/>
-  <text x="60" y="1575" font-size="13" font-weight="bold">Simbología (ANSI)</text>
+  <rect x="50" y="1550" width="800" height="190" fill="#2a2a2a" stroke="#b0b0b0" stroke-width="1"/>
+  <text x="60" y="1575" font-size="13" font-weight="bold" fill="#ffffff">Simbología (ANSI)</text>
 
-  <ellipse cx="120" cy="1610" rx="50" ry="18" fill="#d4edda" stroke="#000" stroke-width="1.5"/>
-  <text x="120" y="1615" text-anchor="middle" font-size="10">Inicio / Fin</text>
+  <ellipse cx="120" cy="1610" rx="50" ry="18" fill="#3a6b41" stroke="#e8e8e8" stroke-width="1.5"/>
+  <text x="120" y="1615" text-anchor="middle" font-size="10" fill="#ffffff">Inicio / Fin</text>
 
-  <rect x="200" y="1592" width="100" height="36" fill="#cfe2ff" stroke="#000" stroke-width="1.5" rx="4"/>
-  <text x="250" y="1615" text-anchor="middle" font-size="10">Actividad / Proceso</text>
+  <rect x="200" y="1592" width="100" height="36" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
+  <text x="250" y="1615" text-anchor="middle" font-size="10" fill="#ffffff">Actividad / Proceso</text>
 
-  <polygon points="380,1610 430,1592 480,1610 430,1628" fill="#fff3cd" stroke="#000" stroke-width="1.5"/>
-  <text x="430" y="1615" text-anchor="middle" font-size="10">Decisión</text>
+  <polygon points="380,1610 430,1592 480,1610 430,1628" fill="#8a6e2a" stroke="#e8e8e8" stroke-width="1.5"/>
+  <text x="430" y="1615" text-anchor="middle" font-size="10" fill="#ffffff">Decisión</text>
 
-  <line x1="510" y1="1610" x2="570" y2="1610" stroke="#000" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <text x="540" y="1602" text-anchor="middle" font-size="10">Dirección del flujo</text>
+  <line x1="510" y1="1610" x2="570" y2="1610" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="540" y="1602" text-anchor="middle" font-size="10" fill="#e8e8e8">Dirección del flujo</text>
 
-  <text x="60" y="1670" font-size="11">Las flechas de retorno (NO en las decisiones) indican que el proceso retrocede a la actividad anterior para corrección, sin avanzar al paso siguiente.</text>
-  <text x="60" y="1690" font-size="11">El retorno solo se da cuando la condición de la decisión no se cumple; cuando se cumple (SÍ), el flujo continúa hacia abajo.</text>
-  <text x="60" y="1710" font-size="11" font-style="italic">Documento: Entregable 1 — Equipo CriterIA — Servicio: Dos Tonos — Módulo 2 / Estación 2</text>
+  <text x="60" y="1670" font-size="11" fill="#b0b0b0">Las flechas de retorno (NO en las decisiones) indican que el proceso retrocede a la actividad anterior para corrección, sin avanzar al paso siguiente.</text>
+  <text x="60" y="1690" font-size="11" fill="#b0b0b0">El retorno solo se da cuando la condición de la decisión no se cumple; cuando se cumple (SÍ), el flujo continúa hacia abajo.</text>
+  <text x="60" y="1710" font-size="11" font-style="italic" fill="#b0b0b0">Documento: Entregable 1 — Equipo CriterIA — Servicio: Dos Tonos — Módulo 2 / Estación 2</text>
 </svg>
