@@ -231,6 +231,51 @@ Vacíos por ahora. Próxima sesión los armamos cuando confirmes:
 
 ---
 
+## PARTE IV — Análisis del proceso
+
+### 8. Intervinientes y funciones
+
+| Interviniente | Función dentro del proceso |
+|---|---|
+| **Equipo CriterIA** (5 estudiantes de Ing. Informática) | Ejecuta las 10 actividades del proceso. Toma las decisiones de diseño, construye la base de información de candidatos, desarrolla la aplicación, valida el producto, prepara y ejecuta la demostración, y arma el documento entregable. |
+| **Sub-equipo B de Módulo 2** (5 estudiantes, alcance complementario) | Participa en las actividades 7 y 8 (preparación de la demostración y demostración en el colegio). Operador conjunto de la Estación 2 el día del evento. |
+| **Docente de la asignatura** (Ing. en Producción) | Recibe el documento entregable (PDF) al final del proceso. Evalúa según los criterios de la Guía del Entregable 1. No interviene en las actividades técnicas pero aprueba/desaprueba el resultado. |
+| **Estudiantes de educación media** (colegio asignado) | Usuarios finales de la demostración. Tipean preguntas en la aplicación y comparan las dos respuestas. No participan en el desarrollo pero son la razón de ser del servicio. |
+
+### 9. Recursos y documentos
+
+| Recurso / Documento | ¿En qué actividad se usa? | ¿Quién lo utiliza? |
+|---|---|---|
+| Guía del Entregable 1 (entregada por el docente) | Actividad 1 (análisis del brief) | CriterIA |
+| Mapa visual del proyecto Startup Educativa | Actividad 1 | CriterIA |
+| Notas y resultados de la Actividad 1 | Actividad 2 (diseño) | CriterIA |
+| API keys de modelos de IA (MiniMax, Gemini, etc.) | Actividades 3 y 5 (investigación, desarrollo) | Delegados técnicos |
+| Fuentes públicas de información de candidatos | Actividad 4 (recopilación) | Delegados |
+| Aplicación "Dos Tonos" en ejecución local | Actividades 6, 7 y 8 (pruebas, preparación, demostración) | CriterIA + sub-equipo B |
+| Lista de preguntas de prueba (preparada por el equipo) | Actividad 6 (pruebas) | CriterIA |
+| Guion de inducción para el estudiante | Actividad 7 (preparación) | Sub-equipo B + CriterIA |
+| Checklist logístico de la Estación 2 | Actividad 7 | Sub-equipo B |
+| Dispositivos electrónicos (para inducción) | Actividad 8 (demostración) | Sub-equipo B + CriterIA |
+| Dispositivo (notebook/tablet) con internet | Actividad 8 | Operador de la Estación 2 |
+| Notas del equipo, brief, esquema del proceso | Actividad 9 (análisis del proceso) | CriterIA |
+| Todo el output previo | Actividad 10 (documentación final) | CriterIA |
+| Formato `Equipo_N°_Entregable_1_StartupEducativa.pdf` | Actividad 10 | CriterIA |
+
+### 10. Decisiones y controles
+
+| Situación | ¿Qué se decide / verifica? | ¿Quién interviene? | ¿Qué ocurre después? |
+|---|---|---|---|
+| Después de Actividad 2 (Diseño) | ¿Las decisiones de diseño (ADRs) están aceptadas? ¿Está claro el diseño experimental, el corpus, el contrato con M5? | CriterIA | Si SÍ → continúa a Act. 3. Si NO → vuelve a Act. 2. |
+| Después de Actividad 5 (Desarrollo) | ¿La aplicación funciona? ¿Los dos modos leen la misma información? ¿El sesgo está SOLO en Tono A? | CriterIA | Si SÍ → continúa a Act. 6. Si NO → vuelve a Act. 5. |
+| Después de Actividad 6 (Pruebas) | ¿La aplicación pasa las pruebas con preguntas reales? ¿La captura de datos para M5 funciona? | CriterIA | Si SÍ → continúa a Act. 7. Si NO → vuelve a Act. 5 o 6. |
+| Antes de Actividad 7 (Preparación) | ¿El sub-equipo B está identificado y disponible? ¿Se coordinaron roles de operación? | CriterIA + sub-equipo B | Si SÍ → continúa. Si NO → esperar o ajustar plan. |
+| Antes de Actividad 8 (Demostración) | ¿Los dispositivos electrónicos y la conexión funcionan? ¿La aplicación está instalada? | CriterIA + sub-equipo B | Si SÍ → se ejecuta la demo. Si NO → abortar o reagendar. |
+| Durante Actividad 8 (Demostración) | ¿El estudiante comprendió el flujo (pregunta → 2 respuestas → comparación)? | CriterIA + sub-equipo B | Si SÍ → se capturan datos. Si NO → se refuerza inducción. |
+| Después de Actividad 8 (Demostración) | ¿Los datos fueron capturados correctamente? ¿Se cubrió la meta de grupos? | CriterIA | Si SÍ → continúa a Act. 9. Si NO → se revisa captura. |
+| Antes de la entrega final (Act. 10) | ¿El documento PDF está completo (las 6 partes)? ¿Cumple con el formato de nombre? | CriterIA | Si SÍ → se entrega. Si NO → se corrige. |
+
+---
+
 ## PARTE V — Flujograma del proceso
 
 ### 11. Flujograma formal — Estándar ANSI
