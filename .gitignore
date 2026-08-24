@@ -1,6 +1,7 @@
-# Entorno
+# Entorno y secretos locales
 .env
-.env.local
+.env.*
+!.env.example
 .venv/
 venv/
 
@@ -21,6 +22,12 @@ build/
 
 # gnosis index (regenerable, no commitear)
 .gnosis/
+
+# Gortex: grafo y memoria local regenerable (no versionar)
+.gortex/
+
+# Artefactos regenerables de las entregas
+entregas/**/generated/
 
 # OS
 .DS_Store
