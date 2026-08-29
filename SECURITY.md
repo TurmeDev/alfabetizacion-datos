@@ -33,6 +33,13 @@ el historial alcanzable; bypass de controles de rama; dependencias o
 automatizaciones que transmitan datos del proyecto sin autorización; y fallas
 que permitan modificar corpus o configuración sin el flujo de revisión.
 
+## Reporting a Vulnerability
+
+Para reportar un hallazgo de seguridad, usar el flujo privado de GitHub
+("Report a vulnerability" / Security Advisories) cuando esté disponible.
+Si no está habilitado, abrir un issue público solo con información mínima y
+solicitar un canal privado antes de compartir detalles, llaves o PII.
+
 ## Out of Scope, Exclusions, and Accepted Risk
 
 La elección de stack, proveedor de IA, esquema de datos de Módulo 5 y el
