@@ -21,9 +21,11 @@ desviación requiere un ADR nuevo.
   40 estudiantes. Si cada uno interactúa distinto, los datos son ruido.
 - **Ética**: menores de edad + política = cuidado. El demo debe ser
   **alfabetización**, no persuasión.
-- **Honestidad**: "modo no-sesgado" no existe. El modo neutro muestra "el
-  modelo sin nuestro corpus" — sigue con sesgo de entrenamiento en internet.
-  El framing al estudiante debe ser explícito sobre esto.
+- **Honestidad**: "modo no-sesgado" no existe. Ambos modos usan el mismo
+  modelo, la misma pregunta y el mismo corpus. El modo neutro solicita una
+  presentación balanceada, no elimina el corpus ni garantiza ausencia de sesgo
+  de entrenamiento. El framing al estudiante debe ser explícito sobre esto,
+  conforme al [ADR-0001](../adr/0001-diseno-experimental-1x2.md).
 
 ## Qué hacer
 - Validar las 7 specs antes de cada demo

@@ -8,13 +8,6 @@ lo absorbió.
 
 ## Diferidos (no urgentes, evaluar en próximas sessions)
 
-### B1. Versionar el corpus con el código
-**Trigger para promover:** cuando se haga el primer demo real y se necesite
-saber qué versión de `\candidatos\` usó cada ejecución para que M5 pueda
-reproducir.
-**Promoción esperada:** ADR-0003 o nota en el README del corpus.
-**Origen:** ideas-para-mejorar del 2026-08-14 (sesión inicial).
-
 ### B2. AGENTS.md bilingüe (español estructura + inglés jerga técnica)
 **Trigger para promover:** cuando el AGENTS.md crezca >3KB o cuando entren
 sub-agentes A1/A2/A3 que necesiten grounding en inglés para el código.
@@ -26,6 +19,14 @@ sub-agentes A1/A2/A3 que necesiten grounding en inglés para el código.
 se vuelva difícil de escanear.
 **Promoción esperada:** nuevo archivo en `docs/adr/`.
 **Origen:** ideas-para-mejorar del 2026-08-14.
+
+### B4. Convenciones de commits para el equipo
+**Trigger para promover:** antes del primer ciclo de commits colaborativos de
+corpus o código, o cuando el equipo necesite revisar historial y PRs de forma
+consistente.
+**Promoción esperada:** sección breve en `CONTRIBUTING.md`; evaluar Conventional
+Commits y automatización sólo después de acordar la convención humana.
+**Origen:** decisión diferida por el usuario el 2026-09-03.
 
 ---
 
@@ -47,16 +48,6 @@ consulta en base a datos almacenados".
 
 ## Próximos (sesión siguiente)
 
-### N1. Definir las 3 áreas políticas concretas de `\candidatos\`
-**Trigger:** bloqueo del corpus. Sin esto, el chatbot no se puede testear.
-**Acción:** confirmar 3-4 áreas (progresiva/centrista/conservadora + ?
-opcional) y empezar a poblar candidatos.
-
-### N2. Confirmar cantidad de candidatos por área
-**Trigger:** bloqueo del corpus.
-**Acción:** decidir 3-5 candidatos por área para tener volumen suficiente
-para que M5 tenga datos.
-
 ### N3. Stack técnico (ADR-0002)
 **Trigger:** decisión del user sobre lenguaje/framework.
 **Nota:** el user decidió que el stack va al FINAL de los ADRs (después de
@@ -71,4 +62,6 @@ modo, respuesta, timestamp, metadata).
 ---
 
 ## Última actualización
-2026-08-21 — setup inicial. Diferidos B1-B3, descartados D1-D2, próximos N1-N4.
+2026-09-03 — B1, N1 y N2 fueron absorbidos por ADR-0003 y
+`docs/tasks/DT-TASK-002.md`. Se conserva B4 para acordar commits antes del
+primer ciclo colaborativo.

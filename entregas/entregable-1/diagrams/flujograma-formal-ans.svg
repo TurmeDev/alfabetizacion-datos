@@ -1,490 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 4900" font-family="Arial, sans-serif" font-size="14" fill="#e8e8e8">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 5590" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#ffffff">
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e8e8e8"/>
-    </marker>
-    <marker id="arrow-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#b0b0b0"/>
     </marker>
   </defs>
-
-  <!-- Dark background -->
-  <rect x="0" y="0" width="1100" height="4900" fill="#1e1e1e"/>
-
-  <!-- ====== TITULO ====== -->
-  <text x="550" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#ffffff">
-    Flujograma Formal del Proceso — Estándar ANSI
-  </text>
-  <text x="550" y="52" text-anchor="middle" font-size="12" font-style="italic" fill="#b0b0b0">
-    Servicio: Dos Tonos · Equipo: CriterIA · Módulo 2 — Estación 2
-  </text>
-  <text x="550" y="72" text-anchor="middle" font-size="11" font-style="italic" fill="#b0b0b0">
-    Vista general arriba. Sub-procesos expandidos abajo (↳ en la actividad apunta al sub-proceso correspondiente).
-  </text>
-
-  <!-- ====== MAIN FLUJOGRAMA (10 actividades) ====== -->
-  <rect x="200" y="95" width="700" height="40" fill="#2a2a2a" stroke="#b0b0b0" stroke-width="1"/>
-  <text x="550" y="120" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">PROCESO PRINCIPAL</text>
-
-  <!-- INICIO -->
-  <ellipse cx="550" cy="170" rx="120" ry="30" fill="#3a6b41" stroke="#e8e8e8" stroke-width="1.5"/>
-  <text x="550" y="166" text-anchor="middle" font-size="12" fill="#ffffff">INICIO</text>
-  <text x="550" y="182" text-anchor="middle" font-size="11" fill="#e8e8e8">Brief + mapa visual del proyecto</text>
-
-  <line x1="550" y1="200" x2="550" y2="230" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <!-- 1. Análisis -->
-  <rect x="350" y="235" width="400" height="50" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="550" y="260" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">1. Análisis del brief y del contexto</text>
-  <text x="550" y="275" text-anchor="middle" font-size="10" fill="#e8e8e8">Lectura de guía, mapa, syllabus</text>
-
-  <line x1="550" y1="285" x2="550" y2="315" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <!-- 2. Diseño (con sub-proceso ↳) -->
-  <rect x="350" y="320" width="400" height="50" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="550" y="345" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">2. Diseño del servicio y preparación técnica ↳</text>
-  <text x="550" y="360" text-anchor="middle" font-size="10" fill="#e8e8e8">ver sub-proceso 2.1</text>
-
-  <line x1="550" y1="370" x2="550" y2="400" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <!-- Decisión 1 -->
-  <polygon points="550,400 670,455 550,510 430,455" fill="#8a6e2a" stroke="#e8e8e8" stroke-width="1.5"/>
-  <text x="550" y="450" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">¿Decisiones</text>
-  <text x="550" y="464" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">locked-in?</text>
-
-  <text x="415" y="452" text-anchor="end" font-size="10" font-weight="bold" fill="#ffffff">NO</text>
-  <path d="M 430 455 L 350 455 L 350 345 L 348 345" fill="none" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <text x="685" y="452" text-anchor="start" font-size="10" font-weight="bold" fill="#ffffff">SÍ</text>
-
-  <line x1="550" y1="510" x2="550" y2="540" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <!-- 3. Investigación -->
-  <rect x="350" y="545" width="400" height="50" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="550" y="570" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">3. Investigación de modelos de IA y herramientas</text>
-  <text x="550" y="585" text-anchor="middle" font-size="10" fill="#e8e8e8">Listar, evaluar, seleccionar</text>
-
-  <line x1="550" y1="595" x2="550" y2="625" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <!-- 4. Recopilación (↳) -->
-  <rect x="350" y="630" width="400" height="50" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="550" y="655" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">4. Recopilación de información de candidatos ↳</text>
-  <text x="550" y="670" text-anchor="middle" font-size="10" fill="#e8e8e8">ver sub-proceso 4.1</text>
-
-  <line x1="550" y1="680" x2="550" y2="710" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <!-- 5. Desarrollo (↳) -->
-  <rect x="350" y="715" width="400" height="50" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="550" y="740" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">5. Desarrollo de la aplicación "Dos Tonos" ↳</text>
-  <text x="550" y="755" text-anchor="middle" font-size="10" fill="#e8e8e8">ver sub-proceso 5.1</text>
-
-  <line x1="550" y1="765" x2="550" y2="795" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <!-- Decisión 2 -->
-  <polygon points="550,795 670,850 550,905 430,850" fill="#8a6e2a" stroke="#e8e8e8" stroke-width="1.5"/>
-  <text x="550" y="845" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">¿Pruebas</text>
-  <text x="550" y="859" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">OK?</text>
-
-  <text x="415" y="847" text-anchor="end" font-size="10" font-weight="bold" fill="#ffffff">NO</text>
-  <path d="M 430 850 L 350 850 L 350 740 L 348 740" fill="none" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <text x="685" y="847" text-anchor="start" font-size="10" font-weight="bold" fill="#ffffff">SÍ</text>
-
-  <line x1="550" y1="905" x2="550" y2="935" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <!-- 6. Pruebas (↳) -->
-  <rect x="350" y="940" width="400" height="50" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="550" y="965" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">6. Pruebas y validación de la aplicación ↳</text>
-  <text x="550" y="980" text-anchor="middle" font-size="10" fill="#e8e8e8">ver sub-proceso 6.1</text>
-
-  <line x1="550" y1="990" x2="550" y2="1020" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <!-- 7. Preparación (↳) -->
-  <rect x="350" y="1025" width="400" height="50" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="550" y="1050" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">7. Preparación de la demostración ↳</text>
-  <text x="550" y="1065" text-anchor="middle" font-size="10" fill="#e8e8e8">ver sub-proceso 7.1</text>
-
-  <line x1="550" y1="1075" x2="550" y2="1105" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <!-- 8. Demostración (↳) -->
-  <rect x="350" y="1110" width="400" height="50" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="550" y="1135" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">8. Demostración del proyecto en el colegio ↳</text>
-  <text x="550" y="1150" text-anchor="middle" font-size="10" fill="#e8e8e8">ver sub-proceso 8.1</text>
-
-  <line x1="550" y1="1160" x2="550" y2="1190" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <!-- 9. Análisis (↳) -->
-  <rect x="350" y="1195" width="400" height="50" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="550" y="1220" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">9. Análisis del proceso: tablas ↳</text>
-  <text x="550" y="1235" text-anchor="middle" font-size="10" fill="#e8e8e8">ver sub-proceso 9.1</text>
-
-  <line x1="550" y1="1245" x2="550" y2="1275" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <!-- 10. Documentación (↳) -->
-  <rect x="350" y="1280" width="400" height="50" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="550" y="1305" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">10. Diagramas, conclusión y armado del PDF ↳</text>
-  <text x="550" y="1320" text-anchor="middle" font-size="10" fill="#e8e8e8">ver sub-proceso 10.1</text>
-
-  <line x1="550" y1="1330" x2="550" y2="1360" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <!-- FIN -->
-  <ellipse cx="550" cy="1395" rx="180" ry="30" fill="#3a6b41" stroke="#e8e8e8" stroke-width="1.5"/>
-  <text x="550" y="1392" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">FIN</text>
-  <text x="550" y="1408" text-anchor="middle" font-size="10" fill="#e8e8e8">PDF del Entregable 1 entregado al docente</text>
-
-  <!-- ====== SECCION SUB-PROCESOS ====== -->
-  <rect x="200" y="1450" width="700" height="40" fill="#2a2a2a" stroke="#b0b0b0" stroke-width="1"/>
-  <text x="550" y="1475" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">SUB-PROCESOS EXPANDIDOS</text>
-
-  <!-- ====== SP-2.1: Diseño del diseño experimental ====== -->
-  <text x="50" y="1530" font-size="13" font-weight="bold" fill="#ffffff">SP-2.1 · Diseño del diseño experimental</text>
-  <text x="1050" y="1530" font-size="10" font-style="italic" fill="#b0b0b0" text-anchor="end">(Actividad 2)</text>
-
-  <rect x="50" y="1545" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="140" y="1568" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">2.1.1</text>
-  <text x="140" y="1582" text-anchor="middle" font-size="9" fill="#e8e8e8">Definir arquitectura</text>
-  <text x="140" y="1594" text-anchor="middle" font-size="9" fill="#e8e8e8">1x2</text>
-
-  <line x1="230" y1="1575" x2="270" y2="1575" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="270" y="1545" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="360" y="1568" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">2.1.2</text>
-  <text x="360" y="1582" text-anchor="middle" font-size="9" fill="#e8e8e8">Prompt Tono A</text>
-  <text x="360" y="1594" text-anchor="middle" font-size="9" fill="#e8e8e8">(con sesgo)</text>
-
-  <line x1="450" y1="1575" x2="490" y2="1575" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="490" y="1545" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="580" y="1568" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">2.1.3</text>
-  <text x="360" y="1582" text-anchor="middle" font-size="9" fill="#e8e8e8"></text>
-  <text x="580" y="1582" text-anchor="middle" font-size="9" fill="#e8e8e8">Prompt Tono B</text>
-  <text x="580" y="1594" text-anchor="middle" font-size="9" fill="#e8e8e8">(neutro)</text>
-
-  <line x1="670" y1="1575" x2="710" y2="1575" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <polygon points="800,1545 850,1575 800,1605 750,1575" fill="#8a6e2a" stroke="#e8e8e8" stroke-width="1.2"/>
-  <text x="800" y="1573" text-anchor="middle" font-size="9" font-weight="bold" fill="#ffffff">¿Distintos?</text>
-
-  <text x="855" y="1573" font-size="9" font-weight="bold" fill="#ffffff">SÍ→</text>
-  <line x1="800" y1="1605" x2="800" y2="1630" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <text x="745" y="1573" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="end">NO→</text>
-  <path d="M 750 1575 L 750 1510 L 360 1510 L 360 1543" fill="none" stroke="#b0b0b0" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrow)"/>
-  <text x="555" y="1505" font-size="8" font-style="italic" fill="#b0b0b0" text-anchor="middle">revisar 2.1.2 / 2.1.3</text>
-
-  <rect x="700" y="1635" width="200" height="50" fill="#3a6b41" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="800" y="1655" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">Output: Diseño experimental</text>
-  <text x="800" y="1670" text-anchor="middle" font-size="9" fill="#e8e8e8">documentado</text>
-
-  <!-- ====== SP-4.1: Construcción de la base ====== -->
-  <text x="50" y="1720" font-size="13" font-weight="bold" fill="#ffffff">SP-4.1 · Construcción de la base de candidatos</text>
-  <text x="1050" y="1720" font-size="10" font-style="italic" fill="#b0b0b0" text-anchor="end">(Actividad 4)</text>
-
-  <rect x="50" y="1735" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="140" y="1758" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">4.1.1</text>
-  <text x="140" y="1772" text-anchor="middle" font-size="9" fill="#e8e8e8">Definir 3 áreas</text>
-  <text x="140" y="1784" text-anchor="middle" font-size="9" fill="#e8e8e8">políticas</text>
-
-  <line x1="230" y1="1765" x2="270" y2="1765" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="270" y="1735" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="360" y="1758" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">4.1.2</text>
-  <text x="360" y="1772" text-anchor="middle" font-size="9" fill="#e8e8e8">Seleccionar</text>
-  <text x="360" y="1784" text-anchor="middle" font-size="9" fill="#e8e8e8">3-5 cand/área</text>
-
-  <line x1="450" y1="1765" x2="490" y2="1765" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="490" y="1735" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="580" y="1758" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">4.1.3</text>
-  <text x="580" y="1772" text-anchor="middle" font-size="9" fill="#e8e8e8">Escribir fichas</text>
-  <text x="580" y="1784" text-anchor="middle" font-size="9" fill="#e8e8e8">por candidato</text>
-
-  <line x1="670" y1="1765" x2="710" y2="1765" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="710" y="1735" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="800" y="1758" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">4.1.4</text>
-  <text x="800" y="1772" text-anchor="middle" font-size="9" fill="#e8e8e8">Verificar fuentes</text>
-  <text x="800" y="1784" text-anchor="middle" font-size="9" fill="#e8e8e8">públicas</text>
-
-  <line x1="890" y1="1765" x2="930" y2="1765" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="930" y="1735" width="120" height="60" fill="#3a6b41" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="990" y="1758" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">Output</text>
-  <text x="990" y="1772" text-anchor="middle" font-size="9" fill="#e8e8e8">≥9 fichas</text>
-  <text x="990" y="1784" text-anchor="middle" font-size="9" fill="#e8e8e8">completas</text>
-
-  <!-- ====== SP-5.1: Desarrollo de la aplicación ====== -->
-  <text x="50" y="1840" font-size="13" font-weight="bold" fill="#ffffff">SP-5.1 · Desarrollo de la aplicación</text>
-  <text x="1050" y="1840" font-size="10" font-style="italic" fill="#b0b0b0" text-anchor="end">(Actividad 5)</text>
-
-  <rect x="50" y="1855" width="160" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="130" y="1878" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">5.1.1</text>
-  <text x="130" y="1892" text-anchor="middle" font-size="9" fill="#e8e8e8">Tono A</text>
-  <text x="130" y="1904" text-anchor="middle" font-size="9" fill="#e8e8e8">(prompt sesgo)</text>
-
-  <line x1="210" y1="1885" x2="240" y2="1885" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="240" y="1855" width="160" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="320" y="1878" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">5.1.2</text>
-  <text x="320" y="1892" text-anchor="middle" font-size="9" fill="#e8e8e8">Tono B</text>
-  <text x="320" y="1904" text-anchor="middle" font-size="9" fill="#e8e8e8">(prompt neutro)</text>
-
-  <line x1="400" y1="1885" x2="430" y2="1885" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="430" y="1855" width="160" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="510" y="1878" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">5.1.3</text>
-  <text x="510" y="1892" text-anchor="middle" font-size="9" fill="#e8e8e8">Interfaz +</text>
-  <text x="510" y="1904" text-anchor="middle" font-size="9" fill="#e8e8e8">captura</text>
-
-  <line x1="590" y1="1885" x2="620" y2="1885" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="620" y="1855" width="160" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="700" y="1878" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">5.1.4</text>
-  <text x="700" y="1892" text-anchor="middle" font-size="9" fill="#e8e8e8">Captura datos</text>
-  <text x="700" y="1904" text-anchor="middle" font-size="9" fill="#e8e8e8">Control Gestión</text>
-
-  <line x1="780" y1="1885" x2="810" y2="1885" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="810" y="1855" width="160" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="890" y="1878" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">5.1.5</text>
-  <text x="890" y="1892" text-anchor="middle" font-size="9" fill="#e8e8e8">Verificación</text>
-  <text x="890" y="1904" text-anchor="middle" font-size="9" fill="#e8e8e8">automática</text>
-
-  <line x1="970" y1="1885" x2="1010" y2="1885" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="1010" y="1855" width="80" height="60" fill="#3a6b41" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="1050" y="1878" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">Output</text>
-  <text x="1050" y="1892" text-anchor="middle" font-size="9" fill="#e8e8e8">APP func.</text>
-
-  <!-- ====== SP-6.1: Validación ====== -->
-  <text x="50" y="1960" font-size="13" font-weight="bold" fill="#ffffff">SP-6.1 · Validación de la aplicación</text>
-  <text x="1050" y="1960" font-size="10" font-style="italic" fill="#b0b0b0" text-anchor="end">(Actividad 6)</text>
-
-  <rect x="50" y="1975" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="140" y="1998" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">6.1.1</text>
-  <text x="140" y="2012" text-anchor="middle" font-size="9" fill="#e8e8e8">Probar con</text>
-  <text x="140" y="2024" text-anchor="middle" font-size="9" fill="#e8e8e8">preguntas ejemplo</text>
-
-  <line x1="230" y1="2005" x2="270" y2="2005" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="270" y="1975" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="360" y="1998" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">6.1.2</text>
-  <text x="360" y="2012" text-anchor="middle" font-size="9" fill="#e8e8e8">Verif Tono A</text>
-  <text x="360" y="2024" text-anchor="middle" font-size="9" fill="#e8e8e8">con variaciones</text>
-
-  <line x1="450" y1="2005" x2="490" y2="2005" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="490" y="1975" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="580" y="1998" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">6.1.3</text>
-  <text x="580" y="2012" text-anchor="middle" font-size="9" fill="#e8e8e8">Verif Tono B</text>
-  <text x="580" y="2024" text-anchor="middle" font-size="9" fill="#e8e8e8">sin variaciones</text>
-
-  <line x1="670" y1="2005" x2="710" y2="2005" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="710" y="1975" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="800" y="1998" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">6.1.4</text>
-  <text x="800" y="2012" text-anchor="middle" font-size="9" fill="#e8e8e8">Validar captura</text>
-  <text x="800" y="2024" text-anchor="middle" font-size="9" fill="#e8e8e8">de datos</text>
-
-  <line x1="890" y1="2005" x2="930" y2="2005" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="930" y="1975" width="160" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="1010" y="1998" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">6.1.5</text>
-  <text x="1010" y="2012" text-anchor="middle" font-size="9" fill="#e8e8e8">Doc bugs +</text>
-  <text x="1010" y="2024" text-anchor="middle" font-size="9" fill="#e8e8e8">fixes</text>
-
-  <line x1="1090" y1="2005" x2="1090" y2="2075" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <rect x="990" y="2080" width="200" height="50" fill="#3a6b41" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="1090" y="2100" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">Output: Reporte</text>
-  <text x="1090" y="2115" text-anchor="middle" font-size="9" fill="#e8e8e8">bugs corregidos</text>
-
-  <!-- ====== SP-7.1: Preparación ====== -->
-  <text x="50" y="2165" font-size="13" font-weight="bold" fill="#ffffff">SP-7.1 · Preparación de la operación</text>
-  <text x="1050" y="2165" font-size="10" font-style="italic" fill="#b0b0b0" text-anchor="end">(Actividad 7)</text>
-
-  <rect x="50" y="2180" width="200" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="150" y="2203" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">7.1.1</text>
-  <text x="150" y="2217" text-anchor="middle" font-size="9" fill="#e8e8e8">Guion inducción</text>
-  <text x="150" y="2229" text-anchor="middle" font-size="9" fill="#e8e8e8">estudiante</text>
-
-  <line x1="250" y1="2210" x2="290" y2="2210" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="290" y="2180" width="200" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="390" y="2203" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">7.1.2</text>
-  <text x="390" y="2217" text-anchor="middle" font-size="9" fill="#e8e8e8">Coordinar con</text>
-  <text x="390" y="2229" text-anchor="middle" font-size="9" fill="#e8e8e8">sub-equipo B</text>
-
-  <line x1="490" y1="2210" x2="530" y2="2210" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="530" y="2180" width="200" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="630" y="2203" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">7.1.3</text>
-  <text x="630" y="2217" text-anchor="middle" font-size="9" fill="#e8e8e8">Preparar</text>
-  <text x="630" y="2229" text-anchor="middle" font-size="9" fill="#e8e8e8">dispositivos</text>
-
-  <line x1="730" y1="2210" x2="770" y2="2210" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="770" y="2180" width="200" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="870" y="2203" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">7.1.4</text>
-  <text x="870" y="2217" text-anchor="middle" font-size="9" fill="#e8e8e8">Checklist</text>
-  <text x="870" y="2229" text-anchor="middle" font-size="9" fill="#e8e8e8">logístico</text>
-
-  <line x1="970" y1="2210" x2="1010" y2="2210" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="1010" y="2180" width="80" height="60" fill="#3a6b41" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="1050" y="2203" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">Output</text>
-  <text x="1050" y="2217" text-anchor="middle" font-size="9" fill="#e8e8e8">Estación</text>
-  <text x="1050" y="2229" text-anchor="middle" font-size="9" fill="#e8e8e8">lista</text>
-
-  <!-- ====== SP-8.1: Operación de la demostración ====== -->
-  <text x="50" y="2285" font-size="13" font-weight="bold" fill="#ffffff">SP-8.1 · Operación de la demostración</text>
-  <text x="1050" y="2285" font-size="10" font-style="italic" fill="#b0b0b0" text-anchor="end">(Actividad 8)</text>
-
-  <rect x="50" y="2300" width="150" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="125" y="2323" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">8.1.1</text>
-  <text x="125" y="2337" text-anchor="middle" font-size="9" fill="#e8e8e8">Recibir</text>
-  <text x="125" y="2349" text-anchor="middle" font-size="9" fill="#e8e8e8">grupo</text>
-
-  <line x1="200" y1="2330" x2="230" y2="2330" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="230" y="2300" width="150" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="305" y="2323" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">8.1.2</text>
-  <text x="305" y="2337" text-anchor="middle" font-size="9" fill="#e8e8e8">Inducción</text>
-  <text x="305" y="2349" text-anchor="middle" font-size="9" fill="#e8e8e8">2 min</text>
-
-  <line x1="380" y1="2330" x2="410" y2="2330" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="410" y="2300" width="150" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="485" y="2323" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">8.1.3</text>
-  <text x="485" y="2337" text-anchor="middle" font-size="9" fill="#e8e8e8">Tipear</text>
-  <text x="485" y="2349" text-anchor="middle" font-size="9" fill="#e8e8e8">pregunta</text>
-
-  <line x1="560" y1="2330" x2="590" y2="2330" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="590" y="2300" width="150" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="665" y="2323" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">8.1.4</text>
-  <text x="665" y="2337" text-anchor="middle" font-size="9" fill="#e8e8e8">Recibir 2</text>
-  <text x="665" y="2349" text-anchor="middle" font-size="9" fill="#e8e8e8">respuestas</text>
-
-  <line x1="740" y1="2330" x2="770" y2="2330" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="770" y="2300" width="150" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="845" y="2323" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">8.1.5</text>
-  <text x="845" y="2337" text-anchor="middle" font-size="9" fill="#e8e8e8">Facilitar</text>
-  <text x="845" y="2349" text-anchor="middle" font-size="9" fill="#e8e8e8">comparación</text>
-
-  <line x1="920" y1="2330" x2="950" y2="2330" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="950" y="2300" width="150" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="1025" y="2323" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">8.1.6</text>
-  <text x="1025" y="2337" text-anchor="middle" font-size="9" fill="#e8e8e8">Capturar</text>
-  <text x="1025" y="2349" text-anchor="middle" font-size="9" fill="#e8e8e8">datos</text>
-
-  <line x1="1100" y1="2330" x2="1100" y2="2395" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <rect x="990" y="2400" width="220" height="50" fill="#3a6b41" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="1100" y="2420" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">Output: Datos capturados</text>
-  <text x="1100" y="2435" text-anchor="middle" font-size="9" fill="#e8e8e8">para Control de Gestión</text>
-
-  <!-- ====== SP-9.1: Documentación del análisis ====== -->
-  <text x="50" y="2485" font-size="13" font-weight="bold" fill="#ffffff">SP-9.1 · Documentación del análisis</text>
-  <text x="1050" y="2485" font-size="10" font-style="italic" fill="#b0b0b0" text-anchor="end">(Actividad 9)</text>
-
-  <rect x="50" y="2500" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="140" y="2523" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">9.1.1</text>
-  <text x="140" y="2537" text-anchor="middle" font-size="9" fill="#e8e8e8">Tabla</text>
-  <text x="140" y="2549" text-anchor="middle" font-size="9" fill="#e8e8e8">intervinientes</text>
-
-  <line x1="230" y1="2530" x2="270" y2="2530" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="270" y="2500" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="360" y="2523" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">9.1.2</text>
-  <text x="360" y="2537" text-anchor="middle" font-size="9" fill="#e8e8e8">Tabla</text>
-  <text x="360" y="2549" text-anchor="middle" font-size="9" fill="#e8e8e8">recursos</text>
-
-  <line x1="450" y1="2530" x2="490" y2="2530" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="490" y="2500" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="580" y="2523" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">9.1.3</text>
-  <text x="580" y="2537" text-anchor="middle" font-size="9" fill="#e8e8e8">Tabla</text>
-  <text x="580" y="2549" text-anchor="middle" font-size="9" fill="#e8e8e8">decisiones</text>
-
-  <line x1="670" y1="2530" x2="710" y2="2530" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="710" y="2500" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="800" y="2523" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">9.1.4</text>
-  <text x="800" y="2537" text-anchor="middle" font-size="9" fill="#e8e8e8">Revisar</text>
-  <text x="800" y="2549" text-anchor="middle" font-size="9" fill="#e8e8e8">coherencia</text>
-
-  <line x1="890" y1="2530" x2="930" y2="2530" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="930" y="2500" width="160" height="60" fill="#3a6b41" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="1010" y="2523" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">Output</text>
-  <text x="1010" y="2537" text-anchor="middle" font-size="9" fill="#e8e8e8">3 tablas</text>
-  <text x="1010" y="2549" text-anchor="middle" font-size="9" fill="#e8e8e8">completas</text>
-
-  <!-- ====== SP-10.1: Armado del documento final ====== -->
-  <text x="50" y="2605" font-size="13" font-weight="bold" fill="#ffffff">SP-10.1 · Armado del documento final</text>
-  <text x="1050" y="2605" font-size="10" font-style="italic" fill="#b0b0b0" text-anchor="end">(Actividad 10)</text>
-
-  <rect x="50" y="2620" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="140" y="2643" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">10.1.1</text>
-  <text x="140" y="2657" text-anchor="middle" font-size="9" fill="#e8e8e8">Construir</text>
-  <text x="140" y="2669" text-anchor="middle" font-size="9" fill="#e8e8e8">flujograma formal</text>
-
-  <line x1="230" y1="2650" x2="270" y2="2650" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="270" y="2620" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="360" y="2643" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">10.1.2</text>
-  <text x="360" y="2657" text-anchor="middle" font-size="9" fill="#e8e8e8">Redactar</text>
-  <text x="360" y="2669" text-anchor="middle" font-size="9" fill="#e8e8e8">conclusión</text>
-
-  <line x1="450" y1="2650" x2="490" y2="2650" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="490" y="2620" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="580" y="2643" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">10.1.3</text>
-  <text x="580" y="2657" text-anchor="middle" font-size="9" fill="#e8e8e8">Armar el</text>
-  <text x="580" y="2669" text-anchor="middle" font-size="9" fill="#e8e8e8">PDF</text>
-
-  <line x1="670" y1="2650" x2="710" y2="2650" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="710" y="2620" width="180" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="800" y="2643" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">10.1.4</text>
-  <text x="800" y="2657" text-anchor="middle" font-size="9" fill="#e8e8e8">Verificar</text>
-  <text x="800" y="2669" text-anchor="middle" font-size="9" fill="#e8e8e8">formato nombre</text>
-
-  <line x1="890" y1="2650" x2="930" y2="2650" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-
-  <rect x="930" y="2620" width="160" height="60" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.2" rx="4"/>
-  <text x="1010" y="2643" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">10.1.5</text>
-  <text x="1010" y="2657" text-anchor="middle" font-size="9" fill="#e8e8e8">Subir a</text>
-  <text x="1010" y="2669" text-anchor="middle" font-size="9" fill="#e8e8e8">plataforma</text>
-
-  <line x1="1090" y1="2650" x2="1090" y2="2715" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <rect x="990" y="2720" width="200" height="50" fill="#3a6b41" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="1090" y="2740" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">Output: PDF entregado</text>
-  <text x="1090" y="2755" text-anchor="middle" font-size="9" fill="#e8e8e8">en la plataforma</text>
-
-  <!-- ====== LEYENDA ====== -->
-  <rect x="50" y="2810" width="1000" height="180" fill="#2a2a2a" stroke="#b0b0b0" stroke-width="1"/>
-  <text x="70" y="2835" font-size="13" font-weight="bold" fill="#ffffff">Simbología (ANSI)</text>
-
-  <ellipse cx="130" cy="2870" rx="50" ry="18" fill="#3a6b41" stroke="#e8e8e8" stroke-width="1.5"/>
-  <text x="130" y="2875" text-anchor="middle" font-size="10" fill="#ffffff">Inicio / Fin</text>
-
-  <rect x="220" y="2852" width="120" height="36" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="280" y="2875" text-anchor="middle" font-size="10" fill="#ffffff">Actividad</text>
-
-  <rect x="370" y="2852" width="120" height="36" fill="#2a4a6b" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="370" y="2867" text-anchor="middle" font-size="10" fill="#ffffff">Actividad con</text>
-  <text x="370" y="2880" text-anchor="middle" font-size="10" fill="#ffffff">↳ sub-proceso</text>
-
-  <polygon points="540,2870 580,2852 620,2870 580,2888" fill="#8a6e2a" stroke="#e8e8e8" stroke-width="1.5"/>
-  <text x="580" y="2875" text-anchor="middle" font-size="10" fill="#ffffff">Decisión</text>
-
-  <rect x="650" y="2852" width="120" height="36" fill="#3a6b41" stroke="#e8e8e8" stroke-width="1.5" rx="4"/>
-  <text x="710" y="2875" text-anchor="middle" font-size="10" fill="#ffffff">Output</text>
-
-  <line x1="800" y1="2870" x2="870" y2="2870" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <text x="835" y="2862" text-anchor="middle" font-size="10" fill="#e8e8e8">Dirección</text>
-
-  <text x="70" y="2920" font-size="11" fill="#b0b0b0">Las actividades del proceso principal marcadas con ↳ tienen un sub-proceso detallado abajo (SP-2.1, SP-4.1, ..., SP-10.1).</text>
-  <text x="70" y="2940" font-size="11" fill="#b0b0b0">Las flechas de retorno (NO en las decisiones) indican que el proceso retrocede a la actividad anterior para corrección, sin avanzar al paso siguiente.</text>
-  <text x="70" y="2970" font-size="11" font-style="italic" fill="#b0b0b0">Documento: Entregable 1 — Equipo CriterIA — Servicio: Dos Tonos — Módulo 2 / Estación 2</text>
+  <rect x="0" y="0" width="1100" height="5590" fill="#1e1e1e"/>
+  <text x="550.0" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#ffffff">Flujograma Formal del Proceso — Estándar ANSI</text>
+  <text x="550.0" y="52" text-anchor="middle" font-size="12" font-style="italic" fill="#b0b0b0">Servicio: Dos Tonos · Equipo: CriterIA · Módulo 2 — Estación 2</text>
+  <text x="550.0" y="70" text-anchor="middle" font-size="11" font-style="italic" fill="#b0b0b0">9 procesos con controles de calidad y retornos al sub-proceso que debe corregirse.</text>
+<ellipse cx="550.0" cy="120" rx="130" ry="28" fill="#3a6b41" stroke="#ffffff" stroke-width="1.5"/><text x="550.0" y="116" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">INICIO</text><text x="550.0" y="132" text-anchor="middle" font-size="10" fill="#ffffff">Guía + mapa visual del proyecto</text>
+<line x1="550.0" y1="148" x2="550.0" y2="168" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="200" y="170" width="700" height="50" fill="#2a4a6b" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="550.0" y="192" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">1. Analizar la guía y el contexto del proyecto</text><text x="550.0" y="206" text-anchor="middle" font-size="11" fill="#e8e8e8">↳ 3 sub-procesos</text>
+<line x1="550.0" y1="220" x2="550.0" y2="248" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="145" y="242" width="810" height="300" fill="none" stroke="#555555" stroke-width="1" stroke-dasharray="5,4" rx="6"/>
+<text x="155" y="236" font-size="11" font-style="italic" fill="#b0b0b0">Sub-procesos de la Actividad 1</text>
+<rect x="300" y="250" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="272" font-size="11" font-weight="bold" fill="#ffffff">1.1</text><text x="565.0" y="272" text-anchor="middle" font-size="11" fill="#ffffff">Leer la guía del Entregable 1</text>
+<line x1="550.0" y1="300" x2="550.0" y2="328" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="330" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="352" font-size="11" font-weight="bold" fill="#ffffff">1.2</text><text x="565.0" y="352" text-anchor="middle" font-size="11" fill="#ffffff">Leer el mapa visual del proyecto</text>
+<line x1="550.0" y1="380" x2="550.0" y2="408" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="410" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="432" font-size="11" font-weight="bold" fill="#ffffff">1.3</text><text x="565.0" y="432" text-anchor="middle" font-size="11" fill="#ffffff">Listar dudas para consultar al docente</text>
+<line x1="550.0" y1="460" x2="550.0" y2="488" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="350" y="490" width="400" height="50" fill="#3a6b41" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="375" y="512" font-size="11" font-weight="bold" fill="#ffffff">Output</text><text x="575.0" y="512" text-anchor="middle" font-size="11" fill="#ffffff">Guía comprendida, dudas listadas</text>
+<line x1="550.0" y1="540" x2="550.0" y2="568" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polygon points="550,570 730,595 550,620 370,595" fill="#8a6e2a" stroke="#ffffff" stroke-width="1.5"/><text x="550" y="599" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">¿Guía comprendida?</text>
+  <text x="362" y="599" text-anchor="end" font-size="10" font-weight="bold" fill="#ffffff">NO</text>
+<path d="M 370 595 L 120 595 L 120 250 L 550 250" fill="none" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="3,3"/>
+  <text x="126" y="589" font-size="9" font-style="italic" fill="#b0b0b0">revisar 1.1</text>
+  <rect x="538" y="625" width="24" height="14" fill="#1e1e1e"/>
+  <text x="550" y="635" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">SÍ</text>
+<line x1="550" y1="620" x2="550" y2="648" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="200" y="650" width="700" height="50" fill="#2a4a6b" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="550.0" y="672" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">2. Diseñar el servicio</text><text x="550.0" y="686" text-anchor="middle" font-size="11" fill="#e8e8e8">↳ 3 sub-procesos</text>
+<line x1="550.0" y1="700" x2="550.0" y2="728" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="145" y="722" width="810" height="300" fill="none" stroke="#555555" stroke-width="1" stroke-dasharray="5,4" rx="6"/>
+<text x="155" y="716" font-size="11" font-style="italic" fill="#b0b0b0">Sub-procesos de la Actividad 2</text>
+<rect x="300" y="730" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="752" font-size="11" font-weight="bold" fill="#ffffff">2.1</text><text x="565.0" y="752" text-anchor="middle" font-size="11" fill="#ffffff">Fijar el objetivo de aprendizaje de la estación</text>
+<line x1="550.0" y1="780" x2="550.0" y2="808" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="810" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="832" font-size="11" font-weight="bold" fill="#ffffff">2.2</text><text x="565.0" y="832" text-anchor="middle" font-size="11" fill="#ffffff">Definir la comparación de dos respuestas</text>
+<line x1="550.0" y1="860" x2="550.0" y2="888" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="890" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="912" font-size="11" font-weight="bold" fill="#ffffff">2.3</text><text x="565.0" y="912" text-anchor="middle" font-size="11" fill="#ffffff">Redactar la explicación breve para el estudiante</text>
+<line x1="550.0" y1="940" x2="550.0" y2="968" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="350" y="970" width="400" height="50" fill="#3a6b41" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="375" y="992" font-size="11" font-weight="bold" fill="#ffffff">Output</text><text x="575.0" y="992" text-anchor="middle" font-size="11" fill="#ffffff">Dinámica educativa definida y explicable</text>
+<line x1="550.0" y1="1020" x2="550.0" y2="1048" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polygon points="550,1050 730,1075 550,1100 370,1075" fill="#8a6e2a" stroke="#ffffff" stroke-width="1.5"/><text x="550" y="1072" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">¿Objetivo y dinámica</text><text x="550" y="1086" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">son claros?</text>
+  <text x="362" y="1079" text-anchor="end" font-size="10" font-weight="bold" fill="#ffffff">NO</text>
+<path d="M 370 1075 L 120 1075 L 120 730 L 550 730" fill="none" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="3,3"/>
+  <text x="126" y="1069" font-size="9" font-style="italic" fill="#b0b0b0">revisar 2.1</text>
+  <rect x="538" y="1105" width="24" height="14" fill="#1e1e1e"/>
+  <text x="550" y="1115" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">SÍ</text>
+<line x1="550" y1="1100" x2="550" y2="1128" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="200" y="1130" width="700" height="50" fill="#2a4a6b" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="550.0" y="1152" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">3. Seleccionar la herramienta de apoyo</text><text x="550.0" y="1166" text-anchor="middle" font-size="11" fill="#e8e8e8">↳ 3 sub-procesos</text>
+<line x1="550.0" y1="1180" x2="550.0" y2="1208" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="145" y="1202" width="810" height="300" fill="none" stroke="#555555" stroke-width="1" stroke-dasharray="5,4" rx="6"/>
+<text x="155" y="1196" font-size="11" font-style="italic" fill="#b0b0b0">Sub-procesos de la Actividad 3</text>
+<rect x="300" y="1210" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="1232" font-size="11" font-weight="bold" fill="#ffffff">3.1</text><text x="565.0" y="1232" text-anchor="middle" font-size="11" fill="#ffffff">Identificar herramientas de IA con acceso del equipo</text>
+<line x1="550.0" y1="1260" x2="550.0" y2="1288" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="1290" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="1312" font-size="11" font-weight="bold" fill="#ffffff">3.2</text><text x="565.0" y="1312" text-anchor="middle" font-size="11" fill="#ffffff">Comparar costo, idioma, velocidad y facilidad</text>
+<line x1="550.0" y1="1340" x2="550.0" y2="1368" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="1370" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="1392" font-size="11" font-weight="bold" fill="#ffffff">3.3</text><text x="565.0" y="1392" text-anchor="middle" font-size="11" fill="#ffffff">Elegir la herramienta para operar la estación</text>
+<line x1="550.0" y1="1420" x2="550.0" y2="1448" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="350" y="1450" width="400" height="50" fill="#3a6b41" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="375" y="1472" font-size="11" font-weight="bold" fill="#ffffff">Output</text><text x="575.0" y="1472" text-anchor="middle" font-size="11" fill="#ffffff">Herramienta elegida para la estación</text>
+<line x1="550.0" y1="1500" x2="550.0" y2="1528" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polygon points="550,1530 730,1555 550,1580 370,1555" fill="#8a6e2a" stroke="#ffffff" stroke-width="1.5"/><text x="550" y="1552" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">¿Herramienta apta</text><text x="550" y="1566" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">para la estación?</text>
+  <text x="362" y="1559" text-anchor="end" font-size="10" font-weight="bold" fill="#ffffff">NO</text>
+<path d="M 370 1555 L 120 1555 L 120 1210 L 550 1210" fill="none" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="3,3"/>
+  <text x="126" y="1549" font-size="9" font-style="italic" fill="#b0b0b0">revisar 3.1</text>
+  <rect x="538" y="1585" width="24" height="14" fill="#1e1e1e"/>
+  <text x="550" y="1595" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">SÍ</text>
+<line x1="550" y1="1580" x2="550" y2="1608" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="200" y="1610" width="700" height="50" fill="#2a4a6b" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="550.0" y="1632" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">4. Preparar fichas de candidatos ficticios</text><text x="550.0" y="1646" text-anchor="middle" font-size="11" fill="#e8e8e8">↳ 4 sub-procesos</text>
+<line x1="550.0" y1="1660" x2="550.0" y2="1688" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="145" y="1682" width="810" height="380" fill="none" stroke="#555555" stroke-width="1" stroke-dasharray="5,4" rx="6"/>
+<text x="155" y="1676" font-size="11" font-style="italic" fill="#b0b0b0">Sub-procesos de la Actividad 4</text>
+<rect x="300" y="1690" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="1712" font-size="11" font-weight="bold" fill="#ffffff">4.1</text><text x="565.0" y="1712" text-anchor="middle" font-size="11" fill="#ffffff">Aplicar los tres perfiles ficticios acordados</text>
+<line x1="550.0" y1="1740" x2="550.0" y2="1768" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="1770" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="1792" font-size="11" font-weight="bold" fill="#ffffff">4.2</text><text x="565.0" y="1792" text-anchor="middle" font-size="11" fill="#ffffff">Redactar una ficha por perfil programático</text>
+<line x1="550.0" y1="1820" x2="550.0" y2="1848" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="1850" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="1872" font-size="11" font-weight="bold" fill="#ffffff">4.3</text><text x="565.0" y="1872" text-anchor="middle" font-size="11" fill="#ffffff">Redactar fichas con datos comparables</text>
+<line x1="550.0" y1="1900" x2="550.0" y2="1928" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="1930" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="1952" font-size="11" font-weight="bold" fill="#ffffff">4.4</text><text x="565.0" y="1952" text-anchor="middle" font-size="11" fill="#ffffff">Verificar ficción, equilibrio y comparabilidad</text>
+<line x1="550.0" y1="1980" x2="550.0" y2="2008" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="350" y="2010" width="400" height="50" fill="#3a6b41" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="375" y="2032" font-size="11" font-weight="bold" fill="#ffffff">Output</text><text x="575.0" y="2032" text-anchor="middle" font-size="11" fill="#ffffff">Fichas completas y verificadas</text>
+<line x1="550.0" y1="2060" x2="550.0" y2="2088" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polygon points="550,2090 730,2115 550,2140 370,2115" fill="#8a6e2a" stroke="#ffffff" stroke-width="1.5"/><text x="550" y="2112" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">¿Fichas completas</text><text x="550" y="2126" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">y verificadas?</text>
+  <text x="362" y="2119" text-anchor="end" font-size="10" font-weight="bold" fill="#ffffff">NO</text>
+<path d="M 370 2115 L 120 2115 L 120 1850 L 550 1850" fill="none" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="3,3"/>
+  <text x="126" y="2109" font-size="9" font-style="italic" fill="#b0b0b0">revisar 4.3</text>
+  <rect x="538" y="2145" width="24" height="14" fill="#1e1e1e"/>
+  <text x="550" y="2155" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">SÍ</text>
+<line x1="550" y1="2140" x2="550" y2="2168" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="200" y="2170" width="700" height="50" fill="#2a4a6b" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="550.0" y="2192" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">5. Preparar el chatbot "Dos Tonos"</text><text x="550.0" y="2206" text-anchor="middle" font-size="11" fill="#e8e8e8">↳ 5 sub-procesos</text>
+<line x1="550.0" y1="2220" x2="550.0" y2="2248" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="145" y="2242" width="810" height="460" fill="none" stroke="#555555" stroke-width="1" stroke-dasharray="5,4" rx="6"/>
+<text x="155" y="2236" font-size="11" font-style="italic" fill="#b0b0b0">Sub-procesos de la Actividad 5</text>
+<rect x="300" y="2250" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="2272" font-size="11" font-weight="bold" fill="#ffffff">5.1</text><text x="565.0" y="2272" text-anchor="middle" font-size="11" fill="#ffffff">Cargar la base verificada de candidatos</text>
+<line x1="550.0" y1="2300" x2="550.0" y2="2328" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="2330" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="2352" font-size="11" font-weight="bold" fill="#ffffff">5.2</text><text x="565.0" y="2352" text-anchor="middle" font-size="11" fill="#ffffff">Preparar la respuesta neutra</text>
+<line x1="550.0" y1="2380" x2="550.0" y2="2408" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="2410" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="2432" font-size="11" font-weight="bold" fill="#ffffff">5.3</text><text x="565.0" y="2432" text-anchor="middle" font-size="11" fill="#ffffff">Preparar la respuesta con encuadre comparativo</text>
+<line x1="550.0" y1="2460" x2="550.0" y2="2488" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="2490" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="2512" font-size="11" font-weight="bold" fill="#ffffff">5.4</text><text x="565.0" y="2512" text-anchor="middle" font-size="11" fill="#ffffff">Armar la vista de comparación del chatbot</text>
+<line x1="550.0" y1="2540" x2="550.0" y2="2568" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="2570" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="2592" font-size="11" font-weight="bold" fill="#ffffff">5.5</text><text x="565.0" y="2592" text-anchor="middle" font-size="11" fill="#ffffff">Probar consulta del chatbot y registro de datos</text>
+<line x1="550.0" y1="2620" x2="550.0" y2="2648" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="350" y="2650" width="400" height="50" fill="#3a6b41" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="375" y="2672" font-size="11" font-weight="bold" fill="#ffffff">Output</text><text x="575.0" y="2672" text-anchor="middle" font-size="11" fill="#ffffff">Chatbot listo para demostración</text>
+<line x1="550.0" y1="2700" x2="550.0" y2="2728" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polygon points="550,2730 730,2755 550,2780 370,2755" fill="#8a6e2a" stroke="#ffffff" stroke-width="1.5"/><text x="550" y="2752" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">¿Chatbot</text><text x="550" y="2766" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">validado?</text>
+  <text x="362" y="2759" text-anchor="end" font-size="10" font-weight="bold" fill="#ffffff">NO</text>
+<path d="M 370 2755 L 120 2755 L 120 2250 L 550 2250" fill="none" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="3,3"/>
+  <text x="126" y="2749" font-size="9" font-style="italic" fill="#b0b0b0">revisar 5.1</text>
+  <rect x="538" y="2785" width="24" height="14" fill="#1e1e1e"/>
+  <text x="550" y="2795" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">SÍ</text>
+<line x1="550" y1="2780" x2="550" y2="2808" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="200" y="2810" width="700" height="50" fill="#2a4a6b" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="550.0" y="2832" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">6. Preparar la demostración de la Estación 2</text><text x="550.0" y="2846" text-anchor="middle" font-size="11" fill="#e8e8e8">↳ 4 sub-procesos</text>
+<line x1="550.0" y1="2860" x2="550.0" y2="2888" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="145" y="2882" width="810" height="380" fill="none" stroke="#555555" stroke-width="1" stroke-dasharray="5,4" rx="6"/>
+<text x="155" y="2876" font-size="11" font-style="italic" fill="#b0b0b0">Sub-procesos de la Actividad 6</text>
+<rect x="300" y="2890" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="2912" font-size="11" font-weight="bold" fill="#ffffff">6.1</text><text x="565.0" y="2912" text-anchor="middle" font-size="11" fill="#ffffff">Redactar guion de bienvenida para estudiantes</text>
+<line x1="550.0" y1="2940" x2="550.0" y2="2968" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="2970" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="2992" font-size="11" font-weight="bold" fill="#ffffff">6.2</text><text x="565.0" y="2992" text-anchor="middle" font-size="11" fill="#ffffff">Asignar roles de facilitación con sub-equipo B</text>
+<line x1="550.0" y1="3020" x2="550.0" y2="3048" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="3050" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="3072" font-size="11" font-weight="bold" fill="#ffffff">6.3</text><text x="565.0" y="3072" text-anchor="middle" font-size="11" fill="#ffffff">Verificar mesa, dispositivo y conexión</text>
+<line x1="550.0" y1="3100" x2="550.0" y2="3128" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="3130" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="3152" font-size="11" font-weight="bold" fill="#ffffff">6.4</text><text x="565.0" y="3152" text-anchor="middle" font-size="11" fill="#ffffff">Confirmar lista de materiales de la estación</text>
+<line x1="550.0" y1="3180" x2="550.0" y2="3208" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="350" y="3210" width="400" height="50" fill="#3a6b41" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="375" y="3232" font-size="11" font-weight="bold" fill="#ffffff">Output</text><text x="575.0" y="3232" text-anchor="middle" font-size="11" fill="#ffffff">Estación 2 lista, sub-equipo B alineado</text>
+<line x1="550.0" y1="3260" x2="550.0" y2="3288" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polygon points="550,3290 730,3315 550,3340 370,3315" fill="#8a6e2a" stroke="#ffffff" stroke-width="1.5"/><text x="550" y="3312" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">¿Estación 2 lista</text><text x="550" y="3326" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">para operar?</text>
+  <text x="362" y="3319" text-anchor="end" font-size="10" font-weight="bold" fill="#ffffff">NO</text>
+<path d="M 370 3315 L 120 3315 L 120 3130 L 550 3130" fill="none" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="3,3"/>
+  <text x="126" y="3309" font-size="9" font-style="italic" fill="#b0b0b0">revisar 6.4</text>
+  <rect x="538" y="3345" width="24" height="14" fill="#1e1e1e"/>
+  <text x="550" y="3355" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">SÍ</text>
+<line x1="550" y1="3340" x2="550" y2="3368" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="200" y="3370" width="700" height="50" fill="#2a4a6b" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="550.0" y="3392" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">7. Prestar el servicio: demostración en el colegio</text><text x="550.0" y="3406" text-anchor="middle" font-size="11" fill="#e8e8e8">↳ 6 sub-procesos</text>
+<line x1="550.0" y1="3420" x2="550.0" y2="3448" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="145" y="3442" width="810" height="540" fill="none" stroke="#555555" stroke-width="1" stroke-dasharray="5,4" rx="6"/>
+<text x="155" y="3436" font-size="11" font-style="italic" fill="#b0b0b0">Sub-procesos de la Actividad 7</text>
+<rect x="300" y="3450" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="3472" font-size="11" font-weight="bold" fill="#ffffff">7.1</text><text x="565.0" y="3472" text-anchor="middle" font-size="11" fill="#ffffff">Recibir al grupo rotativo de estudiantes</text>
+<line x1="550.0" y1="3500" x2="550.0" y2="3528" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="3530" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="3552" font-size="11" font-weight="bold" fill="#ffffff">7.2</text><text x="565.0" y="3552" text-anchor="middle" font-size="11" fill="#ffffff">Explicar la actividad en lenguaje simple</text>
+<line x1="550.0" y1="3580" x2="550.0" y2="3608" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="3610" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="3632" font-size="11" font-weight="bold" fill="#ffffff">7.3</text><text x="565.0" y="3632" text-anchor="middle" font-size="11" fill="#ffffff">Ingresar en el chatbot la consulta del estudiante</text>
+<line x1="550.0" y1="3660" x2="550.0" y2="3688" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="3690" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="3712" font-size="11" font-weight="bold" fill="#ffffff">7.4</text><text x="565.0" y="3712" text-anchor="middle" font-size="11" fill="#ffffff">Mostrar dos respuestas sobre la misma información</text>
+<line x1="550.0" y1="3740" x2="550.0" y2="3768" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="3770" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="3792" font-size="11" font-weight="bold" fill="#ffffff">7.5</text><text x="565.0" y="3792" text-anchor="middle" font-size="11" fill="#ffffff">Guiar la comparación de diferencias</text>
+<line x1="550.0" y1="3820" x2="550.0" y2="3848" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="3850" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="3872" font-size="11" font-weight="bold" fill="#ffffff">7.6</text><text x="565.0" y="3872" text-anchor="middle" font-size="11" fill="#ffffff">Registrar respuestas e incidencias acordadas</text>
+<line x1="550.0" y1="3900" x2="550.0" y2="3928" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="350" y="3930" width="400" height="50" fill="#3a6b41" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="375" y="3952" font-size="11" font-weight="bold" fill="#ffffff">Output</text><text x="575.0" y="3952" text-anchor="middle" font-size="11" fill="#ffffff">Experiencia realizada y datos registrados</text>
+<line x1="550.0" y1="3980" x2="550.0" y2="4008" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polygon points="550,4010 730,4035 550,4060 370,4035" fill="#8a6e2a" stroke="#ffffff" stroke-width="1.5"/><text x="550" y="4032" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">¿Experiencia y datos</text><text x="550" y="4046" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">registrados?</text>
+  <text x="362" y="4039" text-anchor="end" font-size="10" font-weight="bold" fill="#ffffff">NO</text>
+<path d="M 370 4035 L 120 4035 L 120 4170 L 550 4170" fill="none" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="3,3"/>
+  <text x="126" y="4029" font-size="9" font-style="italic" fill="#b0b0b0">registrar incidencia 8.1</text>
+  <rect x="538" y="4065" width="24" height="14" fill="#1e1e1e"/>
+  <text x="550" y="4075" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">SÍ</text>
+<line x1="550" y1="4060" x2="550" y2="4088" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="200" y="4090" width="700" height="50" fill="#2a4a6b" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="550.0" y="4112" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">8. Cerrar la estación y ordenar evidencia</text><text x="550.0" y="4126" text-anchor="middle" font-size="11" fill="#e8e8e8">↳ 3 sub-procesos</text>
+<line x1="550.0" y1="4140" x2="550.0" y2="4168" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="145" y="4162" width="810" height="300" fill="none" stroke="#555555" stroke-width="1" stroke-dasharray="5,4" rx="6"/>
+<text x="155" y="4156" font-size="11" font-style="italic" fill="#b0b0b0">Sub-procesos de la Actividad 8</text>
+<rect x="300" y="4170" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="4192" font-size="11" font-weight="bold" fill="#ffffff">8.1</text><text x="565.0" y="4192" text-anchor="middle" font-size="11" fill="#ffffff">Reunir observaciones de los facilitadores</text>
+<line x1="550.0" y1="4220" x2="550.0" y2="4248" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="4250" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="4272" font-size="11" font-weight="bold" fill="#ffffff">8.2</text><text x="565.0" y="4272" text-anchor="middle" font-size="11" fill="#ffffff">Ordenar registros e incidencias de la actividad</text>
+<line x1="550.0" y1="4300" x2="550.0" y2="4328" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="4330" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="4352" font-size="11" font-weight="bold" fill="#ffffff">8.3</text><text x="565.0" y="4352" text-anchor="middle" font-size="11" fill="#ffffff">Entregar información acordada a Módulo 5</text>
+<line x1="550.0" y1="4380" x2="550.0" y2="4408" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="350" y="4410" width="400" height="50" fill="#3a6b41" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="375" y="4432" font-size="11" font-weight="bold" fill="#ffffff">Output</text><text x="575.0" y="4432" text-anchor="middle" font-size="11" fill="#ffffff">Evidencia del servicio ordenada y usable</text>
+<line x1="550.0" y1="4460" x2="550.0" y2="4488" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polygon points="550,4490 730,4515 550,4540 370,4515" fill="#8a6e2a" stroke="#ffffff" stroke-width="1.5"/><text x="550" y="4512" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">¿Evidencia completa</text><text x="550" y="4526" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">y usable?</text>
+  <text x="362" y="4519" text-anchor="end" font-size="10" font-weight="bold" fill="#ffffff">NO</text>
+<path d="M 370 4515 L 120 4515 L 120 4170 L 550 4170" fill="none" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="3,3"/>
+  <text x="126" y="4509" font-size="9" font-style="italic" fill="#b0b0b0">revisar 8.1</text>
+  <rect x="538" y="4545" width="24" height="14" fill="#1e1e1e"/>
+  <text x="550" y="4555" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">SÍ</text>
+<line x1="550" y1="4540" x2="550" y2="4568" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="200" y="4570" width="700" height="50" fill="#2a4a6b" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="550.0" y="4592" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">9. Elaborar el informe académico del proceso</text><text x="550.0" y="4606" text-anchor="middle" font-size="11" fill="#e8e8e8">↳ 5 sub-procesos</text>
+<line x1="550.0" y1="4620" x2="550.0" y2="4648" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="145" y="4642" width="810" height="460" fill="none" stroke="#555555" stroke-width="1" stroke-dasharray="5,4" rx="6"/>
+<text x="155" y="4636" font-size="11" font-style="italic" fill="#b0b0b0">Sub-procesos de la Actividad 9</text>
+<rect x="300" y="4650" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="4672" font-size="11" font-weight="bold" fill="#ffffff">9.1</text><text x="565.0" y="4672" text-anchor="middle" font-size="11" fill="#ffffff">Redactar tablas de roles, recursos y controles</text>
+<line x1="550.0" y1="4700" x2="550.0" y2="4728" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="4730" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="4752" font-size="11" font-weight="bold" fill="#ffffff">9.2</text><text x="565.0" y="4752" text-anchor="middle" font-size="11" fill="#ffffff">Incluir el flujograma formal del servicio</text>
+<line x1="550.0" y1="4780" x2="550.0" y2="4808" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="4810" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="4832" font-size="11" font-weight="bold" fill="#ffffff">9.3</text><text x="565.0" y="4832" text-anchor="middle" font-size="11" fill="#ffffff">Redactar aprendizaje y mejoras del equipo</text>
+<line x1="550.0" y1="4860" x2="550.0" y2="4888" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="4890" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="4912" font-size="11" font-weight="bold" fill="#ffffff">9.4</text><text x="565.0" y="4912" text-anchor="middle" font-size="11" fill="#ffffff">Armar el documento con las 6 partes</text>
+<line x1="550.0" y1="4940" x2="550.0" y2="4968" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="300" y="4970" width="500" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="318" y="4992" font-size="11" font-weight="bold" fill="#ffffff">9.5</text><text x="565.0" y="4992" text-anchor="middle" font-size="11" fill="#ffffff">Verificar formato final y nombre de archivo</text>
+<line x1="550.0" y1="5020" x2="550.0" y2="5048" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="350" y="5050" width="400" height="50" fill="#3a6b41" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="375" y="5072" font-size="11" font-weight="bold" fill="#ffffff">Output</text><text x="575.0" y="5072" text-anchor="middle" font-size="11" fill="#ffffff">Documento completo y alineado al servicio</text>
+<line x1="550.0" y1="5100" x2="550.0" y2="5128" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polygon points="550,5130 730,5155 550,5180 370,5155" fill="#8a6e2a" stroke="#ffffff" stroke-width="1.5"/><text x="550" y="5152" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">¿Documento explica</text><text x="550" y="5166" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">el servicio?</text>
+  <text x="362" y="5159" text-anchor="end" font-size="10" font-weight="bold" fill="#ffffff">NO</text>
+<path d="M 370 5155 L 120 5155 L 120 4890 L 550 4890" fill="none" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="3,3"/>
+  <text x="126" y="5149" font-size="9" font-style="italic" fill="#b0b0b0">revisar 9.4</text>
+  <rect x="538" y="5185" width="24" height="14" fill="#1e1e1e"/>
+  <text x="550" y="5195" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">SÍ</text>
+<line x1="550" y1="5180" x2="550" y2="5208" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+<ellipse cx="550.0" cy="5235" rx="200" ry="28" fill="#3a6b41" stroke="#ffffff" stroke-width="1.5"/><text x="550.0" y="5231" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">FIN</text><text x="550.0" y="5247" text-anchor="middle" font-size="10" fill="#ffffff">Servicio cerrado y documentado</text>
+  <rect x="50" y="5390" width="1000" height="160" fill="#252525" stroke="#b0b0b0" stroke-width="1" rx="4"/>
+  <text x="70" y="5414" font-size="13" font-weight="bold" fill="#ffffff">Simbología (ANSI)</text>
+<ellipse cx="120" cy="5450" rx="50" ry="16" fill="#3a6b41" stroke="#ffffff" stroke-width="1.5"/><text x="120" y="5446" text-anchor="middle" font-size="12" font-weight="bold" fill="#ffffff">Inicio / Fin</text><text x="120" y="5462" text-anchor="middle" font-size="10" fill="#ffffff"></text>
+<rect x="220" y="5434" width="130" height="50" fill="#2a4a6b" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="285.0" y="5456" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">Actividad</text>
+<rect x="380" y="5434" width="160" height="50" fill="#1e3a5a" stroke="#b0b0b0" stroke-width="1.2" rx="4"/><text x="398" y="5456" font-size="11" font-weight="bold" fill="#ffffff">2.1</text><text x="475.0" y="5456" text-anchor="middle" font-size="11" fill="#ffffff">Sub-proceso</text>
+<polygon points="630,5435 680,5450 630,5465 580,5450" fill="#8a6e2a" stroke="#ffffff" stroke-width="1.5"/><text x="630" y="5454" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">Decisión</text>
+<rect x="710" y="5434" width="160" height="50" fill="#3a6b41" stroke="#ffffff" stroke-width="1.5" rx="4"/><text x="735" y="5456" font-size="11" font-weight="bold" fill="#ffffff">Output</text><text x="815.0" y="5456" text-anchor="middle" font-size="11" fill="#ffffff">Output</text>
+<line x1="900" y1="5450" x2="950" y2="5450" stroke="#b0b0b0" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="925" y="5442" text-anchor="middle" font-size="10" fill="#b0b0b0">Dirección</text>
+  <text x="70" y="5490" font-size="11" fill="#b0b0b0">Cada actividad cierra con un rombo de validación: si SÍ, continúa; si NO, vuelve al sub-proceso específico.</text>
+  <text x="70" y="5508" font-size="11" fill="#b0b0b0">La Actividad 7 valida la prestación y registra incidencias para el cierre de evidencias.</text>
+  <text x="70" y="5526" font-size="11" fill="#b0b0b0">La verificación está integrada al final de cada proceso; no aparece como proceso separado.</text>
 </svg>

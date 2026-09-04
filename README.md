@@ -37,6 +37,8 @@ queda a disposición del docente.
 3. Consultar [`docs/adr/`](./docs/adr/) — decisiones arquitectónicas.
 4. Respetar [`docs/anti-patterns/`](./docs/anti-patterns/) — reglas duras.
 5. Revisar [`docs/backlog.md`](./docs/backlog.md) — pendientes con trigger.
+6. Consultar [`SECURITY.md`](./SECURITY.md) — política de secretos y datos sensibles.
+7. Antes de publicar, seguir [`docs/publicacion-segura.md`](./docs/publicacion-segura.md).
 
 ## Re-indexar gnosis (tras cambios en `docs/`)
 
@@ -47,8 +49,10 @@ GNOSIS_MCP_DATABASE_URL="$(git rev-parse --show-toplevel)/.gnosis/docs.db" \
 
 ## Estado del proyecto
 
-- 🟡 **Setup inicial completo** (2026-08-21). Estructura, gnosis, ADRs, anti-patterns.
-- ⏳ Pendiente: poblar `corpus/`, implementar `app/`, completar Entregable 1.
+- 🟡 **Corpus en revisión** (2026-09-03). ADR-0003 aceptado y tres fichas
+  sintéticas en borrador.
+- ⏳ Pendiente: revisión humana y liberación de `corpus/v1/`, contrato con
+  Módulo 5, implementación de `app/` y finalización del Entregable 1.
 
 ## Curso
 
