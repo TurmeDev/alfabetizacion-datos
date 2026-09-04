@@ -6,7 +6,16 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-Add-Type -AssemblyName System.Drawing
+
+if ([System.Environment]::OSVersion.Platform -ne [System.PlatformID]::Win32NT) {
+    throw 'build_one_page_flowchart.ps1 requiere Windows porque utiliza System.Drawing/GDI+.'
+}
+
+try {
+    Add-Type -AssemblyName System.Drawing -ErrorAction Stop
+} catch {
+    throw "No se pudo cargar System.Drawing/GDI+ en Windows: $($_.Exception.Message)"
+}
 
 function Draw-CenteredText {
     param($Graphics, [string]$Text, $Font, $Brush, [System.Drawing.Rectangle]$Rect)

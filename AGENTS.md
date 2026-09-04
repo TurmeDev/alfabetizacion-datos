@@ -28,6 +28,7 @@ revisión humana y liberar `corpus/v1/`.
 - **02-corpus-antes-codigo**: sin `\candidatos\` no se toca la API
 - **03-ciego-en-demo**: el estudiante no ve nombre de modelo
 - **04-alcance-hermetico**: 7 specs del demo
+- **05-herramientas-reproducibles**: sin rutas locales ni efectos al importar
 
 ## Estructura
 ```

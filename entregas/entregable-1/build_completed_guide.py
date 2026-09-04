@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import argparse
+import os
 import shutil
 from pathlib import Path
 
@@ -8,8 +10,9 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.shared import Inches, Pt
 
 
-SOURCE = Path(r"C:\Users\User\Downloads\Guia_Entregable_1_Startup_Educativa.docx")
-OUT_DIR = Path("entregas/entregable-1/generated")
+SCRIPT_DIR = Path(__file__).resolve().parent
+DEFAULT_SOURCE = SCRIPT_DIR / "Guia_Entregable_1_Startup_Educativa.docx"
+OUT_DIR = SCRIPT_DIR / "generated"
 OUTPUT = OUT_DIR / "Guia_Entregable_1_Startup_Educativa_COMPLETADA_CriterIA.docx"
 
 FLOW_IMAGES = [
@@ -264,14 +267,27 @@ def fill_tables(doc: Document) -> None:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Completa la guía del Entregable 1.")
+    parser.add_argument(
+        "--source",
+        type=Path,
+        default=Path(os.environ.get("ENTREGABLE_SOURCE", str(DEFAULT_SOURCE))),
+        help="DOCX fuente; también puede definirse con ENTREGABLE_SOURCE.",
+    )
+    args = parser.parse_args()
+    source = args.source.expanduser().resolve()
+
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    if not SOURCE.exists():
-        raise FileNotFoundError(SOURCE)
+    if not source.is_file():
+        parser.error(
+            f"No se encontró el DOCX fuente: {source}. "
+            "Usá --source o la variable ENTREGABLE_SOURCE."
+        )
     for image in FLOW_IMAGES:
         if not image.exists():
             raise FileNotFoundError(image)
 
-    shutil.copy2(SOURCE, OUTPUT)
+    shutil.copy2(source, OUTPUT)
     doc = Document(str(OUTPUT))
 
     flow_was_filled = False

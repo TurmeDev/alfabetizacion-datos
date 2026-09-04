@@ -1,9 +1,13 @@
+import argparse
+import os
+import sys
 from pathlib import Path
 
 from docx import Document
 
 
-SOURCE = Path(r"C:\Users\User\Downloads\Guia_Entregable_1_Startup_Educativa.docx")
+SCRIPT_DIR = Path(__file__).resolve().parent
+DEFAULT_SOURCE = SCRIPT_DIR / "Guia_Entregable_1_Startup_Educativa.docx"
 
 
 def clean(text: str) -> str:
@@ -11,8 +15,27 @@ def clean(text: str) -> str:
 
 
 def main() -> None:
-    print("exists", SOURCE.exists(), "size", SOURCE.stat().st_size if SOURCE.exists() else None)
-    doc = Document(str(SOURCE))
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+    parser = argparse.ArgumentParser(description="Inspecciona la estructura del DOCX fuente.")
+    parser.add_argument(
+        "source",
+        nargs="?",
+        type=Path,
+        default=Path(os.environ.get("ENTREGABLE_SOURCE", str(DEFAULT_SOURCE))),
+        help="DOCX fuente; también puede definirse con ENTREGABLE_SOURCE.",
+    )
+    args = parser.parse_args()
+    source = args.source.expanduser().resolve()
+    if not source.is_file():
+        parser.error(
+            f"No se encontró el DOCX fuente: {source}. "
+            "Indicá la ruta o definí ENTREGABLE_SOURCE."
+        )
+
+    print("exists", True, "size", source.stat().st_size)
+    doc = Document(str(source))
     print("paragraphs", len(doc.paragraphs), "tables", len(doc.tables), "sections", len(doc.sections))
     for i, paragraph in enumerate(doc.paragraphs):
         text = clean(paragraph.text)

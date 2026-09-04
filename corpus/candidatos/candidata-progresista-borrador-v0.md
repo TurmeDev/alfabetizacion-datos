@@ -6,8 +6,8 @@
 > Paraguay únicamente como ubicación de actividades hipotéticas; su mención no
 > puede presentar afirmaciones sobre su situación, población o gobierno reales.
 
-**Estado de la plantilla:** propuesta para revisión del equipo. No constituye aún
-el contrato approved de ADR-0003 y no representa un candidato terminado.
+**Estado de la ficha:** borrador pendiente de revisión humana. Usa la estructura
+aprobada por ADR-0003 y todavía no forma parte de `corpus/v1/`.
 
 ---
 
