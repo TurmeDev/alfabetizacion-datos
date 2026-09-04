@@ -163,7 +163,7 @@ def set_landscape(section):
     section.right_margin = Inches(0.5)
 
 
-def add_page_number_footer(section):
+def add_document_footer(section):
     footer = section.footer
     p = footer.paragraphs[0]
     p.alignment = WD_ALIGN_PARAGRAPH.RIGHT
@@ -219,7 +219,7 @@ resources = [
 
 doc = Document()
 set_portrait(doc.sections[0])
-add_page_number_footer(doc.sections[0])
+add_document_footer(doc.sections[0])
 
 styles = doc.styles
 styles["Normal"].font.name = "Calibri"
@@ -320,7 +320,7 @@ add_para(doc, "Los principales aspectos a mejorar antes de la implementación so
 
 landscape = doc.add_section(WD_SECTION.NEW_PAGE)
 set_landscape(landscape)
-add_page_number_footer(landscape)
+add_document_footer(landscape)
 add_heading(doc, "Anexo A - Flujograma formal detallado")
 add_para(doc, "El flujograma formal se divide en segmentos para conservar legibilidad en Word/PDF. La fuente editable permanece como SVG.")
 

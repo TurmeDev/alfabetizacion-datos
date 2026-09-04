@@ -11,10 +11,12 @@ operativo o el estado de importación de la máquina donde fueron creados.
 - Recibir archivos mediante argumentos o variables de entorno, con defaults
   relativos al repositorio.
 - Validar que las entradas existan antes de abrirlas y explicar cómo indicarlas.
-- Encapsular la ejecución de scripts Python en `main()` y usar el guard
-  `if __name__ == "__main__"`.
+- Encapsular la ejecución de scripts Python reutilizables en `main()` y usar el
+  guard `if __name__ == "__main__"`.
 - Si una dependencia es específica de plataforma, detectarla al inicio y terminar
   con un error claro que indique el requisito.
+- Nombrar funciones según el efecto que realmente producen; no prometer, por
+  ejemplo, numeración de páginas cuando sólo se agrega un texto fijo.
 
 ## Qué NO hacer
 
