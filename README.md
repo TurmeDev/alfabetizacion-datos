@@ -40,12 +40,16 @@ queda a disposición del docente.
 6. Consultar [`SECURITY.md`](./SECURITY.md) — política de secretos y datos sensibles.
 7. Antes de publicar, seguir [`docs/publicacion-segura.md`](./docs/publicacion-segura.md).
 
-## Re-indexar gnosis (tras cambios en `docs/`)
+## Re-indexar Gnosis (tras cambios documentales o del corpus)
 
 ```bash
 GNOSIS_MCP_DATABASE_URL="$(git rev-parse --show-toplevel)/.gnosis/docs.db" \
-  gnosis-mcp ingest docs/ --force --embed
+  gnosis-mcp ingest . --force --embed --prune && \
+gnosis-mcp check
 ```
+
+Gnosis es el único índice de contexto del proyecto. Las rutas `archive/` se
+conservan para trazabilidad, pero no son fuente para decisiones ni runtime.
 
 ## Estado del proyecto
 
