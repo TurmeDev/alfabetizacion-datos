@@ -6,7 +6,7 @@ const require = createRequire(import.meta.url);
 const sharp = require("sharp");
 
 const root = process.cwd();
-const svgPath = path.join(root, "entregas", "entregable-1", "diagrams", "flujograma-formal-ans.svg");
+const svgPath = path.join(root, "entregas", "entregable-1", "diagrams", "archive", "flujograma-formal-ans.svg");
 const outDir = path.join(root, "entregas", "entregable-1", "generated");
 
 await mkdir(outDir, { recursive: true });

@@ -5,7 +5,8 @@
 Adjuntar o pegar junto con este prompt, en este orden:
 
 1. `corpus/templates/candidato-v0.md` — estructura obligatoria.
-2. `corpus/examples/candidato-ejemplo-centrista-v0.md` — ejemplo de tono y alcance.
+2. `corpus/archive/candidato-ejemplo-centrista-v0.md` — ejemplo histórico de
+   tono y alcance; no es una ficha activa ni debe alimentar la APP.
 
 La plantilla define los campos. El ejemplo es un borrador que debe ampliarse y
 corregirse; no es una fuente factual ni una autorización para introducir política

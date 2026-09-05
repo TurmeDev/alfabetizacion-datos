@@ -10,15 +10,15 @@ políticas reales.
 
 Todavía no existe una versión liberada para la APP. Los tres perfiles de
 `candidatos/` son borradores sometidos a revisión humana. La plantilla aprobada
-está en `templates/candidato-v0.md` y `examples/` contiene material de discusión,
-no contenido ejecutable.
+está en `templates/candidato-v0.md`. Los ejemplos históricos se conservan en
+`archive/`; no son contenido ejecutable.
 
 ## Estructura y ciclo de vida
 
 ```text
 corpus/
 ├── candidatos/          # borradores editables; la APP no debe leerlos
-├── examples/            # ejemplos no normativos
+├── archive/             # evidencia histórica; la APP no debe leerla
 ├── templates/           # contrato de ficha
 └── vN/
     ├── README.md        # versión, fecha, estado y cambios

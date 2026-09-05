@@ -320,9 +320,9 @@ Dentro de Módulo 2:
 
 **Tipo de flujograma:** Vertical · **Estándar:** ANSI (simbología clásica de procesos)
 
-![Flujograma Formal ANSI](diagrams/flujograma-formal-ans.svg)
+![Flujograma formal de una página](diagrams/flujograma-formal-una-pagina.svg)
 
-*Fuente: `entregas/entregable-1/diagrams/flujograma-formal-ans.svg`*
+*Fuente: `entregas/entregable-1/diagrams/flujograma-formal-una-pagina.svg`*
 
 **Justificación de la elección (estándar ANSI):**
 
