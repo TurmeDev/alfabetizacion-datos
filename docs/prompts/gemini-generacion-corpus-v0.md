@@ -131,10 +131,10 @@ METADATOS Y ESTADO
 
 - Tipo de contenido: sintético.
 - Versión de plantilla: candidato-v0.
-- Versión del corpus: NO DEFINIDO — pendiente de C-06.
+- Versión del corpus: NO DEFINIDO — se asigna al liberar una versión aprobada.
 - Autor: Gemini — borrador solicitado por el equipo.
 - Fecha: usar la fecha real de generación en formato AAAA-MM-DD.
-- Revisor: NO DEFINIDO — pendiente de C-07.
+- Revisor: NO DEFINIDO — pendiente de revisión humana.
 - Estado: borrador.
 - Resultado de aprobación: requiere revisión del equipo.
 - Mantén sin marcar todos los checks que requieran confirmación humana.
@@ -143,17 +143,17 @@ FORMATO DE SALIDA
 
 Devuelve exactamente tres bloques, en este orden:
 
-FILE: corpus/examples/candidata-progresista-borrador-v0.md
+FILE: corpus/candidatos/candidata-progresista-borrador-v0.md
 ```markdown
 [ficha completa]
 ```
 
-FILE: corpus/examples/candidata-centrista-borrador-v1.md
+FILE: corpus/candidatos/candidata-centrista-borrador-r1.md
 ```markdown
 [versión ampliada de Iria Valen]
 ```
 
-FILE: corpus/examples/candidato-conservador-borrador-v0.md
+FILE: corpus/candidatos/candidato-conservador-borrador-v0.md
 ```markdown
 [ficha completa]
 ```

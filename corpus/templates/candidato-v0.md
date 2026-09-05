@@ -107,11 +107,11 @@ pronunciada por una persona real.
 
 - **Tipo de contenido:** `sintético`
 - **Versión de la plantilla:** `candidato-v0`
-- **Versión del corpus:** `[COMPLETAR cuando se resuelva C-06]`
+- **Versión del corpus:** `[COMPLETAR al liberar una versión aprobada]`
 - **Autor o autores:** `[COMPLETAR]`
 - **Fecha de creación:** `[COMPLETAR: AAAA-MM-DD]`
 - **Última modificación:** `[COMPLETAR: AAAA-MM-DD]`
-- **Revisor humano:** `[COMPLETAR cuando se resuelva C-07]`
+- **Revisor humano:** `[COMPLETAR tras la revisión humana]`
 - **Fecha de revisión:** `[COMPLETAR: AAAA-MM-DD]`
 - **Estado:** `[COMPLETAR: borrador | en revisión | aprobado | rechazado]`
 - **Notas de procedencia:** `Contenido creado localmente para un escenario ficticio.`
@@ -129,7 +129,7 @@ pronunciada por una persona real.
 - [ ] El nivel de detalle es comparable con las otras dos fichas.
 - [ ] No contiene PII de estudiantes, secretos, credenciales ni datos locales restringidos.
 - [ ] Las preguntas fuera de la ficha permiten responder «No tengo datos sobre eso».
-- [ ] El responsable definido en C-07 aprobó la ficha antes de usarla en el demo.
+- [ ] Un revisor humano identificado aprobó la ficha antes de usarla en el demo.
 
 ## Aprobación interna
 

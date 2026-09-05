@@ -16,7 +16,7 @@ aceptadas por el equipo y congelar el primer corpus reproducible en
 
 - `corpus/templates/candidato-v0.md`
 - `corpus/candidatos/candidata-progresista-borrador-v0.md`
-- `corpus/candidatos/candidata-centrista-borrador-v1.md`
+- `corpus/candidatos/candidata-centrista-borrador-r1.md`
 - `corpus/candidatos/candidato-conservador-borrador-v0.md`
 - `corpus/README.md`
 - `docs/adr/0003-criterios-corpus.md`

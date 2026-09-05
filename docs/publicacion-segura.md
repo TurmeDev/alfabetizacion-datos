@@ -8,8 +8,8 @@
    historial si alguna credencial llegó a estar versionada.
 3. Verificar que no haya PII de estudiantes en `corpus/`, `docs/`, entregas,
    capturas ni archivos adjuntos.
-4. Confirmar que las reglas de `main` siguen activas y que los colaboradores
-   usan pull requests.
+4. Confirmar que las reglas de `develop` y `main` siguen activas y que los
+   colaboradores usan pull requests.
 
 ## Uso futuro de secretos
 
@@ -23,10 +23,12 @@
 
 ## Flujo para colaboradores
 
-1. Crear una rama propia desde `main`.
-2. Abrir un pull request con una descripción breve del cambio.
+1. Crear una rama propia desde `develop`.
+2. Abrir un pull request hacia `develop` con una descripción breve del cambio.
 3. Esperar una aprobación y resolver las conversaciones antes de fusionar.
-4. No usar force-push ni eliminar `main`.
+4. Promover una versión estable desde `develop` hacia `main` mediante otro pull
+   request.
+5. No usar force-push ni eliminar ramas protegidas.
 
 ## Artefactos de entrega
 

@@ -67,7 +67,7 @@ con evidencia insuficiente permanecen `UNKNOWN`, no se relajan para pasar el pil
 
 | Decisión | Qué debe resolver el humano o equipo responsable | Qué bloquea |
 | --- | --- | --- |
-| Criterios de corpus / ADR-0003 | Selección y fuentes, qué completa un área y convención de versión/rutas | Declarar DT-01 satisfecho y empezar código del chatbot. No crear fichas políticas inventadas para superar el gate. |
+| Liberación del corpus v1 / DT-TASK-003 | Revisión humana de las tres fichas y congelado de `corpus/v1/` con índice y hashes | Declarar DT-01 satisfecho y empezar código del chatbot. ADR-0003 ya resolvió criterios, fuentes y versionado; no reabrirlos para superar el gate. |
 | Privacidad / ADR-0005 | Texto libre, transmisión, minimización, conservación, acceso y eliminación | Usar entradas reales de estudiantes, persistir conversaciones o enviarlas al proveedor. La prohibición vigente de SECURITY no queda levantada por esta guía. |
 | Contrato M5 / ADR-0004 | Schema, procedencia, errores y tratamiento de datos, acordados con M5 | Implementar el registro definitivo y declarar DT-08 conforme; resolver antes del código según el backlog. |
 | Stack / ADR-0002 | Proveedor e integración tras las decisiones previas | Código/integración del proveedor; observar también las condiciones previas de SECURITY. |

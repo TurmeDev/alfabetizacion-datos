@@ -103,11 +103,11 @@ pronunciada por una persona real.
 
 - **Tipo de contenido:** `sintético`
 - **Versión de la plantilla:** `candidato-v0`
-- **Versión del corpus:** `NO DEFINIDO — pendiente de C-06`
+- **Versión del corpus:** `NO DEFINIDO — ejemplo no destinado a una versión liberada`
 - **Autor o autores:** `Codex, a solicitud del usuario`
 - **Fecha de creación:** `2026-09-03`
 - **Última modificación:** `2026-09-03`
-- **Revisor humano:** `NO DEFINIDO — pendiente de C-07`
+- **Revisor humano:** `NO DEFINIDO — pendiente de revisión humana si se reutiliza`
 - **Fecha de revisión:** `NO DEFINIDO`
 - **Estado:** `borrador`
 - **Notas de procedencia:** `Contenido creado localmente para un escenario ficticio.`
@@ -125,11 +125,11 @@ pronunciada por una persona real.
 - [ ] El nivel de detalle es comparable con las otras dos fichas.
 - [ ] No contiene PII de estudiantes, secretos, credenciales ni datos locales restringidos.
 - [ ] Las preguntas fuera de la ficha permiten responder «No tengo datos sobre eso».
-- [ ] El responsable definido en C-07 aprobó la ficha antes de usarla en el demo.
+- [ ] Un revisor humano identificado aprobó la ficha antes de usarla en el demo.
 
 ## Aprobación interna
 
 - **Resultado:** `requiere revisión del equipo`
-- **Responsable:** `NO DEFINIDO — pendiente de C-07`
+- **Responsable:** `NO DEFINIDO — pendiente de revisión humana si se reutiliza`
 - **Fecha:** `NO DEFINIDO`
 - **Observaciones:** Revisar nombre ficticio, partido, ejes comunes, equilibrio de detalle y claridad del formato antes de producir las otras dos fichas.

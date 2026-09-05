@@ -1,4 +1,4 @@
-# Iria Valen — candidata ficticia de ejemplo v1
+# Iria Valen — candidata ficticia de ejemplo, revisión 1
 
 > **Advertencia obligatoria:** todo el contenido de esta ficha debe ser sintético.
 > No usar personas, partidos, elecciones, autoridades, instituciones políticas,
@@ -123,11 +123,11 @@ pronunciada por una persona real.
 
 - **Tipo de contenido:** `sintético`
 - **Versión de la plantilla:** `candidato-v0`
-- **Versión del corpus:** `NO DEFINIDO — pendiente de C-06`
+- **Versión del corpus:** `NO DEFINIDO — se asigna al liberar una versión aprobada`
 - **Autor o autores:** `Gemini — borrador solicitado por el equipo`
 - **Fecha de creación:** `2026-09-03`
 - **Última modificación:** `2026-09-03`
-- **Revisor humano:** `NO DEFINIDO — pendiente de C-07`
+- **Revisor humano:** `NO DEFINIDO — pendiente de revisión humana`
 - **Fecha de revisión:** `NO DEFINIDO`
 - **Estado:** `borrador`
 - **Notas de procedencia:** `Contenido creado localmente para un escenario ficticio.`
@@ -145,11 +145,11 @@ pronunciada por una persona real.
 - [ ] El nivel de detalle es comparable con las otras dos fichas.
 - [ ] No contiene PII de estudiantes, secretos, credenciales ni datos locales restringidos.
 - [ ] Las preguntas fuera de la ficha permiten responder «No tengo datos sobre eso».
-- [ ] El responsable definido en C-07 aprobó la ficha antes de usarla en el demo.
+- [ ] Un revisor humano identificado aprobó la ficha antes de usarla en el demo.
 
 ## Aprobación interna
 
 - **Resultado:** `requiere revisión del equipo`
-- **Responsable:** `NO DEFINIDO — pendiente de C-07`
+- **Responsable:** `NO DEFINIDO — pendiente de revisión humana`
 - **Fecha:** `NO DEFINIDO`
 - **Observaciones:** Versión ampliada de Iria Valen adecuada al alcance de palabras y detalle exigidos. Pendiente de aprobación.
