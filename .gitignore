@@ -23,9 +23,6 @@ build/
 # gnosis index (regenerable, no commitear)
 .gnosis/
 
-# Gortex: grafo y memoria local regenerable (no versionar)
-.gortex/
-
 # Artefactos regenerables de las entregas
 entregas/**/generated/
 
