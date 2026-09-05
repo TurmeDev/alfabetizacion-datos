@@ -6,19 +6,13 @@ lo absorbió.
 
 ---
 
-## Diferidos (no urgentes, evaluar en próximas sessions)
-
-### B1. Versionar el corpus con el código
-**Trigger para promover:** cuando se haga el primer demo real y se necesite
-saber qué versión de `\candidatos\` usó cada ejecución para que M5 pueda
-reproducir.
-**Promoción esperada:** ADR-0003 o nota en el README del corpus.
-**Origen:** ideas-para-mejorar del 2026-08-14 (sesión inicial).
+## Diferidos (no urgentes, evaluar en próximas sesiones)
 
 ### B2. AGENTS.md bilingüe (español estructura + inglés jerga técnica)
-**Trigger para promover:** cuando el AGENTS.md crezca >3KB o cuando entren
-sub-agentes A1/A2/A3 que necesiten grounding en inglés para el código.
-**Promoción esperada:** refinamiento del AGENTS.md.
+**Estado:** trigger alcanzado: `AGENTS.md` supera 3 KB. Se evaluará cuando el
+equipo confirme que necesita una versión bilingüe; el tamaño por sí solo no
+justifica duplicar documentación.
+**Promoción esperada:** refinamiento acotado del `AGENTS.md`.
 **Origen:** ideas-para-mejorar del 2026-08-14.
 
 ### B3. `docs/adr/README.md` como timeline visual
@@ -26,6 +20,13 @@ sub-agentes A1/A2/A3 que necesiten grounding en inglés para el código.
 se vuelva difícil de escanear.
 **Promoción esperada:** nuevo archivo en `docs/adr/`.
 **Origen:** ideas-para-mejorar del 2026-08-14.
+
+### B4. Convenciones de commits para el equipo
+**Estado:** promovible ahora. Ya existe una rama `develop`, pull requests y
+commits que el equipo deberá revisar.
+**Promoción esperada:** sección breve en `CONTRIBUTING.md`; evaluar Conventional
+Commits y automatización sólo después de acordar la convención humana.
+**Origen:** decisión diferida por el usuario el 2026-09-03.
 
 ---
 
@@ -45,30 +46,37 @@ consulta en base a datos almacenados".
 
 ---
 
-## Próximos (sesión siguiente)
+## Próximos (en orden de dependencia)
 
-### N1. Definir las 3 áreas políticas concretas de `\candidatos\`
-**Trigger:** bloqueo del corpus. Sin esto, el chatbot no se puede testear.
-**Acción:** confirmar 3-4 áreas (progresiva/centrista/conservadora + ?
-opcional) y empezar a poblar candidatos.
-
-### N2. Confirmar cantidad de candidatos por área
-**Trigger:** bloqueo del corpus.
-**Acción:** decidir 3-5 candidatos por área para tener volumen suficiente
-para que M5 tenga datos.
-
-### N3. Stack técnico (ADR-0002)
-**Trigger:** decisión del user sobre lenguaje/framework.
-**Nota:** el user decidió que el stack va al FINAL de los ADRs (después de
-0001-0004) porque "el stack no debería acoplarse a una decisión de corpus
-que puede cambiar".
+### N3. Revisar y liberar `corpus/v1` (DT-TASK-003)
+**Trigger:** revisión humana de las tres fichas por P4 (Arnold y Mathias).
+**Acción:** registrar las aprobaciones, corregir sólo lo observado y congelar
+la versión con su índice y hashes. No iniciar la APP antes de este cierre.
 
 ### N4. Contrato de datos con M5 (ADR-0004)
-**Trigger:** antes de implementar el código, para que M5 sepa qué esperar.
+**Trigger:** después de liberar `corpus/v1` y antes de implementar el código,
+para que M5 sepa qué esperar.
 **Acción:** definir schema JSON de las respuestas capturadas (pregunta,
 modo, respuesta, timestamp, metadata).
+
+### N5. Privacidad y datos de estudiantes (ADR-0005)
+**Trigger:** antes de aceptar entradas reales de estudiantes, persistir
+conversaciones o enviar contenido a un proveedor externo.
+**Acción:** definir minimización, conservación, acceso, eliminación y límites
+de transmisión.
+
+### N6. Métricas del contraste pedagógico (ADR-0006)
+**Trigger:** antes de declarar que el demo mide o demuestra sesgo.
+**Acción:** acordar métricas, evidencia y encuadre educativo con M5.
+
+### N7. Stack técnico (ADR-0002)
+**Trigger:** después de ADR-0004, ADR-0005 y ADR-0006.
+**Acción:** elegir lenguaje, framework y proveedor sin contradecir el corpus,
+la privacidad ni el contrato con M5.
 
 ---
 
 ## Última actualización
-2026-08-21 — setup inicial. Diferidos B1-B3, descartados D1-D2, próximos N1-N4.
+2026-09-04 — ADR-0003 y DT-TASK-002 cerraron los criterios del corpus. La
+única tarea operativa actual es DT-TASK-003; el resto queda ordenado por sus
+dependencias.

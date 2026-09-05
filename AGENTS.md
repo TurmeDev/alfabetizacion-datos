@@ -11,13 +11,14 @@ PY. Dos modos del mismo modelo leen `\candidatos\` con system prompts distintos
 sino en cómo se le pide al modelo que los presente.
 
 ## Fase actual
-🟡 Setup inicial (2026-08-21). Estructura creada, sin código aún. Próximo: poblar
-`\candidatos\` y definir stack (ADR-0002).
+🟡 Corpus en revisión (2026-09-03). Hay tres fichas sintéticas en borrador y aún
+no existe una versión liberada; sin código. Próximo: ejecutar DT-TASK-003 para
+revisión humana y liberar `corpus/v1/`.
 
 ## Decisiones locked-in (ver `docs/adr/`)
 - **ADR-0001** — Diseño 1x2 con sesgo en prompting, hard-coded hacia **progresista** ✅ Aceptado
 - **ADR-0002** — Stack técnico — PENDIENTE (será el ÚLTIMO ADR, tras corpus)
-- **ADR-0003** — Criterios del corpus — PENDIENTE
+- **ADR-0003** — Criterios y versionado del corpus — ACEPTADO; `v1` pendiente
 - **ADR-0004** — Contrato de datos con Módulo 5 — PENDIENTE
 - **ADR-0005** — Privacidad y manejo de datos de estudiantes — PENDIENTE
 - **ADR-0006** — Métricas de "sesgo" para Módulo 5 — PENDIENTE
@@ -27,12 +28,13 @@ sino en cómo se le pide al modelo que los presente.
 - **02-corpus-antes-codigo**: sin `\candidatos\` no se toca la API
 - **03-ciego-en-demo**: el estudiante no ve nombre de modelo
 - **04-alcance-hermetico**: 7 specs del demo
+- **05-herramientas-reproducibles**: sin rutas locales ni efectos al importar
 
 ## Estructura
 ```
 alfabetizacion-datos/             ← repo único (consolidado 2026-08-21)
 ├── app/                          ← código de la APP (vacío por ahora)
-├── corpus/                       ← datos curados (vacío por ahora)
+├── corpus/                       ← borradores, plantilla y versiones aprobadas
 ├── docs/                         ← doc viva (indexada por gnosis)
 │   ├── adr/                      ← decisiones arquitectónicas
 │   ├── anti-patterns/            ← reglas duras

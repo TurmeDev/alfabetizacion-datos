@@ -2,7 +2,7 @@
 
 > Documento de trabajo. La versión final se exporta a PDF.
 > **Equipo:** Sub-equipo de Módulo 2 (Contenido y Demostraciones), 5 estudiantes universitarios, OSM 5° sem.
-> **Tema:** Estación 2: Alfabetización de Datos — construcción de la APP chatbot + base documental.
+> **Tema:** Estación 2: Alfabetización de Datos — construcción del chatbot + base documental.
 
 ---
 
@@ -14,13 +14,13 @@ Somos 1 de los 2 sub-equipos de 5 que cubren Alfabetización de Datos dentro de 
 - **Módulo 1 (Diseño de Estaciones)** — OSM, 15-20 estudiantes
 - **Módulo 2 (Contenido y Demostraciones)** — OSM, 10-15 estudiantes ← nuestro módulo
 
-Los módulos 3 (Logística), 4 (Promoción de Carreras) y 5 (Evaluación) son de soporte operativo; los módulos 1 y 2 son los que **operan** la experiencia educativa el día del evento.
+Los módulos 3 (Logística), 4 (Promoción de Carreras) y 5 (Evaluación) son de soporte operativo. Los módulos 1 y 2 son los que **operan** la experiencia educativa el día del evento.
 
 Dentro de Módulo 2:
-- **Sub-equipo A — CriterIA (este equipo, 5 estudiantes):** construye la APP chatbot (código, arquitectura, infraestructura) y la base documental (ADRs, anti-patterns, decisiones de diseño, iteraciones) que queda a disposición del docente. **Produce el Documento entregable del Entregable 1.**
+- **Sub-equipo A — CriterIA (este equipo, 5 estudiantes):** construye el chatbot de consulta, prepara la base de información y arma la base documental (registros de decisiones de diseño, lecciones aprendidas, iteraciones) que queda a disposición del docente. **Produce el Documento entregable del Entregable 1.**
 - **Sub-equipo B (otros 5 estudiantes):** alcance complementario, aún por confirmar. Probablemente facilitación, materiales impresos, dinámica de la estación o guión pedagógico de inducción. *A coordinar.*
 
-**Interfaz entre los dos sub-equipos:** nuestro chatbot es la herramienta que el sub-equipo B opera el día del evento. La base documental es lo que el docente usa para entender qué construimos y por qué.
+**Articulación entre los dos sub-equipos:** el chatbot "Dos Tonos" es la herramienta central de la Estación 2. El sub-equipo B acompaña la facilitación y los materiales de apoyo. La base documental no es el resultado del servicio: es la evidencia académica que explica al docente cómo se diseñó, preparó y controló la experiencia educativa.
 
 ---
 
@@ -30,30 +30,14 @@ Dentro de Módulo 2:
 **CriterIA** — Sub-equipo A de Módulo 2 (Contenido y Demostraciones), 5 estudiantes universitarios de la carrera de Ingeniería en Informática, OSM 5° semestre.
 
 ### 2. Tema o componente asignado
-**Módulo 2 (Contenido y Demostraciones) — Estación 2: Alfabetización de Datos — sub-equipo técnico (APP + base documental).**
+**Módulos 1 y 2 (Diseño de Estaciones + Contenido y Demostraciones) — Estación 2: Alfabetización de Datos — sub-equipo de chatbot + base documental.** El equipo pertenece al Módulo 2, pero la Estación 2 es un componente co-diseñado con Módulo 1 (diseño físico de la estación) y cuyo contenido + operación quedan a cargo de Módulo 2.
 
 ### 3. Nombre del servicio o experiencia
-**"Dos Tonos"** — APP de consulta política con dos modos de presentación del mismo modelo (uno con sesgo marcado hacia el área ideológica progresiva, otro neutro/balanceado).
+**"Dos Tonos"** — chatbot de consulta política con dos modos de presentación del mismo modelo (uno con inclinación intencional hacia el área ideológica progresiva, otro neutro/balanceado).
 
 ### 4. Descripción del servicio (BORRADOR)
 
-> **"Dos Tonos"** es una APP de consulta sobre candidatos políticos del
-> equipo CriterIA, pensada para la Estación 2 (Alfabetización de Datos)
-> del Startup Educativa. Se alimenta de un corpus curado y presenta los
-> datos en **dos modos claramente diferenciados e independientes del
-> prompt** del estudiante. **Tono B (neutro)** responde **siempre** de
-> forma objetiva y estadística, mostrando los datos tal como están en
-> el corpus. **Tono A (sesgado)** introduce variaciones intencionales
-> en el framing — resalta u opaca información según el área ideológica.
-> Cuando un estudiante de educación media tipea una pregunta, recibe
-> simultáneamente las dos respuestas y las compara en tiempo real. El
-> insight pedagógico es que **el sesgo nunca está en los datos**: los
-> dos modos leen exactamente la misma información. El sesgo es
-> únicamente el efecto de las variaciones que el Tono A aplica sobre
-> el framing. La experiencia es una **consulta**, no simulación de
-> voto. El equipo entrega la APP junto con una base documental
-> completa que permite al docente y al sub-equipo B entender el porqué
-> de cada elección técnica.
+> **"Dos Tonos"** es una experiencia de alfabetización de datos para estudiantes de educación media dentro de la Estación 2 del proyecto Startup Educativa. El estudiante realiza una consulta sobre candidatos políticos y observa dos respuestas generadas a partir de la misma base de información verificada. Una respuesta se presenta en tono neutro y otra con un encuadre intencionalmente diferente, para que el estudiante compare cómo cambia la percepción cuando se resaltan u omiten ciertos aspectos. La actividad no busca orientar el voto, sino enseñar que los datos, aunque sean los mismos, pueden comunicarse de maneras distintas. Durante la estación, el equipo guía la comparación, registra observaciones acordadas con Control de Gestión y deja evidencia del proceso para su evaluación posterior.
 
 ---
 
@@ -63,57 +47,29 @@ Dentro de Módulo 2:
 
 | Campo | Valor |
 |---|---|
-| Nombre | Construcción de "Dos Tonos" y entrega de la documentación al docente |
-| Inicio | El equipo CriterIA recibe el brief del Entregable 1 y conforma el plan de trabajo |
-| Fin | PDF del Entregable 1 entregado al docente. **El docente NO es especialista en tecnologías informáticas**, por lo que el formato de entrega es siempre **documentación PDF**, y salvo a ciertos esquemas, simplemente se anexan al desarrollo (no se entrega código, configs, ni artefactos de dev como resultado formal) |
-| Usuario/beneficiario directo | Docente de la asignatura |
-| Resultado esperado | **Índice 3: Documento entregable** (el PDF con las 6 partes de la Guía del Entregable 1). El resto del trabajo (APP funcionando, base documental en git) son insumos/medio para producir el documento, no resultados formales del proceso |
+| Nombre | Diseño, preparación y prestación de la Estación 2: Alfabetización de Datos |
+| Inicio | El equipo CriterIA recibe el componente asignado y define el objetivo educativo de la estación |
+| Fin | Estudiantes de educación media completan la experiencia de comparación de respuestas y se registran los datos acordados para evaluación |
+| Usuario/beneficiario directo | Estudiantes de educación media que recorren la Estación 2 |
+| Resultado esperado | Experiencia educativa clara, guiada y medible, donde el estudiante comprende que una misma información puede presentarse con distintos encuadres |
 
-### 6. Actividades principales — Plan de Acción secuencial (10 actividades, **desde el Diseño del servicio hasta la Prestación del servicio**)
+### 6. Actividades principales — Plan de Acción secuencial (9 actividades, **desde el diseño de la estación hasta el cierre de la experiencia**)
 
-> Nota para la Ing. de Producción: las descripciones pueden contener términos técnicos de informática (LLM, ADRs, API, etc.) porque así se referencian en la base documental del proyecto. Los **títulos** están redactados en lenguaje de procesos, sin jerga IT.
+> **Coherencia de diseño del proceso:** cada sub-proceso arranca con un verbo (Leer, Definir, Redactar, Implementar, Validar, etc.) que define su acción. Cada proceso cierra con un control de calidad (un rombo de decisión) que valida el resultado antes de pasar al siguiente. Si la validación es NO, el flujo vuelve a un sub-proceso específico a corregir. **"Pruebas" no es un proceso separado**: la verificación está integrada al final de cada proceso. La documentación final queda como evidencia para el docente, pero no reemplaza al resultado del servicio.
 
 | N.° | Actividad | Quién la realiza | Dónde | Recursos / documentos | Resultado |
 |---|---|---|---|---|---|
-| 1 | **Análisis del brief y del contexto del proyecto** — Lectura de la Guía del Entregable 1, del mapa visual del proyecto, comprensión del rol de la Estación 2 dentro del Startup Educativa | CriterIA completo | Reunión inicial (presencial o virtual) | Guía Entregable 1, mapa visual del proyecto, syllabus OSM | Brief comprendido, plan de trabajo, dudas listadas para el profe |
-| 2 | **Diseño del servicio y preparación técnica** — Definición del diseño experimental (un modelo de IA, dos modos de presentación), de las áreas políticas de la base de candidatos, del modelo de datos de las respuestas. Creación del espacio de trabajo del equipo y configuración de las herramientas de documentación | CriterIA completo (diseño) + 1 delegado (preparación técnica) | Sesión de diseño + trabajo técnico | Notas de la actividad 1, herramientas de indexación de documentos, reference de configuración | Decisiones de diseño documentadas, espacio de trabajo del equipo listo, documentación del equipo organizada |
-| 3 | **Investigación de modelos de IA y herramientas disponibles** — Evaluar qué modelos de IA generativa se pueden usar (vía API key), qué herramientas de soporte, qué restricciones técnicas (costo, latencia, idioma) | 1-2 delegados | Trabajo individual + puesta en común | API keys disponibles, documentación de herramientas, búsqueda de modelos de IA | Lista corta de modelos y herramientas elegibles, restricciones documentadas |
-| 4 | **Recopilación de información de candidatos** — Definir las 3 áreas políticas, seleccionar 3-5 candidatos por área, escribir una ficha por candidato con: nombre, partido, propuestas, frases textuales, fuente | 2-3 delegados (uno por área) | Trabajo individual + revisión cruzada | Fuentes públicas verificables (perfil del candidato, propuestas, Wikipedia, sitios oficiales) | Base de información de candidatos con ≥9 fichas completas |
-| 5 | **Desarrollo de la aplicación "Dos Tonos"** — Construcción del sistema con dos modos diferenciados: Tono A con sesgo marcado hacia el área ideológica progresiva, Tono B neutro/balanceado. Interfaz para que el estudiante tipee preguntas y vea las dos respuestas lado a lado. Captura de datos para el equipo de evaluación | 2-3 delegados (parte técnica) | Trabajo técnico iterativo | Decisiones de diseño, base de candidatos, API keys | Aplicación funcional con 2 modos, demo local corriendo |
-| 6 | **Pruebas y validación de la aplicación** — Probar con preguntas de ejemplo, verificar que ambos modos leen la misma información de la base, verificar que el sesgo se aplica en Tono A y NUNCA en Tono B, validar la captura de datos | CriterIA completo | Sesión de pruebas | Aplicación, base de candidatos, lista de preguntas de prueba | Reporte de errores, correcciones aplicadas, demo validado |
-| 7 | **Preparación de la demostración** — Preparar materiales de inducción para el estudiante, ensayar el flujo interno, coordinar con el otro sub-equipo de 5 sobre la operación el día del evento, preparar la logística de la Estación 2 (mesa, dispositivo, conexión, scripts) | CriterIA completo + coordinación con el sub-equipo B | Trabajo previo al evento | Guion de inducción, checklist logístico, plan de rotación | Estación 2 lista para operar, materiales preparados, sub-equipo B alineado |
-| 8 | **Demostración del proyecto en el colegio** — Ejecutar la Estación 2 con cada grupo rotativo de estudiantes: inducción, tipeo de pregunta, comparación de respuestas, reflexión, captura de datos para el equipo de evaluación | CriterIA + sub-equipo B (operación conjunta) | Colegio asignado, Estación 2 | Aplicación "Dos Tonos" instalada localmente, dispositivo, internet, materiales de inducción | Estudiantes experimentan el contraste entre Tono A y Tono B; datos capturados para el equipo de evaluación |
-| 9 | **Análisis del proceso: tablas de intervinientes, recursos y decisiones** — Documentar quiénes participan en cada actividad, qué recursos se usan y quién los usa, qué decisiones o controles aplican durante el proceso | CriterIA completo | Trabajo de documentación | Notas del equipo, brief, esquema del proceso | 3 tablas completadas siguiendo el formato de la Guía del Entregable 1 |
-| 10 | **Diagramas del proceso, conclusión y armado del documento final** — Dibujar el flujograma preliminar (notación `INICIO → ACTIVIDAD → DECISIÓN → RESULTADO → FIN`) y el flujograma formal (simbología de procesos de la Unidad VI). Redactar la conclusión del equipo (300 palabras). Armar el PDF final con el formato `Equipo_N°_Entregable_1_StartupEducativa.pdf` | CriterIA completo | Trabajo final individual | Todo el output previo, simbología de procesos | PDF del Entregable 1 listo para subir a la plataforma |
+| 1 | **Analizar la guía y el contexto del proyecto** — Leer la Guía del Entregable 1, el mapa visual del proyecto, listar dudas para el docente | Todos | Reunión inicial (presencial o virtual) | Guía Entregable 1, mapa visual del proyecto, syllabus OSM | Guía comprendida, dudas listadas para el docente. **Validación:** ¿Guía comprendida? → si NO, revisar 1.1 |
+| 2 | **Diseñar el servicio** — Definir el objetivo de aprendizaje, la comparación de dos respuestas y la explicación breve para el estudiante | Todos | Sesión de diseño | Notas de la actividad 1, herramientas de documentación | Dinámica educativa definida y explicable. **Validación:** ¿Objetivo y dinámica son claros? → si NO, revisar 2.1 |
+| 3 | **Seleccionar la herramienta de apoyo** — Identificar herramientas de IA con acceso del equipo, comparar costo, idioma, velocidad y facilidad, y elegir la opción para operar la estación | Lucas y Diego | Trabajo individual + puesta en común | Acceso a herramientas de IA, criterios de selección | Herramienta elegida para la estación. **Validación:** ¿Herramienta apta para la estación? → si NO, revisar 3.1 |
+| 4 | **Preparar fichas de candidatos ficticios** — Aplicar los tres perfiles programáticos acordados, redactar una ficha por perfil y verificar ficción, equilibrio y comparabilidad | Arnold y Mathias | Trabajo individual + revisión cruzada | ADR-0003, plantilla y checklist del corpus | Tres fichas sintéticas completas y aprobadas. **Validación:** ¿Fichas completas y verificadas? → si NO, revisar 4.3 |
+| 5 | **Preparar el chatbot "Dos Tonos"** — Cargar la base de candidatos, preparar las dos respuestas, armar la vista comparativa y probar la consulta con el registro de datos | Lucas y Mathias | Trabajo de preparación | Decisiones de diseño, base de candidatos, herramienta seleccionada | Chatbot listo para demostración. **Validación:** ¿Chatbot validado? → si NO, revisar 5.1 |
+| 6 | **Preparar la demostración de la Estación 2** — Redactar el guion de inducción, coordinar roles con el sub-equipo B, preparar los dispositivos y la conexión, armar la lista de verificación logística | Todos + coordinación con el sub-equipo B | Trabajo previo al evento | Guion de inducción, lista de verificación logística | Estación 2 lista para operar, sub-equipo B alineado. **Validación:** ¿Estación 2 lista? → si NO, revisar 6.4 |
+| 7 | **Prestar el servicio: demostración en el colegio** — Recibir al grupo rotativo, inducir al estudiante, ingresar la consulta en el chatbot, mostrar las 2 respuestas, facilitar la comparación y capturar los datos acordados para Control de Gestión | Todos + sub-equipo B (operación conjunta) | Colegio asignado, Estación 2 | Chatbot "Dos Tonos", dispositivo, internet, materiales de inducción | Estudiantes experimentan el contraste entre Tono A y Tono B; datos capturados para el equipo de evaluación. **Validación:** ¿Experiencia realizada y datos registrados? → si NO, registrar incidencia y corregir en 8.1 |
+| 8 | **Cerrar la estación y ordenar la evidencia** — Consolidar observaciones de la actividad, revisar incidencias, organizar los datos capturados y preparar la información que recibirá Módulo 5 | Mathias y Arnold + coordinación con Módulo 5 | Cierre posterior al evento | Registro de observaciones, datos capturados, acuerdos con Control de Gestión | Evidencia del servicio ordenada y lista para evaluación. **Validación:** ¿Evidencia completa y usable? → si NO, revisar 8.1 |
+| 9 | **Elaborar el informe académico del proceso** — Redactar tablas, flujograma, conclusión y PDF final para explicar al docente cómo se diseñó y controló la Estación 2 | CriterIA completo | Trabajo final de documentación | Evidencia del servicio, guía del entregable, simbología de procesos | Documento entregable completo, coherente y alineado al servicio. **Validación:** ¿Documento explica el proceso del servicio? → si NO, revisar 9.4 |
 
-**Estructura del plan:** actividades 1-6 son la fase de **diseño y construcción** del servicio; actividad 7 es la **preparación operativa**; actividad 8 es la **prestación** del servicio (el día del evento); actividades 9-10 son la **documentación formal** que cierra el ciclo y se entrega al docente como Entregable 1.
-
----
-
-## PARTE III / IV / V / VI
-
-Vacíos por ahora. Próxima sesión los armamos cuando confirmes:
-- ☐ Nombre del equipo
-- ☐ Nombre del servicio
-- ☐ Validación de las 8 actividades
-- ☐ Aporte del sub-equipo B (si lo conseguimos, podemos integrar su parte al flujograma)
-- ☐ Diagrama de flujo preliminar (preludio del flujograma final, peso 25%)
-
----
-
-## Tareas para próximas sessions
-1. ~~Confirmar nombre del equipo + nombre del servicio~~ ✅ (CriterIA + Dos Tonos)
-2. ~~Refinar descripción (modos bien separados, sesgo nunca en los datos)~~ ✅
-3. ~~Establecer que el único resultado formal es el Documento entregable (PDF)~~ ✅
-4. ~~Establecer que Módulos 1 y 2 son los de operación~~ ✅
-5. ~~Plan de acción secuencial (Diseño → Prestación) con demo incorporada~~ ✅
-6. ~~Reducir tecnicismo en títulos de actividades~~ ✅
-7. ~~Construir el **flujograma preliminar** (Part III)~~ ✅
-8. ~~Construir el **flujograma formal** (Part V, ANSI, peso 25%)~~ ✅
-9. ~~Llenar las **3 tablas de análisis** (Part IV)~~ ✅
-10. ~~Escribir la **conclusión** (Part VI, 300 palabras)~~ ✅
-11. Coordinar con el sub-equipo B (pendiente externo, no bloquea Entregable 1)
-11. Escribir la **conclusión** (Part VI, 300 palabras)
+**Estructura del plan:** actividades 1-5 son la fase de **diseño y construcción** del servicio; actividad 6 es la **preparación operativa**; actividad 7 es la **prestación** del servicio; actividad 8 es el **cierre y ordenamiento de evidencias**; actividad 9 convierte ese proceso en el documento que recibirá el docente. **Cada actividad valida su propio resultado antes de pasar a la siguiente**: si la validación falla, el flujo vuelve al sub-proceso específico donde está el problema, no a la actividad completa.
 
 ---
 
@@ -124,99 +80,168 @@ Vacíos por ahora. Próxima sesión los armamos cuando confirmes:
 ```
                           ╭───────────────────╮
                           │       INICIO       │
-                          │  Brief + mapa del  │
+                          │  Guía + mapa del   │
                           │      proyecto      │
                           ╰─────────┬─────────╯
                                     │
                                     ▼
         ┌─────────────────────────────────────────────┐
-        │ 1. Análisis del brief y del contexto        │
-        └────────────────────────┬────────────────────┘
-                                 │
-                                 ▼
-        ┌─────────────────────────────────────────────┐
-        │ 2. Diseño del servicio y preparación        │
-        │    técnica                                  │
+        │ 1. Analizar la guía y el contexto          │
+        │    (Leer guía, mapa, listar dudas)          │
         └────────────────────────┬────────────────────┘
                                  │
                                  ▼
                              ╱─────────╲
-                            ╱ ¿Decisiones╲
-                           ╱   locked-in? ╲
-                           ╲  (decisiones) ╱
-                            ╲──────┬─────╯
-                              NO  │  SÍ
-                              ┌───┘   └───┐
-                              │          │
-                              ▼          │
-                    ┌──────────────┐    │
-                    │ volver a 2   │    │
-                    └──────────────┘    │
-                                       │
-                                       ▼
-        ┌─────────────────────────────────────────────┐
-        │ 3. Investigación de modelos de IA y         │
-        │    herramientas                             │
-        └────────────────────────┬────────────────────┘
+                            ╱  ¿Guía     ╲
+                           ╱ ¿comprendida?╲
+                            ╲─────┬───────╯
+                            NO  │  SÍ
+                          ┌─────┘  └─────┐
+                          │ volver a 1.1  │
+                          └───────────────┘
                                  │
                                  ▼
         ┌─────────────────────────────────────────────┐
-        │ 4. Recopilación de información de           │
-        │    candidatos                               │
-        └────────────────────────┬────────────────────┘
-                                 │
-                                 ▼
-        ┌─────────────────────────────────────────────┐
-        │ 5. Desarrollo de la aplicación              │
-        │    "Dos Tonos"                              │
+        │ 2. Diseñar el servicio                       │
+        │    (Definir arquitectura, redactar            │
+        │    instrucciones de Tono A y Tono B)         │
         └────────────────────────┬────────────────────┘
                                  │
                                  ▼
                              ╱─────────╲
-                            ╱  ¿Pruebas  ╲
-                           ╱    OK?       ╲
-                           ╲              ╱
-                            ╲─────┬─────╯
-                              NO │ SÍ
-                              ┌──┘  └──┐
-                              │       │
-                              ▼       │
-                    ┌──────────────┐   │
-                    │ volver a 5   │   │
-                    └──────────────┘   │
-                                    │
-                                    ▼
-        ┌─────────────────────────────────────────────┐
-        │ 6. Pruebas y validación de la aplicación    │
-        └────────────────────────┬────────────────────┘
+                            ╱  ¿Decisiones╲
+                           ╱  ¿confirmadas?╲
+                            ╲──────┬───────╯
+                            NO  │  SÍ
+                          ┌─────┘  └─────┐
+                          │ volver a 2.1  │
+                          └───────────────┘
                                  │
                                  ▼
         ┌─────────────────────────────────────────────┐
-        │ 7. Preparación de la demostración           │
+        │ 3. Seleccionar la herramienta de apoyo      │
+        │    (Listar opciones, evaluar, seleccionar)  │
         └────────────────────────┬────────────────────┘
                                  │
                                  ▼
-        ┌─────────────────────────────────────────────┐
-        │ 8. Demostración del proyecto en el colegio  │
-        └────────────────────────┬────────────────────┘
+                             ╱─────────╲
+                            ╱  ¿Modelo   ╲
+                           ╱  ¿viable?   ╲
+                            ╲─────┬───────╯
+                            NO  │  SÍ
+                          ┌─────┘  └─────┐
+                          │ volver a 3.1  │
+                          └───────────────┘
                                  │
                                  ▼
         ┌─────────────────────────────────────────────┐
-        │ 9. Análisis del proceso: tablas de          │
-        │    intervinientes, recursos y decisiones    │
+        │ 4. Preparar fichas de candidatos ficticios  │
+        │    (Aplicar perfiles, redactar fichas y     │
+        │    verificar ficción y comparabilidad)      │
         └────────────────────────┬────────────────────┘
                                  │
                                  ▼
+                             ╱─────────╲
+                            ╱  ¿Fichas   ╲
+                           ╱ ¿verificadas?╲
+                            ╲─────┬───────╯
+                            NO  │  SÍ
+                          ┌─────┘  └─────┐
+                          │ volver a 4.3  │
+                          └───────────────┘
+                                 │
+                                 ▼
         ┌─────────────────────────────────────────────┐
-        │ 10. Diagramas, conclusión y armado del      │
-        │     documento final                         │
+        │ 5. Preparar el chatbot "Dos Tonos"          │
+        │    (Tono A, Tono B, pantalla, captura,      │
+        │     verif. automática,                       │
+        │     inclinación solo en Tono A)              │
         └────────────────────────┬────────────────────┘
+                                 │
+                                 ▼
+                             ╱─────────╲
+                            ╱  ¿Implem.  ╲
+                           ╱  ¿validada? ╲
+                            ╲─────┬───────╯
+                            NO  │  SÍ
+                          ┌─────┘  └─────┐
+                          │ volver a 5.1  │
+                          └───────────────┘
+                                 │
+                                 ▼
+        ┌─────────────────────────────────────────────┐
+        │ 6. Preparar la demostración de la Estación  │
+        │    2 (Guion, coordinación, dispositivos)    │
+        └────────────────────────┬────────────────────┘
+                                 │
+                                 ▼
+                             ╱─────────╲
+                            ╱  ¿Estación ╲
+                           ╱   2 lista?   ╲
+                            ╲─────┬───────╯
+                            NO  │  SÍ
+                          ┌─────┘  └─────┐
+                          │ volver a 6.4  │
+                          └───────────────┘
+                                 │
+                                 ▼
+        ┌─────────────────────────────────────────────┐
+        │ 7. Prestar el servicio: demostración        │
+        │    (Recibir grupo, inducir, tipear pregunta,│
+        │    entregar respuestas, capturar datos)     │
+        └────────────────────────┬────────────────────┘
+                                 │
+                                 ▼
+                             ╱─────────╲
+                            ╱ ¿Experiencia╲
+                           ╱  y datos OK?  ╲
+                            ╲─────┬───────╯
+                            NO  │  SÍ
+                          ┌─────┘  └─────┐
+                          │ registrar     │
+                          │ incidencia 8.1│
+                          └───────────────┘
+                                 │
+                                 ▼
+        ┌─────────────────────────────────────────────┐
+        │ 8. Cerrar la estación y ordenar evidencia   │
+        │    (Observaciones, incidencias, datos para   │
+        │    Módulo 5)                                │
+        └────────────────────────┬────────────────────┘
+                                 │
+                                 ▼
+                             ╱─────────╲
+                            ╱ ¿Evidencia ╲
+                           ╱ completa y   ╲
+                            ╲  usable?    ╱
+                             ╲────┬───────╯
+                             NO │ SÍ
+                          ┌─────┘  └─────┐
+                          │ volver a 8.1  │
+                          └───────────────┘
+                                 │
+                                 ▼
+        ┌─────────────────────────────────────────────┐
+        │ 9. Elaborar el informe académico            │
+        │    (Tablas, flujograma, conclusión, PDF)    │
+        └────────────────────────┬────────────────────┘
+                                 │
+                                 ▼
+                             ╱─────────╲
+                            ╱ ¿Documento ╲
+                           ╱ explica el   ╲
+                            ╲ servicio?   ╱
+                            ╲─────┬───────╯
+                            NO  │  SÍ
+                          ┌─────┘  └─────┐
+                          │ volver a 9.4  │
+                          └───────────────┘
                                  │
                                  ▼
                           ╭───────────────────╮
                           │        FIN         │
-                          │   PDF Entregable   │
-                          │    1 entregado     │
+                          │ Servicio cerrado   │
+                          │ y documentado      │
                           ╰───────────────────╯
 ```
 
@@ -226,9 +251,18 @@ Vacíos por ahora. Próxima sesión los armamos cuando confirmes:
 - `╱─╲` rombos = Decisión (con retorno si NO se cumple la condición)
 - `│` `▼` = Dirección del flujo
 
-**Decisiones con retorno:**
-1. Después de actividad 2: ¿Decisiones locked-in? Si NO, vuelve a la actividad 2
-2. Después de actividad 5: ¿Pruebas OK? Si NO, vuelve a la actividad 5
+**Decisiones con retorno (9 controles de calidad al final de cada proceso):**
+1. Después de Actividad 1: ¿Guía comprendida? Si NO → revisar 1.1
+2. Después de Actividad 2: ¿Objetivo y dinámica son claros? Si NO → revisar 2.1
+3. Después de Actividad 3: ¿Herramienta apta para la estación? Si NO → revisar 3.1
+4. Después de Actividad 4: ¿Fichas verificadas? Si NO → revisar 4.3
+5. Después de Actividad 5: ¿Chatbot validado? Si NO → revisar 5.1
+6. Después de Actividad 6: ¿Estación 2 lista? Si NO → revisar 6.4
+7. Después de Actividad 7: ¿Experiencia realizada y datos registrados? Si NO → registrar incidencia en 8.1
+8. Después de Actividad 8: ¿Evidencia completa y usable? Si NO → revisar 8.1
+9. Después de Actividad 9: ¿Documento explica el proceso del servicio? Si NO → revisar 9.4
+
+**Coherencia del proceso:** "Pruebas" no es un proceso separado, está integrada al final de cada actividad como un control de calidad. Cada sub-proceso empieza con un verbo (Leer, Definir, Redactar, Implementar, etc.) que define la acción.
 
 ---
 
@@ -238,43 +272,45 @@ Vacíos por ahora. Próxima sesión los armamos cuando confirmes:
 
 | Interviniente | Función dentro del proceso |
 |---|---|
-| **Equipo CriterIA** (5 estudiantes de Ing. Informática) | Ejecuta las 10 actividades del proceso. Toma las decisiones de diseño, construye la base de información de candidatos, desarrolla la aplicación, valida el producto, prepara y ejecuta la demostración, y arma el documento entregable. |
-| **Sub-equipo B de Módulo 2** (5 estudiantes, alcance complementario) | Participa en las actividades 7 y 8 (preparación de la demostración y demostración en el colegio). Operador conjunto de la Estación 2 el día del evento. |
-| **Equipo de Módulo 5 — Evaluación y Análisis** (8-12 estudiantes de Control de Gestión) | Recibe los datos capturados durante la demostración (Actividad 8) para su análisis e informe de impacto. No participa en el desarrollo técnico pero es el destinatario final del output de la Estación 2. |
-| **Docente de la asignatura** (Ing. en Producción) | Recibe el documento entregable (PDF) al final del proceso. Evalúa según los criterios de la Guía del Entregable 1. No interviene en las actividades técnicas pero aprueba/desaprueba el resultado. |
-| **Estudiantes de educación media** (colegio asignado) | Usuarios finales de la demostración. Tipean preguntas en la aplicación y comparan las dos respuestas. No participan en el desarrollo pero son la razón de ser del servicio. |
+| **Equipo CriterIA** (5 estudiantes de Ing. Informática) | Ejecuta las 9 actividades del proceso. Toma las decisiones de diseño, construye la base de información de candidatos, prepara el chatbot de consulta, valida la estación, acompaña la demostración, ordena la evidencia y elabora el informe académico. |
+| **Sub-equipo B de Módulo 2** (5 estudiantes, alcance complementario) | Participa en las actividades 6 y 7 (preparación de la demostración y prestación del servicio en el colegio). Operador conjunto de la Estación 2 el día del evento. |
+| **Equipo de Módulo 5 — Evaluación y Análisis** (8-12 estudiantes de Control de Gestión) | Recibe los datos capturados durante la demostración (Actividad 7) para su análisis e informe de impacto. |
+| **Docente de la asignatura** (Ing. en Producción) | Recibe el informe académico que explica el proceso del servicio y evalúa según los criterios de la Guía del Entregable 1. |
+| **Estudiantes de educación media** (colegio asignado) | Proponen preguntas para el chatbot y comparan las dos respuestas durante la demostración. |
 
 ### 9. Recursos y documentos
 
 | Recurso / Documento | ¿En qué actividad se usa? | ¿Quién lo utiliza? |
 |---|---|---|
-| Guía del Entregable 1 (entregada por el docente) | Actividad 1 (análisis del brief) | CriterIA |
+| Guía del Entregable 1 (entregada por el docente) | Actividad 1 (análisis de la guía) | CriterIA |
 | Mapa visual del proyecto Startup Educativa | Actividad 1 | CriterIA |
 | Notas y resultados de la Actividad 1 | Actividad 2 (diseño) | CriterIA |
-| API keys de modelos de IA (MiniMax, Gemini, etc.) | Actividades 3 y 5 (investigación, desarrollo) | Delegados técnicos |
-| Fuentes públicas de información de candidatos | Actividad 4 (recopilación) | Delegados |
-| Aplicación "Dos Tonos" en ejecución local | Actividades 6, 7 y 8 (pruebas, preparación, demostración) | CriterIA + sub-equipo B |
-| Lista de preguntas de prueba (preparada por el equipo) | Actividad 6 (pruebas) | CriterIA |
-| Guion de inducción para el estudiante | Actividad 7 (preparación) | Sub-equipo B + CriterIA |
-| Checklist logístico de la Estación 2 | Actividad 7 | Sub-equipo B |
-| Dispositivos electrónicos (para inducción) | Actividad 8 (demostración) | Sub-equipo B + CriterIA |
-| Dispositivo (notebook/tablet) con internet | Actividad 8 | Operador de la Estación 2 |
-| Notas del equipo, brief, esquema del proceso | Actividad 9 (análisis del proceso) | CriterIA |
-| Todo el output previo | Actividad 10 (documentación final) | CriterIA |
-| Formato `Equipo_N°_Entregable_1_StartupEducativa.pdf` | Actividad 10 | CriterIA |
+| Acceso a herramientas de IA | Actividades 3 y 5 (selección y preparación) | Delegados |
+| ADR-0003, plantilla y fichas sintéticas | Actividad 4 (preparación del corpus) | Arnold y Mathias |
+| Chatbot "Dos Tonos" en ejecución local | Actividades 5, 6 y 7 (preparación, validación y prestación) | CriterIA + sub-equipo B |
+| Verificación del chatbot (ambos modos leen lo mismo, inclinación solo en Tono A) | Actividad 5 (preparación) | CriterIA |
+| Guion de inducción para el estudiante | Actividad 6 (preparación) | Sub-equipo B + CriterIA |
+| Lista de verificación logística de la Estación 2 | Actividad 6 | Sub-equipo B |
+| Dispositivos electrónicos (para inducción) | Actividad 7 (prestación) | Sub-equipo B + CriterIA |
+| Dispositivo (notebook/tablet) con internet | Actividad 7 | Operador de la Estación 2 |
+| Registro de observaciones e incidencias | Actividad 8 (cierre de estación) | CriterIA |
+| Datos acordados para evaluación | Actividad 8 | CriterIA + Módulo 5 |
+| Evidencia del servicio, guía y esquema del proceso | Actividad 9 (informe académico) | CriterIA |
+| Formato `Equipo_N°_Entregable_1_StartupEducativa.pdf` | Actividad 9 | CriterIA |
 
 ### 10. Decisiones y controles
 
 | Situación | ¿Qué se decide / verifica? | ¿Quién interviene? | ¿Qué ocurre después? |
 |---|---|---|---|
-| Después de Actividad 2 (Diseño) | ¿Las decisiones de diseño están aceptadas? ¿Está claro el diseño experimental, la base de candidatos, el contrato con el equipo de Control de Gestión? | CriterIA | Si SÍ → continúa a Act. 3. Si NO → vuelve a Act. 2. |
-| Después de Actividad 5 (Desarrollo) | ¿La aplicación funciona? ¿Los dos modos leen la misma información? ¿El sesgo está SOLO en Tono A? | CriterIA | Si SÍ → continúa a Act. 6. Si NO → vuelve a Act. 5. |
-| Después de Actividad 6 (Pruebas) | ¿La aplicación pasa las pruebas con preguntas reales? ¿La captura de datos para el equipo de Control de Gestión funciona? | CriterIA | Si SÍ → continúa a Act. 7. Si NO → vuelve a Act. 5 o 6. |
-| Antes de Actividad 7 (Preparación) | ¿El sub-equipo B está identificado y disponible? ¿Se coordinaron roles de operación? | CriterIA + sub-equipo B | Si SÍ → continúa. Si NO → esperar o ajustar plan. |
-| Antes de Actividad 8 (Demostración) | ¿Los dispositivos electrónicos y la conexión funcionan? ¿La aplicación está instalada? | CriterIA + sub-equipo B | Si SÍ → se ejecuta la demo. Si NO → abortar o reagendar. |
-| Durante Actividad 8 (Demostración) | ¿El estudiante comprendió el flujo (pregunta → 2 respuestas → comparación)? | CriterIA + sub-equipo B | Si SÍ → se capturan datos. Si NO → se refuerza inducción. |
-| Después de Actividad 8 (Demostración) | ¿Los datos fueron capturados correctamente? ¿Se cubrió la meta de grupos? | CriterIA | Si SÍ → continúa a Act. 9. Si NO → se revisa captura. |
-| Antes de la entrega final (Act. 10) | ¿El documento PDF está completo (las 6 partes)? ¿Cumple con el formato de nombre? | CriterIA | Si SÍ → se entrega. Si NO → se corrige. |
+| Después de Actividad 1 (Analizar) | ¿La guía está comprendida? ¿Las dudas para el docente están listadas? | CriterIA | Si SÍ → continúa a Act. 2. Si NO → revisar 1.1. |
+| Después de Actividad 2 (Diseñar) | ¿La dinámica educativa está aceptada? ¿Está claro que se usará una misma información presentada de dos formas? | CriterIA | Si SÍ → continúa a Act. 3. Si NO → revisar 2.1. |
+| Después de Actividad 3 (Investigar) | ¿El sistema de IA seleccionado es viable (costo, latencia, idioma)? | CriterIA | Si SÍ → continúa a Act. 4. Si NO → revisar 3.1. |
+| Después de Actividad 4 (Preparar fichas) | ¿Las tres fichas ficticias están completas, equilibradas y aprobadas? | Arnold y Mathias | Si SÍ → continúa a Act. 5. Si NO → revisar 4.3. |
+| Después de Actividad 5 (Preparar) | ¿El chatbot funciona? ¿Los dos modos leen la misma información? ¿La inclinación está SOLO en Tono A? ¿La captura de datos funciona? | CriterIA | Si SÍ → continúa a Act. 6. Si NO → revisar 5.1. |
+| Después de Actividad 6 (Preparar) | ¿El sub-equipo B está alineado? ¿Los dispositivos y la conexión funcionan? | CriterIA + sub-equipo B | Si SÍ → continúa a Act. 7. Si NO → revisar 6.4. |
+| Después de Actividad 7 (Prestar) | ¿La experiencia se realizó? ¿Los datos acordados quedaron registrados? | CriterIA + sub-equipo B | Si SÍ → continúa a Act. 8. Si NO → registrar incidencia y ajustar en 8.1. |
+| Después de Actividad 8 (Cerrar) | ¿La evidencia está completa, ordenada y usable por Módulo 5? | CriterIA + Módulo 5 | Si SÍ → continúa a Act. 9. Si NO → revisar 8.1. |
+| Antes de la entrega final (Act. 9) | ¿El documento explica el proceso del servicio? ¿Cumple con las 6 partes y el formato de nombre? | CriterIA | Si SÍ → se entrega. Si NO → revisar 9.4. |
 
 ---
 
@@ -284,16 +320,15 @@ Vacíos por ahora. Próxima sesión los armamos cuando confirmes:
 
 **Tipo de flujograma:** Vertical · **Estándar:** ANSI (simbología clásica de procesos)
 
-![Flujograma Formal ANSI](diagrams/flujograma-formal-ans.svg)
+![Flujograma formal de una página](diagrams/flujograma-formal-una-pagina.svg)
 
-*Fuente: `entregas/entregable-1/diagrams/flujograma-formal-ans.svg`*
+*Fuente: `entregas/entregable-1/diagrams/flujograma-formal-una-pagina.svg`*
 
 **Justificación de la elección (estándar ANSI):**
 
 - Es el estándar más usado en textbooks de Organización y Métodos en universidades latinoamericanas
 - La simbología es clara y reconocible para un lector no técnico: rectángulo = proceso, rombo = decisión, óvalo = inicio/fin
-- Permite representar los dos puntos de control del proceso (decisiones sobre ADRs y sobre validación de pruebas) con retorno explícito al paso anterior cuando la condición no se cumple
-- Es coherente con la formación de la docente (Ingeniera en Producción), que probablemente enseñó con material ANSI durante la carrera
+- Permite representar los puntos de control del proceso con retorno explícito al sub-proceso específico a corregir cuando la condición no se cumple
 
 **Simbología utilizada:**
 
@@ -304,89 +339,25 @@ Vacíos por ahora. Próxima sesión los armamos cuando confirmes:
 | Rombo amarillo | Decisión (con retorno si NO) |
 | Flecha con punta | Dirección del flujo |
 
-**Decisiones representadas:**
-1. **Después de actividad 2 (Diseño):** ¿Decisiones de diseño locked-in? Si NO, vuelve a la actividad 2 para revisar
-2. **Después de actividad 5 (Desarrollo):** ¿Pruebas OK? (verifica que ambos modos leen lo mismo y que el sesgo solo está en Tono A). Si NO, vuelve a la actividad 5 para corregir
+**Decisiones representadas** (9 controles de calidad):
+1. **Después de actividad 1:** ¿Guía comprendida? Si NO, revisar 1.1
+2. **Después de actividad 2 (Diseño):** ¿Objetivo y dinámica son claros? Si NO, revisar 2.1
+3. **Después de actividad 3:** ¿Herramienta apta para la estación? Si NO, revisar 3.1
+4. **Después de actividad 4:** ¿Fichas verificadas? Si NO, revisar 4.3
+5. **Después de actividad 5:** ¿Chatbot validado? (funciona, usa la misma información base y registra datos). Si NO, revisar 5.1
+6. **Después de actividad 6:** ¿Estación 2 lista? Si NO, revisar 6.4
+7. **Después de actividad 7:** ¿Experiencia realizada y datos registrados? Si NO, registrar incidencia en 8.1
+8. **Después de actividad 8:** ¿Evidencia completa y usable? Si NO, revisar 8.1
+9. **Después de actividad 9:** ¿Documento explica el proceso del servicio? Si NO, revisar 9.4
 
 ---
 
-## Sub-procesos
-
-Las actividades marcadas con ↳ en el flujograma formal tienen sub-procesos asociados. Esta sección los detalla.
-
-### Sub-proceso 2.1 — Diseño del diseño experimental
-
-- **2.1.1** Definir la arquitectura (un modelo de IA, dos modos de presentación)
-- **2.1.2** Escribir el prompt de Tono A (con sesgo marcado hacia progresiva)
-- **2.1.3** Escribir el prompt de Tono B (neutro, balanceado)
-- **2.1.D1** Decisión: ¿Los prompts producen respuestas claramente distintas? Si NO → volver a 2.1.2 / 2.1.3
-- **Output:** Diseño experimental documentado
-
-### Sub-proceso 4.1 — Construcción de la base de candidatos
-
-- **4.1.1** Definir las 3 áreas políticas (progresista, centrista, conservadora)
-- **4.1.2** Seleccionar 3-5 candidatos por área (total ≥9)
-- **4.1.3** Escribir una ficha por candidato con: nombre, partido, propuestas, frases textuales, fuente
-- **4.1.4** Verificar fuentes (sitios oficiales, perfiles públicos)
-- **Output:** Carpeta con ≥9 fichas completas
-
-### Sub-proceso 5.1 — Desarrollo de la aplicación
-
-- **5.1.1** Construir Tono A: implementar el prompt con sesgo marcado hacia progresiva
-- **5.1.2** Construir Tono B: implementar el prompt neutro, balanceado
-- **5.1.3** Construir la interfaz: input del estudiante, 2 respuestas lado a lado
-- **5.1.4** Implementar la captura de datos para Control de Gestión
-- **5.1.5** Implementar verificación automática: ambos modos leen lo mismo, sesgo solo en Tono A
-- **Output:** APP funcional con 2 modos verificada
-
-### Sub-proceso 6.1 — Validación de la aplicación
-
-- **6.1.1** Probar la aplicación con preguntas de ejemplo
-- **6.1.2** Verificar que Tono A introduce variaciones de framing
-- **6.1.3** Verificar que Tono B NO introduce variaciones
-- **6.1.4** Validar la captura de datos
-- **6.1.5** Documentar bugs y aplicar correcciones
-- **Output:** Reporte de validación + bugs corregidos
-
-### Sub-proceso 7.1 — Preparación de la operación
-
-- **7.1.1** Preparar el guion de inducción (~2 min) para el estudiante media
-- **7.1.2** Coordinar con el sub-equipo B los roles de operación del día del evento
-- **7.1.3** Preparar los dispositivos electrónicos para inducción
-- **7.1.4** Preparar el checklist logístico de la Estación 2
-- **Output:** Estación 2 lista, sub-equipo B alineado
-
-### Sub-proceso 8.1 — Operación de la demostración
-
-- **8.1.1** Recibir al grupo de estudiantes en la Estación 2
-- **8.1.2** Hacer la inducción: "van a comparar 2 respuestas del mismo modelo"
-- **8.1.3** Estudiante tipea su pregunta sobre un candidato
-- **8.1.4** Recibir las 2 respuestas (Tono A y Tono B) lado a lado
-- **8.1.5** Facilitar la comparación: "¿ven alguna diferencia en el framing?"
-- **8.1.6** Capturar los datos para Control de Gestión
-- **Output:** Datos capturados para Módulo 5
-
-### Sub-proceso 9.1 — Documentación del análisis
-
-- **9.1.1** Llenar la tabla de intervinientes y funciones
-- **9.1.2** Llenar la tabla de recursos y documentos
-- **9.1.3** Llenar la tabla de decisiones y controles
-- **9.1.4** Revisar la coherencia entre las 3 tablas
-- **Output:** 3 tablas completadas y consistentes
-
-### Sub-proceso 10.1 — Armado del documento final
-
-- **10.1.1** Construir el flujograma formal (la imagen SVG de la Parte V)
-- **10.1.2** Redactar la conclusión del equipo (300 palabras)
-- **10.1.3** Armar el PDF único con las 6 partes de la Guía
-- **10.1.4** Verificar el formato del nombre del archivo
-- **10.1.5** Subir a la plataforma del docente
-- **Output:** PDF entregado en la plataforma
+> **Nota sobre los sub-procesos:** los sub-procesos de cada actividad (verbos, pasos, decisiones internas, outputs) están dibujados como cuadros conectados dentro del flujograma formal (Parte V). El flujograma preliminar ASCII (Parte III) muestra los 9 procesos con sus decisiones de retorno. El detalle exhaustivo de cada sub-proceso vive en el SVG, no en este documento.
 
 ---
 
 ## PARTE VI — Conclusión del equipo
 
-Al analizar "Dos Tonos" como un proceso, el equipo CriterIA aprendió tres cosas centrales. Primero, descomponer un servicio en actividades discretas hace visibles dependencias que de otro modo quedarían ocultas: por ejemplo, la demostración del día del evento depende de que el sub-equipo B coordine, lo que depende de que se defina su alcance, lo que aún no hicimos. Sin este ejercicio de mapeo, la dependencia aparecería como problema el día del evento. Segundo, los puntos de control son tan importantes como las actividades mismas: las dos decisiones del flujograma (¿decisiones locked-in?, ¿pruebas OK?) no son opcionales sino el mecanismo que evita avanzar con supuestos sin validar. Tercero, el mismo dato puede producir dos presentaciones muy distintas: el sesgo de los modelos de IA no está en la información que leen, sino en cómo se les pide que la presenten.
+Al analizar "Dos Tonos" como un proceso de servicio, el equipo CriterIA aprendió tres cosas centrales. Primero, descomponer la Estación 2 en actividades discretas hace visibles dependencias ocultas: por ejemplo, la demostración depende de que el sub-equipo B coordine la facilitación, de que Módulo 3 confirme las condiciones operativas y de que Módulo 5 defina qué datos necesita recibir. Sin este ejercicio, esas dependencias aparecerían recién el día del evento. Segundo, los puntos de control son tan importantes como las actividades mismas: cada proceso cierra con una validación concreta (guía comprendida, dinámica educativa confirmada, fichas verificadas, estación lista, datos registrados, evidencia ordenada) que evita avanzar con supuestos sin revisar. Tercero, el mismo dato puede producir dos presentaciones muy distintas: la inclinación de los modelos de IA no está en la información que leen, sino en cómo se les pide que la presenten. La verificación "ambos modos leen lo mismo, inclinación solo en Tono A" es la forma operativa de asegurar esta enseñanza.
 
-Los principales aspectos a mejorar antes de la implementación son: (1) definir el alcance del sub-equipo B, que actualmente está sin asignar, sin lo cual las actividades 7 y 8 del flujograma no se pueden planificar concretamente; (2) construir la base de al menos 9 candidatos en 3 áreas, ya que sin contenido la aplicación no se puede probar; (3) definir la tecnología a utilizar y el contrato de datos con el equipo de Control de Gestión, ambos pendientes; (4) coordinar con el equipo de Control de Gestión para asegurar que los datos capturados durante la demo sirvan para su informe. El plazo hasta la entrega aprieta, pero el flujograma permite ver qué se puede paralelizar (base de candidatos y tecnología) y qué es secuencial (diseño → base de candidatos → implementación).
+Los principales aspectos a mejorar antes de la implementación son: (1) definir el alcance del sub-equipo B, sin lo cual las actividades 6 y 7 no se pueden planificar concretamente; (2) completar la revisión humana y liberar las tres fichas ficticias del corpus v1; (3) definir la herramienta de apoyo y el contrato de datos con el equipo de Control de Gestión, ambos pendientes; (4) coordinar con Control de Gestión para que los datos capturados durante la demo sirvan para su informe. El plazo aprieta, pero el flujograma permite ver qué se puede paralelizar (revisión del corpus y herramienta) y qué es secuencial (diseño → corpus aprobado → preparación de la aplicación), con sus puntos de control también secuenciados.

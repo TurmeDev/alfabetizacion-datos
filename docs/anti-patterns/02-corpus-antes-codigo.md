@@ -27,17 +27,18 @@
 
 ## Estructura mínima del corpus antes de empezar el código
 ```
-corpus/candidatos/
+corpus/v1/
 ├── README.md
 ├── _indice.md
-├── progresiva/
-│   └── <candidato>.md       ← al menos 1 candidato completo
-├── centrista/
-└── conservadora/
+└── candidatos/
+    ├── <candidatura-progresista>.md
+    ├── <candidatura-centrista>.md
+    └── <candidatura-conservadora>.md
 ```
 
-Cada `<candidato>.md` debe tener: nombre, partido, propuestas resumidas, frases
-textuales emblemáticas, fuente.
+`corpus/candidatos/` contiene sólo borradores y no es fuente de runtime. Cada
+ficha versionada debe tener nombre, partido, propuestas resumidas, frases
+textuales emblemáticas, procedencia y aprobación humana. Ver ADR-0003.
 
 ## Aplicar cuando
 - Inicio de cualquier proyecto con RAG/corpus
